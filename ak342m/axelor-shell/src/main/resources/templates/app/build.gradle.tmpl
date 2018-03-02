@@ -1,0 +1,28 @@
+apply plugin: 'axelor-app'
+
+application {
+
+	name "${name}"
+	title "${title}"
+
+	version "1.0.0"
+
+	// ADK version required
+	adkVersion "~${sdkVersion}"
+
+	// module dependencies
+	// module "modules:axelor-contact"
+}
+
+allprojects {
+	license {
+		ext.product = "<%= name %>"
+		ext.owner = "My Company"
+		ext.website = "http://my-company.com"
+	}
+}
+
+tomcat {
+	httpPort = project.properties.get("http.port", 8080) as Integer
+	stopPort = 9451
+}

@@ -1,0 +1,114 @@
+apply plugin: 'application'
+
+buildscript {
+	apply from: "version.gradle"
+	repositories {
+		ivy {
+			url "file://${projectDir}/ivy"
+		}
+	}
+	dependencies {
+		classpath "com.axelor:axelor-gradle:${version}"
+	}
+}
+
+dependencies {
+	compile project(":axelor-shell")
+}
+
+def localDist = "${rootProject.buildDir}/dist"
+def localRepo = "${localDist}/ivy"
+
+task repo(dependsOn: [uploadArchives, ':axelor-gradle:dist']) {
+	outputs.dir localDist
+}
+
+allprojects {
+
+	apply from: "${rootDir}/version.gradle"
+
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
+
+	repositories {
+		ivy {
+			name "localRepo"
+			url "file://${localRepo}"
+		}
+	}
+
+	uploadArchives {
+		repositories {
+			add project.repositories.localRepo
+		}
+	}
+
+	afterEvaluate {
+		// only run test suites
+		test {
+			scanForTestClasses = false
+			include "**/*Suite.class"
+		}
+	}
+}
+
+tasks.repo.dependsOn subprojects*.uploadArchives
+
+jar.enabled = false
+install.enabled = false
+uploadArchives.enabled = false
+
+applicationName = "axelor"
+mainClassName = "com.axelor.shell.Main"
+
+run {
+	standardInput = System.in
+	standardOutput = System.out
+}
+
+applicationDistribution.from(repo) {
+	
+}
+
+def distName = "axelor-development-kit"
+def distConfig = {
+	baseName distName
+	eachFile {
+		if (it.name.endsWith('.bat')) {
+			it.mode = 0644
+		}
+	}
+}
+
+distZip distConfig
+distTar distConfig
+distTar.compression Compression.GZIP
+
+task dist(dependsOn: [distZip, distTar])
+
+installApp {
+	destinationDir = file("${buildDir}/install/${distName}")
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = "2.0"
+}
+
+// force wtp settings on subprojects
+apply from: 'gradle/force-wtp.gradle'
+
+import com.axelor.gradle.tasks.VersionTask
+
+task("updateVersion", type: VersionTask) {
+	description "Update version text in source files."
+	group "Axelor"
+	processFiles = fileTree(projectDir) {
+		include '**/resources/**/*.xml'
+		include '**/resources/domain-models.xsd'
+		include '**/resources/object-views.xsd'
+		include '**/resources/data-import.xsd'
+		include '**/resources/templates/**/*.tmpl'
+		include '**/data/**/*config.xml'
+		include '**/webapp/package.json'
+	}
+}

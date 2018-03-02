@@ -1,0 +1,61 @@
+apply plugin: 'groovy'
+
+configurations {
+    gradleApi
+    gradleApi.extendsFrom groovy
+    compile.extendsFrom gradleApi
+}
+
+dependencies {
+
+	testCompile	libs.junit
+
+	gradleApi gradleApi()
+
+	compile	libs.guava
+	compile libs.opencsv
+
+	compile project(':axelor-common')
+
+	compile libs.plugin_license
+	compile libs.plugin_tomcat
+}
+
+sourceSets {
+	main {
+		java.srcDirs = []
+		groovy.srcDirs = ['src/main/java', 'src/main/groovy']
+	}
+}
+
+allprojects {
+
+	apply from: '../version.gradle'
+
+	repositories {
+		ivy {
+			name "localRepo"
+			url "file://${projectDir}/../ivy"
+		}
+	}
+
+	uploadArchives {
+		repositories {
+			add project.repositories.localRepo
+		}
+	}
+}
+
+// sometime installApp fails to process resources
+processResources.outputs.upToDateWhen { false }
+
+task dist(type: Copy) {
+	destinationDir = file("${rootProject.buildDir}/dist")
+	into('init.d') { from 'src/init.d' }
+    into('init.d/libs') {
+		from jar
+        from configurations.runtime - configurations.gradleApi
+    }
+}
+
+uploadArchives.dependsOn project(":axelor-common").uploadArchives

@@ -1,0 +1,29 @@
+C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bin>b_jdk7_121.cmd
+
+C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bin>set M2_HOME=C:\noux\aaxk71\Downloads\maven325
+
+C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bin>set JAVA_HOME=C:\noux\aaxk71\Downloads\jdk7u121
+
+C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bin>set PATH=C:\noux\aaxk71\Downloads\jdk7u121\bin;C:\noux\aaxk71\Downloads\maven325\bin
+;C:\Program Files (x86)\Cuminas\Document Express DjVu Plug-in\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:
+\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\SlikSvn\bin;C:\Program Files (x86)\Microchip\
+MPLAB C32 Suite\bin;C:\Program Files (x86)\Microchip860\MPLAB C32 Suite\pic32mx\binC:\Program Files (x86)\Common Files\Autodesk Shared\;C:\P
+rogram Files\Microsoft Windows Performance Toolkit\;C:\Program Files (x86)\Common Files\Autodesk Shared\;C:\Program Files (x86)\QuickTime\QT
+System\;C:\noux\aaxk71\Downloads\gettext-iconv;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)
+\Microsoft SDKs\TypeScript\1.0\;C:\Program Files (x86)\Skype\Phone\;G:\brackets170\command;C:\noux\aaxk71\Documents\;C:\Program Files\Tort
+oiseGit\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;G:\vscode_tool15\yarn\bin;C:\noux\aaxk71\Downlo
+ads\LyX21\miktex29\miktex\bin\;C:\noux\aaxk71\Downloads\Lyx212\external\miktex\miktex\bin\;C:\noux\aaxk71\Documents\D7lite\Bin;C:\noux\
+aaxk71\Documents\D7lite\Projects\Bpl;C:\noux\aaxk71\Downloads\cygwin\usr\i686-pc-cygwin\bin;C:\noux\aaxk71\Downloads\cygwin\bin;C:\User
+s\aaxk71\AppData\Roaming\npm;C:\noux\aaxk71\downloads\MiKTeX29\miktex\bin\;C:\noux\aaxk71\AppData\Local\Yarn\bin
+
+
+set CATALINA_OPTS=-Xms512M -Xmx1024M -XX:PermSize=256m -XX:MaxPermSize=512m
+
+C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bin>startup
+Using CATALINA_BASE:   "C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73"
+Using CATALINA_HOME:   "C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73"
+Using CATALINA_TMPDIR: "C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\temp"
+Using JRE_HOME:        "C:\noux\aaxk71\Downloads\jdk7u121"
+Using CLASSPATH:       "C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bin\bootstrap.jar;C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bi
+n\tomcat-juli.jar"
+C:\noux\aaxk71\Downloads\apache-tomcat-7.0.73\bin>

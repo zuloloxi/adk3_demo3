@@ -1,0 +1,318 @@
+/**
+ * Axelor Business Solutions
+ *
+ * Copyright (C) 2012-2014 Axelor (<http://axelor.com>).
+ *
+ * This program is free software: you can redistribute it and/or  modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+.portal-view .portal,
+.portal-view .portlet,
+.portal-view .portlet-body,
+.portal-view .portlet-header,
+.portal-view .portlet-content {
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.form-view .portlet,
+.form-view .portlet-body,
+.form-view .portlet-header,
+.form-view .portlet-content {
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.portal-view .portal {
+	padding: 4px;
+}
+
+.portal > .portal-tabs,
+.portal > .portlet {
+	position: relative;
+	float: left;
+}
+
+.portlet-header.navbar i {
+	padding: 4px;
+	margin: 0;
+}
+
+.portlet-header.navbar .portlet-pager i.disabled {
+	color: gray;
+	cursor: default;
+}
+
+.portlet-header.navbar .divider-vertical {
+	height: 28px;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-content {
+	position: absolute !important;
+}
+
+.portlet .portlet-body {
+	top: 0px;
+	right: 2px;
+	bottom: 4px;
+	left: 2px;
+
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+				
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.portlet .portlet-content {
+	top: 30px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	
+	border: 1px solid #d4d4d4;
+	border-top: none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.portlet .portlet-content > div,
+.portlet .portlet-content > div > .slickgrid {
+	top: -1px !important;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	        
+	border: none;
+}
+
+.portal-tabs {
+	margin-bottom: 4px;
+}
+
+.portal-tabs > .nav-tabs {
+	margin-bottom: 0;
+}
+
+.portal-tabs > .tab-content {
+	position: relative;
+	border: 1px solid #DDD;
+	border-top: 0;
+	background-color: #fff;
+}
+
+.portlet .portlet-content > .nvtooltip {
+	height: auto;
+}
+
+.portlet.portlet-minimized {
+	height: 34px !important;
+}
+
+.portlet.portlet-minimized .portlet-content {
+	display: none !important;
+}
+
+.portal-view .ui-sortable-placeholder {
+	border: 2px dashed #c9c9c9;
+	visibility: visible !important;
+	
+	margin-bottom: 4px;
+	
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+}
+
+/** dashboard */
+
+.dashboard {
+	margin: auto;
+	padding: 14px;
+}
+
+.dashboard.attached {
+	margin-top: -9px;
+}
+
+.dashboard > .dashlet-container {
+	padding: 0;
+}
+
+.dashboard .dashlet {
+	border: 1px solid #d4d4d4;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	height: 300px;
+}
+
+.bar-layout .dashboard {
+	height: 300px;
+}
+
+.bar-layout .dashlet {
+	height: 100%;
+}
+
+.dashboard .dashlet-header {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #d4d4d4;
+
+	padding: 6px 10px;
+	overflow: hidden;
+}
+
+.dashboard .dashlet-title {
+	font-size: 16px;
+	max-width: 60%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.dashboard .dashlet-body {
+	padding: 4px;
+	height: calc(100% - 32px);
+}
+
+.dashboard .dashlet-body > * {
+	height: calc(100% - 9px);
+}
+
+.dashboard .dashlet-body .slickgrid {
+	height: 100%;
+}
+
+.dashboard .dashlet-pager {
+	margin-right: 8px;
+}
+
+.dashboard .dashlet-buttons > a,
+.dashboard .dashlet-pager > a {
+	color: #333;
+	padding-left: 8px;
+}
+
+.dashboard .dashlet-pager > a.disabled {
+	color: gray;
+	cursor: default;
+}
+
+.dashlet .chart-controls {
+
+}
+
+.dashlet .chart-controls form {
+	margin: 0;
+	padding: 0;
+}
+
+.dashlet .chart-controls .panel {
+	border: 0;
+	box-shadow: none;
+}
+.dashlet .chart-controls .panel-body {
+	padding: 4px;
+}
+
+.dashboard .dashlet {
+	margin: 4px !important;
+}
+
+.form-item .dashboard {
+	padding: 0 !important;
+}
+.form-item .dashboard .dashlet {
+	margin: 0 !important;
+}
+
+/** responsive dashlet classes */
+
+[class*="dashlet-cs"] {
+  float: left;
+  min-height: 1px;
+}
+
+.dashlet-cs12 {
+	width: calc(100% - 10px);
+}
+
+.dashlet-cs11 {
+	width: calc(91.666666667% - 10px);
+}
+
+.dashlet-cs10 {
+	width: calc(83.333333333% - 10px);
+}
+
+.dashlet-cs9 {
+	width: calc(75% - 10px);
+}
+
+.dashlet-cs8 {
+	width: calc(66.666666667% - 10px);
+}
+
+.dashlet-cs7 {
+	width: calc(58.333333333% - 10px);
+}
+
+.dashlet-cs6 {
+	width: calc(50% - 10px);
+}
+
+.dashlet-cs5 {
+	width: calc(41.666666667% - 10px);
+}
+
+.dashlet-cs4 {
+	width: calc(33.333333333% - 10px);
+}
+
+.dashlet-cs3 {
+	width: calc(25% - 10px);
+}
+
+.dashlet-cs2 {
+	width: calc(16.666666667% - 10px);
+}
+
+.dashlet-cs1 {
+	width: calc(8.333333333% - 10px);
+}
+
+@media (max-width: 768px) {
+	[class*="dashlet-cs"] {
+		width: calc(100% - 10px);
+	}
+}
+
+.chart-controls .span6 {
+	width: calc(50% - 4px) !important;
+	margin: 0 4px !important;
+	float: left !important;
+}
+
+.chart-controls .span6:first-child {
+	margin-left: 0 !important;
+}
+
+.chart-controls .span6:last-child {
+	margin-right: 0 !important;
+}

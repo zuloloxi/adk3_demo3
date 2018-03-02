@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_3.4.xsd">
+
+  <module name="meta" package="com.axelor.meta.db" />
+  
+  <entity name="MetaModule" table="META_MODULE" cachable="true">
+    <![CDATA[
+    This object store the modules.
+    ]]>
+    
+    <string name="name" required="true" unique="true"/>
+    <string name="title" required="true" />
+    <string name="description" large="true"/>
+    <string name="depends" max="512"/>
+    <string name="moduleVersion" required="true" title="Version"/>
+    <boolean name="removable" />
+    <boolean name="installed" />
+    <boolean name="pending" />
+  </entity>
+  
+  <entity name="MetaView" table="META_VIEW" cachable="true">
+    <![CDATA[
+    This object store the xml views.
+    ]]>
+    
+  	<string name="name" required="true"/>
+	<string name="title" required="true" namecolumn="true"/>
+  	<string name="type" required="true" selection="view.type.selection"/>
+    <integer name="priority" required="true" default="20"/>
+  	<string name="model"/>
+    <string name="module"/>
+  	<string name="xml" required="true" large="true"/>
+    <string name="xmlId" unique="true" />
+    <string name="helpLink" />
+  	<many-to-many name="groups" ref="com.axelor.auth.db.Group"/>
+    
+    <finder-method name="findByName" using="name" orderBy="-priority" cacheable="true"/>
+    <finder-method name="findByID" using="xmlId" />
+    <finder-method name="findByModule" using="module" all="true" cacheable="true"/>
+  </entity>
+  
+  <entity name="MetaMenu" table="META_MENU" cachable="true">
+    <![CDATA[
+    This object store the menus.
+    ]]>
+    
+  	<integer name="priority"/>
+  	<string name="name" unique="true" required="true"/>
+  	<string name="title" required="true" namecolumn="true"/>
+  	<string name="icon"/>
+    <string name="module"/>
+    <boolean name="top" column="top_menu"/>
+    <boolean name="left" column="left_menu" default="true"/>
+    <boolean name="mobile" column="mobile_menu"/>
+  	<many-to-one name="parent" ref="MetaMenu"/>
+  	<many-to-one name="action" ref="MetaAction"/>
+  	<many-to-many name="groups" ref="com.axelor.auth.db.Group"/>
+    <many-to-many name="roles" ref="com.axelor.auth.db.Role"/>
+    
+    <finder-method name="findByName" using="name" orderBy="-priority" cacheable="true"/>
+    <finder-method name="findByParent" using="Long:id" filter="self.parent.id = :id" all="true" cacheable="true"/>
+    <finder-method name="findByModule" using="module" all="true" cacheable="true"/>
+  </entity>
+  
+  <entity name="MetaActionMenu" table="META_ACTION_MENU" cachable="true">
+    <![CDATA[
+    This object store the actions menu.
+    ]]>
+    
+  	<string name="name" unique="true" required="true"/>
+  	<string name="title" required="true" namecolumn="true"/>
+    <string name="category" help="Category name to group action menus."/>
+    <string name="module"/>
+  	<many-to-one name="parent" ref="MetaActionMenu"/>
+  	<many-to-one name="action" ref="MetaAction"/>
+    
+    <finder-method name="findByModule" using="module" all="true" cacheable="true"/>
+  </entity>
+   
+  <entity name="MetaAction" table="META_ACTION" cachable="true">
+    <![CDATA[
+    This object store the xml actions.
+    ]]>
+    
+  	<string name="name" unique="true" required="true"/>
+    <string name="type" required="true" selection="action.type.selection"/>
+    <string name="model" />
+    <string name="module" />
+  	<string name="xml" required="true" large="true"/>
+    
+    <finder-method name="findByModule" using="module" all="true" cacheable="true"/>
+  </entity>
+  
+  <entity name="MetaSelect" table="META_SELECT" cachable="true">
+    <![CDATA[
+    This object store the selects.
+    ]]>
+    <string name="xmlId" unique="true" />
+    <string name="name" required="true"/>
+    <integer name="priority" required="true" default="20"/>
+    <string name="module"/>
+    <one-to-many name="items" ref="MetaSelectItem" mappedBy="select"/>
+    
+    <finder-method name="findByID" using="xmlId" cacheable="true" />
+    <finder-method name="findByName" using="name" orderBy="-priority" cacheable="true"/>
+    <finder-method name="findByModule" using="module" all="true" cacheable="true"/>
+  </entity>
+
+  <entity name="MetaSelectItem" table="META_SELECT_ITEM" cachable="true">
+    <![CDATA[
+    This object store the select items.
+    ]]>
+    
+    <string name="title" required="true" namecolumn="true" help="The select item title." />
+    <string name="value" required="true" help="The select item value." />
+    <string name="data" help="The addition data for UI widgets." max="1024" />
+    <integer name="order" column="order_seq"/>
+    <many-to-one name="select" ref="MetaSelect" column="select_id" required="true"/>
+  </entity>
+  
+  <entity name="MetaModel" table="META_MODEL" cachable="true">
+    <![CDATA[
+    This object store the models.
+    ]]>
+    
+    <string name="name" title="Name" required="true"/>
+    <string name="packageName" title="Package" required="true"/>
+    <string name="tableName" title="Table" />
+    <one-to-many name="metaFields" ref="MetaField" mappedBy="metaModel" title="Fields" />
+    <string name="fullName" title="Fullname" />
+  </entity>
+
+  <entity name="MetaField" table="META_FIELD" cachable="true">
+    <![CDATA[
+    This object store the fields.
+    ]]>
+    
+    <many-to-one name="metaModel" ref="MetaModel" />
+    <string name="name" title="Name" required="true"/>
+    <string name="packageName" title="Package" />
+    <string name="typeName" title="Type"  required="true"/>
+    <string name="label" title="Label" />
+    <string name="relationship" title="Relationship" selection="relationship.field.selection"/>
+    <string name="mappedBy" title="Mapped by" />
+    <string name="description" title="Description" large="true" />
+  </entity>
+  
+  <entity name="MetaTranslation" table="META_TRANSLATION" logUpdates="false">
+    <string name="key" required="true" large="true" />
+    <string name="message" large="true" />
+    <string name="language" required="true" />
+    <unique-constraint columns="key,language"/>
+    <finder-method name="findByKey" using="key,language" cacheable="true" />
+  </entity>
+
+  <entity name="MetaFile" table="META_FILE">
+    <![CDATA[
+    This object store the files.
+    ]]>
+  	<string name="fileName" required="true" namecolumn="true"/>
+    <string name="filePath" required="true"/>
+  	<long name="size" title="Size in bytes" readonly="true"/>
+  	<string name="mime" title="File type"/>
+  	<string name="description" multiline="true"/>
+  	<string name="sizeText" title="Size" readonly="true">
+      <![CDATA[
+      	if(size >= 1024)
+      		return (size / 1024) + " KB";
+      	else if(size > 1048576)
+      		return (size / 1048576) + " MB";
+      	else if(size > 1073741824)
+      		return (size / 1073741824) + " GB";
+      	return size + " Bytes";
+      ]]>
+  	</string>
+  </entity>
+  
+  <entity name="MetaAttachment" table="META_ATTACHMENT">
+  	<string name="objectName" required="true"/>
+  	<long name="objectId" required="true"/>
+  	<many-to-one name="metaFile" ref="MetaFile" title="File" required="true" column="meta_file"/>
+  	<unique-constraint columns="objectName,objectId,meta_file"/>
+  </entity>
+
+</domain-models>

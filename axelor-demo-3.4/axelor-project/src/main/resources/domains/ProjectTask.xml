@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_3.4.xsd">
+
+  <module name="project" package="com.axelor.project.db" />
+
+  <entity name="ProjectTask" table="PROJECT_TASK" cachable="true">
+    <string name="name" title="Task Summary" required="true" />
+    <string name="notes" multiline="true"/>
+    <integer name="priority"/>
+    <datetime name="createDate" required="true"/>
+    <datetime name="startDate"/>
+    <datetime name="endDate"/>
+    <date name="deadlineDate"/>
+    <integer name="progress">
+    <![CDATA[
+      double result = 0.0, duration = 0.0;
+		if (workItems == null || startDate == null || endDate == null) {
+			return 0;
+		}
+		for(ProjectWork work : workItems) {
+		  org.joda.time.LocalTime time = work.getHours();
+		  result += time.getHourOfDay();
+		  result += time.getMinuteOfHour() / 60.0;
+		}
+		duration = (double) org.joda.time.Hours.hoursBetween(startDate, endDate).getHours();
+
+		result = Math.min(100.0, ((result / duration) * 100));
+		return (int) Math.round(result);
+    ]]>
+    </integer>
+    <many-to-one name="project" ref="Project" />
+    <many-to-one name="user" column="user_id" ref="com.axelor.auth.db.User" required="true" />
+    <one-to-many name="workItems" ref="ProjectWork" mappedBy="task" />
+  </entity>
+
+</domain-models>

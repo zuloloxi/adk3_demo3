@@ -1,0 +1,9 @@
+<div ng-controller="NavCtrl" id="offcanvas" class="hidden">
+	<div class="sidebar" id="sidebar">
+		<div nav-tree x-item-click="menuClick" class="webkit-scrollbar"></div>
+	</div>
+	<div class="view-tabs" id="view-tabs">
+		<div nav-tabs ng-model="tabs"></div>
+	</div>
+	<span ng-hide="true" ng-view></span>
+</div>

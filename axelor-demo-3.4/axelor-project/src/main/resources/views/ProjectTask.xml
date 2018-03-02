@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_3.4.xsd">
+  
+  <grid name="project-task-grid" title="Project Tasks" model="com.axelor.project.db.ProjectTask">
+    <field name="name" />
+    <field name="createDate" />
+    <field name="startDate" />
+    <field name="endDate" />
+    <field name="user" />
+    <field name="project" />
+    <field name="priority" />
+    <field name="progress" widget="Progress"/>
+  </grid>
+  
+  <form name="project-task-form" title="Project Task" model="com.axelor.project.db.ProjectTask" onNew="project.task.on.new">
+    <panel title="Overview">
+      <field name="name"/>
+      <field name="priority"/>
+      <field name="createDate"/>
+      <field name="deadlineDate"/>
+      <field name="startDate"/>
+      <field name="endDate"/>
+      <field name="user"/>
+      <field name="project"/>
+      <field name="progress" widget="Progress"/>
+    </panel>
+    <panel-tabs>
+      <panel-related field="workItems" editable="true">
+        <field name="name"/>
+        <field name="date"/>
+        <field name="hours"/>
+      </panel-related>
+      <panel title="Notes">
+        <field name="notes" showTitle="false" colSpan="12"/>
+      </panel>
+    </panel-tabs>
+  </form>
+
+  <tree name="project-task-tree" title="Project Tasks">
+  
+    <!-- define tree columns -->
+    <column name="title" type="string" />
+    <column name="progress" type="integer" />
+  
+    <!-- define 1st level node -->
+    <node model="com.axelor.project.db.Project" onClick="projects.task.open.project">
+      <field name="name" as="title" />
+    </node>
+
+    <!-- define 2nd level node -->
+    <node model="com.axelor.project.db.ProjectTask" parent="project" draggable="true" onClick="projects.task.open.task">
+      <field name="name" as="title" />
+      <field name="progress" as="progress" />
+    </node>
+    
+  </tree>
+  
+  <action-record name="project.task.on.new" model="com.axelor.project.db.ProjectTask">
+    <field name="createDate" expr="eval: startDate ? startDate : __time__"/>
+    <field name="user" expr="eval: __user__"/>
+  </action-record>
+  
+  <action-view name="projects.task.open.project" title="Project" model="com.axelor.project.db.Project">
+    <view type="grid" name="project-grid"/>
+    <view type="form" name="project-form"/>
+    <domain>self.id = :project_id</domain>
+    <context name="project_id" expr="eval: id"/>
+    <context name="_showSingle" expr="true"/>
+  </action-view>
+  
+  <action-view name="projects.task.open.task" title="Task" model="com.axelor.project.db.ProjectTask">
+    <view type="grid" name="project-task-grid"/>
+    <view type="form" name="project-task-form"/>
+    <domain>self.id = :task_id</domain>
+    <context name="task_id" expr="eval: id"/>
+    <context name="_showSingle" expr="true"/>
+  </action-view>
+
+  <calendar name="project-task-calendar" title="Project Tasks" model="com.axelor.project.db.ProjectTask"
+    colorBy="user"
+    eventStart="startDate"
+    eventStop="endDate"
+    eventLength="1">
+    <field name="name" />
+  </calendar>
+
+  <calendar name="project-task-calendar-my" title="My Tasks" model="com.axelor.project.db.ProjectTask"
+    colorBy="project"
+    eventStart="startDate"
+    eventStop="endDate"
+    eventLength="1">
+    <field name="name" />
+  </calendar>
+
+</object-views>

@@ -1,0 +1,568 @@
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server version:        Apache Tomcat/7.0.85
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server built:          Feb 7 2018 18:52:33 UTC
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server number:         7.0.85.0
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: OS Name:               Windows 7
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: OS Version:            6.1
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Architecture:          x86
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Java Home:             C:\A15\java\jdk7u161\jre
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: JVM Version:           1.7.0_161-b33
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: JVM Vendor:            Oracle Corporation
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_BASE:         C:\A15\a4x\adk_20170130\tomcat_7_0_85
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_HOME:         C:\A15\a4x\adk_20170130\tomcat_7_0_85
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.util.logging.config.file=C:\A15\a4x\adk_20170130\tomcat_7_0_85\conf\logging.properties
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Dignore.endorsed.dirs=
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Dcatalina.base=C:\A15\a4x\adk_20170130\tomcat_7_0_85
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Dcatalina.home=C:\A15\a4x\adk_20170130\tomcat_7_0_85
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.io.tmpdir=C:\A15\a4x\adk_20170130\tomcat_7_0_85\temp
+févr. 28, 2018 9:44:16 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on th
+e java.library.path: C:\A15\java\jdk7u161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\A15\java\jdk7u161\bin;...
+févr. 28, 2018 9:44:16 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+févr. 28, 2018 9:44:16 AM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8009"]
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 523 ms
+févr. 28, 2018 9:44:16 AM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+févr. 28, 2018 9:44:16 AM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.85
+févr. 28, 2018 9:44:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\docs de l'application web
+févr. 28, 2018 9:44:17 AM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+AVERTISSEMENT: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [343] milliseconds.
+févr. 28, 2018 9:44:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\docs has finished in 624 ms
+févr. 28, 2018 9:44:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\examples de l'application web
+févr. 28, 2018 9:44:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\examples has finished in 484 ms
+févr. 28, 2018 9:44:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\host-manager de l'application web
+févr. 28, 2018 9:44:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\host-manager has finished in 218 ms
+févr. 28, 2018 9:44:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\manager de l'application web
+févr. 28, 2018 9:44:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\manager has finished in 78 ms
+févr. 28, 2018 9:44:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\ROOT de l'application web
+févr. 28, 2018 9:44:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\ROOT has finished in 62 ms
+févr. 28, 2018 9:44:18 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+févr. 28, 2018 9:44:18 AM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8009"]
+févr. 28, 2018 9:44:18 AM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 1549 ms
+févr. 28, 2018 9:45:48 AM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Déploiement de l'archive C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\axelor-web-2.0.0-SNAPSHOT.war de l'application web
+févr. 28, 2018 9:45:55 AM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of J
+ARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP com
+pilation time.
+2018-02-28 09:45:55,675 [localhost-startStop-2] INFO  com.axelor.web.AppServletModule - Starting application:
+  Name: Axelor DEMO
+  Version: 3.0.0
+2018-02-28 09:45:55,706 [localhost-startStop-2] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-02-28 09:46:02,555 [localhost-startStop-2] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-02-28 09:46:02,711 [localhost-startStop-2] INFO  com.axelor.db.JpaScanner - Total found: 40
+2018-02-28 09:46:02,711 [localhost-startStop-2] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+2018-02-28 09:46:04,489 [localhost-startStop-2] INFO  com.axelor.web.InitServlet - Initializing...
+2018-02-28 09:46:07,500 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager - modules found:
+2018-02-28 09:46:07,500 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager -   axelor-common axelor-cglib
+2018-02-28 09:46:07,500 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager -   axelor-wkf axelor-core
+2018-02-28 09:46:07,516 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager -   axelor-core
+2018-02-28 09:46:07,516 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager -   axelor-web
+2018-02-28 09:46:07,516 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager -   axelor-wkf
+2018-02-28 09:46:07,531 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager - installing: Module{name=axelor-core,
+ version=2.0.0-SNAPSHOT}
+2018-02-28 09:46:07,765 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/Group.xml
+2018-02-28 09:46:07,765 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Group
+2018-02-28 09:46:07,797 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/Meta.xml
+2018-02-28 09:46:07,812 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaModule
+2018-02-28 09:46:07,828 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaView
+2018-02-28 09:46:07,859 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaMenu
+2018-02-28 09:46:07,890 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaActionMenu
+2018-02-28 09:46:07,906 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaAction
+2018-02-28 09:46:07,921 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaSelect
+2018-02-28 09:46:07,937 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaSelectItem
+2018-02-28 09:46:07,968 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaModel
+2018-02-28 09:46:07,984 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaField
+2018-02-28 09:46:07,999 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaTranslation
+2018-02-28 09:46:08,015 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaFile
+2018-02-28 09:46:08,046 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaAttachment
+2018-02-28 09:46:08,062 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/MetaFilter.xml
+2018-02-28 09:46:08,062 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaFilter
+2018-02-28 09:46:08,077 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/MetaPermission.xml
+2018-02-28 09:46:08,077 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaPermission
+2018-02-28 09:46:08,093 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaPermissionRule
+2018-02-28 09:46:08,109 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/MetaSchedule.xml
+2018-02-28 09:46:08,124 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaScheduleParam
+2018-02-28 09:46:08,140 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaSchedule
+2018-02-28 09:46:08,155 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/MetaSequence.xml
+2018-02-28 09:46:08,155 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MetaSequence
+2018-02-28 09:46:08,187 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/Permission.xml
+2018-02-28 09:46:08,187 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Permission
+2018-02-28 09:46:08,218 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/Role.xml
+2018-02-28 09:46:08,218 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Role
+2018-02-28 09:46:08,233 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/domains/User.xml
+2018-02-28 09:46:08,233 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: User
+2018-02-28 09:46:08,467 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/Group.xml
+2018-02-28 09:46:09,154 [localhost-startStop-2] INFO  com.axelor.meta.loader.XMLViews - JAXB marshaller doesn't support property:
+ eclipselink.indent-string
+2018-02-28 09:46:09,216 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: group-grid
+2018-02-28 09:46:09,279 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: group-form
+2018-02-28 09:46:09,310 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading selection : select.user.navigat
+ion
+2018-02-28 09:46:09,341 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-condition-group
+-validName
+2018-02-28 09:46:09,372 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-condition-group
+-validCode
+2018-02-28 09:46:09,388 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-group-view-perm
+issions
+2018-02-28 09:46:09,403 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/Menu.xml
+2018-02-28 09:46:09,419 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-auth-users
+2018-02-28 09:46:09,435 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-auth-groups
+2018-02-28 09:46:09,450 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-auth-roles
+2018-02-28 09:46:09,466 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-auth-permission
+s
+2018-02-28 09:46:09,481 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : meta.modules
+2018-02-28 09:46:09,497 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-model-view
+s
+2018-02-28 09:46:09,513 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-views
+2018-02-28 09:46:09,528 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-menus
+2018-02-28 09:46:09,544 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-actions
+2018-02-28 09:46:09,544 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-select
+2018-02-28 09:46:09,559 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-action-men
+us
+2018-02-28 09:46:09,575 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-translatio
+ns
+2018-02-28 09:46:09,575 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : meta.charts
+2018-02-28 09:46:09,591 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : meta.jobs
+2018-02-28 09:46:09,606 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-admin
+2018-02-28 09:46:09,637 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-auth
+2018-02-28 09:46:09,653 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-model
+2018-02-28 09:46:09,669 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-management
+2018-02-28 09:46:09,684 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-module-management
+2018-02-28 09:46:09,700 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-job-management
+2018-02-28 09:46:09,715 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-auth-users
+2018-02-28 09:46:09,731 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-auth-groups
+2018-02-28 09:46:09,762 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-auth-roles
+2018-02-28 09:46:09,778 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-auth-permissions
+2018-02-28 09:46:09,793 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-meta-module
+2018-02-28 09:46:09,809 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-meta-model
+2018-02-28 09:46:09,840 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-all
+2018-02-28 09:46:09,856 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-menus
+2018-02-28 09:46:09,887 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-actions
+2018-02-28 09:46:09,903 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-selects
+2018-02-28 09:46:09,918 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-action-menus
+2018-02-28 09:46:09,934 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-translations
+2018-02-28 09:46:09,965 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-view-charts
+2018-02-28 09:46:09,981 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-job-all
+2018-02-28 09:46:09,996 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/Meta.xml
+2018-02-28 09:46:10,028 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-module-grid
+2018-02-28 09:46:10,043 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-module-form
+2018-02-28 09:46:10,074 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-view-grid
+2018-02-28 09:46:10,090 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-view-chart-grid
+2018-02-28 09:46:10,121 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-view-form
+2018-02-28 09:46:10,137 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-action-grid
+2018-02-28 09:46:10,168 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-action-form
+2018-02-28 09:46:10,184 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: simple-meta-menu-grid
+2018-02-28 09:46:10,215 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-menu-grid
+2018-02-28 09:46:10,230 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-menu-form
+2018-02-28 09:46:10,262 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-action-menu-grid
+2018-02-28 09:46:10,277 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-action-menu-form
+2018-02-28 09:46:10,308 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-select-grid
+2018-02-28 09:46:10,324 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-select-form
+2018-02-28 09:46:10,355 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-select-item-form
+2018-02-28 09:46:10,371 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-model-grid
+2018-02-28 09:46:10,402 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-model-form
+2018-02-28 09:46:10,418 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-field-grid
+2018-02-28 09:46:10,449 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-field-form
+2018-02-28 09:46:10,464 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-translations-grid
+2018-02-28 09:46:10,480 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-translations-form
+2018-02-28 09:46:10,511 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-files-grid
+2018-02-28 09:46:10,527 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-files-form
+2018-02-28 09:46:10,558 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading selection : view.type.selection
+
+2018-02-28 09:46:10,589 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading selection : action.type.selecti
+on
+2018-02-28 09:46:10,620 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading selection : relationship.field.
+selection
+2018-02-28 09:46:10,636 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-view-validate
+2018-02-28 09:46:10,652 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-action-validate
+
+2018-02-28 09:46:10,667 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-restore-al
+l
+2018-02-28 09:46:10,683 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-meta-restore-si
+ngle
+2018-02-28 09:46:10,698 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : meta-field-method-open
+-model
+2018-02-28 09:46:10,714 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/MetaPermission.xml
+2018-02-28 09:46:10,714 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-permission-grid
+2018-02-28 09:46:10,745 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-permission-form
+2018-02-28 09:46:10,776 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-permission-rule-form
+
+2018-02-28 09:46:10,792 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/Permission.xml
+2018-02-28 09:46:10,792 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: permission-grid
+2018-02-28 09:46:10,823 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: permission-form
+2018-02-28 09:46:10,854 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/Role.xml
+2018-02-28 09:46:10,854 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: role-grid
+2018-02-28 09:46:10,886 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: role-form
+2018-02-28 09:46:10,917 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/Schedules.xml
+2018-02-28 09:46:10,917 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-schedule-grid
+2018-02-28 09:46:10,948 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-schedule-form
+2018-02-28 09:46:10,979 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-schedule-param-form
+2018-02-28 09:46:10,995 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/views/User.xml
+2018-02-28 09:46:11,010 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: user-grid
+2018-02-28 09:46:11,026 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: user-form
+2018-02-28 09:46:11,057 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: user-preferences-form
+2018-02-28 09:46:11,088 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading selection : select.language
+2018-02-28 09:46:11,104 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-condition-user-
+validCode
+2018-02-28 09:46:11,120 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-condition-user-
+validName
+2018-02-28 09:46:11,338 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: file:/C:/A15/a4x/adk_
+20170130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/i18n/messages.csv
+2018-02-28 09:46:11,338 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: file:/C:/A15/a4x/adk_
+20170130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/i18n/messages_en.csv
+2018-02-28 09:46:11,400 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: file:/C:/A15/a4x/adk_
+20170130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-core-2.0.0-SNAPSHOT.jar!/i18n/messages_fr.csv
+2018-02-28 09:46:11,806 [localhost-startStop-2] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.auth.db.Group from g
+roups.csv
+2018-02-28 09:46:11,806 [localhost-startStop-2] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name]
+2018-02-28 09:46:11,822 [localhost-startStop-2] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.auth.db.User from us
+ers.csv
+2018-02-28 09:46:11,822 [localhost-startStop-2] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name, password, group]
+2018-02-28 09:46:12,087 [localhost-startStop-2] INFO  com.axelor.data.xml.XMLImporter - Importing: auth.xml
+2018-02-28 09:46:12,102 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:12,149 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:12,165 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:12,165 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:12,165 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:12,165 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,786 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,786 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,786 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,786 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,786 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,801 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,801 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,801 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,801 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,817 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,817 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,817 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,817 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,832 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,832 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,832 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,832 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,848 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,848 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,848 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,848 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,848 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,879 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,879 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,879 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,895 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,910 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,910 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,910 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,910 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,926 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='group' type='com.axelo
+r.auth.db.Group' ... >
+2018-02-28 09:46:14,926 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='user' type='com.axelor
+.auth.db.User' ... >
+2018-02-28 09:46:14,926 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='permission' type='com.
+axelor.auth.db.Permission' ... >
+2018-02-28 09:46:14,942 [localhost-startStop-2] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='role' type='com.axelor
+.auth.db.Role' ... >
+2018-02-28 09:46:14,957 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager - installing: Module{name=axelor-web,
+version=2.0.0-SNAPSHOT}
+2018-02-28 09:46:15,566 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: /C:/A15/a4x/adk_20170
+130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/classes/i18n/messages.csv
+2018-02-28 09:46:15,566 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: /C:/A15/a4x/adk_20170
+130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/classes/i18n/messages_en.csv
+2018-02-28 09:46:15,800 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: /C:/A15/a4x/adk_20170
+130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/classes/i18n/messages_fr.csv
+2018-02-28 09:46:16,377 [localhost-startStop-2] INFO  com.axelor.meta.loader.ModuleManager - installing: Module{name=axelor-wkf,
+version=2.0.0-SNAPSHOT}
+2018-02-28 09:46:16,580 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - importing: file:/C:/A15/a4x/adk_201701
+30/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/domains/Workflow.xml
+2018-02-28 09:46:16,580 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Workflow
+2018-02-28 09:46:16,595 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Instance
+2018-02-28 09:46:16,595 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: InstanceCounter
+2018-02-28 09:46:16,611 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: InstanceHistory
+2018-02-28 09:46:16,611 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Transition
+2018-02-28 09:46:16,626 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Node
+2018-02-28 09:46:16,626 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: StartEvent
+2018-02-28 09:46:16,642 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: EndEvent
+2018-02-28 09:46:16,642 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: NodeTask
+2018-02-28 09:46:16,658 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: MessageEvent
+2018-02-28 09:46:16,658 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: TimerEvent
+2018-02-28 09:46:16,673 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: Gateway
+2018-02-28 09:46:16,673 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: ExclusiveGateway
+2018-02-28 09:46:16,689 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: InclusiveGateway
+2018-02-28 09:46:16,689 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ModelLoader - Loading model: ParallelGateway
+2018-02-28 09:46:16,907 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/views/Instance.xml
+2018-02-28 09:46:16,907 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: instance-grid
+2018-02-28 09:46:16,923 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: instance-form
+2018-02-28 09:46:16,938 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: instance-history-grid
+2018-02-28 09:46:16,954 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: instance-history-form
+2018-02-28 09:46:16,954 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: instance-counter-grid
+2018-02-28 09:46:16,970 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: instance-counter-form
+2018-02-28 09:46:16,985 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-instance-load-d
+iagram
+2018-02-28 09:46:16,985 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-my-process
+2018-02-28 09:46:17,001 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/views/Menu.xml
+2018-02-28 09:46:17,001 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-workflows
+2018-02-28 09:46:17,016 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-instances
+2018-02-28 09:46:17,016 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-start-event
+
+2018-02-28 09:46:17,016 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-transitions
+
+2018-02-28 09:46:17,032 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-node-task
+2018-02-28 09:46:17,032 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-end-event
+2018-02-28 09:46:17,048 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-timer-event
+
+2018-02-28 09:46:17,048 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-message-eve
+nt
+2018-02-28 09:46:17,063 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-inclusive-g
+ateway
+2018-02-28 09:46:17,063 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-parallel-ga
+teway
+2018-02-28 09:46:17,079 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : action-wkf-exclusive-g
+ateway
+2018-02-28 09:46:17,094 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf
+2018-02-28 09:46:17,094 [localhost-startStop-2] INFO  com.axelor.meta.loader.ViewLoader - Creating a new user group: workflow
+2018-02-28 09:46:17,110 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-workflows
+2018-02-28 09:46:17,126 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-instances
+2018-02-28 09:46:17,126 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-configurations
+2018-02-28 09:46:17,141 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-start-event
+2018-02-28 09:46:17,157 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-transitions
+2018-02-28 09:46:17,157 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-node-task
+2018-02-28 09:46:17,172 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-end-event
+2018-02-28 09:46:17,188 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-configurations-
+events
+2018-02-28 09:46:17,204 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-timer-event
+2018-02-28 09:46:17,204 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-message-event
+2018-02-28 09:46:17,219 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-configurations-
+gateway
+2018-02-28 09:46:17,219 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-inclusive-gatew
+ay
+2018-02-28 09:46:17,235 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-parallel-gatewa
+y
+2018-02-28 09:46:17,250 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading menu : menu-wkf-exclusive-gatew
+ay
+2018-02-28 09:46:17,250 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/views/Node.xml
+2018-02-28 09:46:17,266 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: node-grid
+2018-02-28 09:46:17,282 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: node-form
+2018-02-28 09:46:17,282 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: start-event-grid
+2018-02-28 09:46:17,313 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: start-event-form
+2018-02-28 09:46:17,328 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: end-event-grid
+2018-02-28 09:46:17,328 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: end-event-form
+2018-02-28 09:46:17,344 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: node-task-grid
+2018-02-28 09:46:17,360 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: node-task-form
+2018-02-28 09:46:17,375 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: inclusive-gateway-grid
+2018-02-28 09:46:17,391 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: inclusive-gateway-form
+2018-02-28 09:46:17,391 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: exclusive-gateway-grid
+2018-02-28 09:46:17,406 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: exclusive-gateway-form
+2018-02-28 09:46:17,422 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: parallel-gateway-grid
+2018-02-28 09:46:17,438 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: parallel-gateway-form
+2018-02-28 09:46:17,453 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: timer-event-grid
+2018-02-28 09:46:17,469 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: timer-event-form
+2018-02-28 09:46:17,484 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: message-event-grid
+2018-02-28 09:46:17,500 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: message-event-form
+2018-02-28 09:46:17,500 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading selection : node.type.selection
+
+2018-02-28 09:46:17,531 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading selection : node.logic.operator
+.selection
+2018-02-28 09:46:17,531 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : start-event-default-re
+cord
+2018-02-28 09:46:17,547 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : end-event-default-reco
+rd
+2018-02-28 09:46:17,547 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : node-task-default-reco
+rd
+2018-02-28 09:46:17,562 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : inclusive-gateway-defa
+ult-record
+2018-02-28 09:46:17,578 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : exclusive-gateway-defa
+ult-record
+2018-02-28 09:46:17,578 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : parallel-gateway-defau
+lt-record
+2018-02-28 09:46:17,594 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : timer-event-default-re
+cord
+2018-02-28 09:46:17,594 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : message-event-default-
+record
+2018-02-28 09:46:17,609 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : node-record-name
+2018-02-28 09:46:17,625 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : node-default-record-gr
+oup
+2018-02-28 09:46:17,640 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - importing: file:/C:/A15/a4x/adk_2017013
+0/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/views/Workflow.xml
+2018-02-28 09:46:17,640 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: workflow-grid
+2018-02-28 09:46:17,656 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: workflow-form
+2018-02-28 09:46:17,672 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: transition-grid
+2018-02-28 09:46:17,687 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: transition-form
+2018-02-28 09:46:17,703 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: start-transition-grid
+2018-02-28 09:46:17,718 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: start-transition-form
+2018-02-28 09:46:17,734 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: end-transition-grid
+2018-02-28 09:46:17,750 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: end-transition-form
+2018-02-28 09:46:17,765 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : wkf-import-display
+2018-02-28 09:46:17,765 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : wkf-import-hidden
+2018-02-28 09:46:17,781 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : wkf-record-archived
+2018-02-28 09:46:17,781 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : wkf-method-open-instan
+ces
+2018-02-28 09:46:17,796 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : wkf-method-open-editor
+
+2018-02-28 09:46:17,796 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading action : wkf-method-import-work
+flow
+2018-02-28 09:46:18,015 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: file:/C:/A15/a4x/adk_
+20170130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/i18n/messages.csv
+2018-02-28 09:46:18,015 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: file:/C:/A15/a4x/adk_
+20170130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/i18n/messages_en.csv
+2018-02-28 09:46:18,077 [localhost-startStop-2] DEBUG com.axelor.meta.loader.I18nLoader - Load translation: file:/C:/A15/a4x/adk_
+20170130/tomcat_7_0_85/webapps/axelor-web-2.0.0-SNAPSHOT/WEB-INF/lib/axelor-wkf-2.0.0-SNAPSHOT.jar!/i18n/messages_fr.csv
+2018-02-28 09:46:18,764 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-sequence-grid
+2018-02-28 09:46:18,779 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-sequence-form
+2018-02-28 09:46:18,779 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Creating default views: C:\A15\a4x\adk_
+20170130\tomcat_7_0_85\temp\axelor\generated\views\MetaSequence.xml
+2018-02-28 09:46:18,810 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-attachment-grid
+2018-02-28 09:46:18,810 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-attachment-form
+2018-02-28 09:46:18,810 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Creating default views: C:\A15\a4x\adk_
+20170130\tomcat_7_0_85\temp\axelor\generated\views\MetaAttachment.xml
+2018-02-28 09:46:18,826 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-filter-grid
+2018-02-28 09:46:18,842 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: meta-filter-form
+2018-02-28 09:46:18,842 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Creating default views: C:\A15\a4x\adk_
+20170130\tomcat_7_0_85\temp\axelor\generated\views\MetaFilter.xml
+2018-02-28 09:46:19,263 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: gateway-grid
+2018-02-28 09:46:19,263 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Loading view: gateway-form
+2018-02-28 09:46:19,263 [localhost-startStop-2] DEBUG com.axelor.meta.loader.ViewLoader - Creating default views: C:\A15\a4x\adk_
+20170130\tomcat_7_0_85\temp\axelor\generated\views\Gateway.xml
+févr. 28, 2018 9:46:19 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFOS: Scanning for root resource and provider classes in the packages:
+  com.axelor
+févr. 28, 2018 9:46:19 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFOS: Root resource classes found:
+  class com.axelor.web.service.FileService
+  class com.axelor.web.service.ViewService
+  class com.axelor.web.service.SearchService
+  class com.axelor.web.service.AppService
+  class com.axelor.web.service.RestService
+  class com.axelor.web.service.ActionService
+  class com.axelor.web.service.I18nService
+févr. 28, 2018 9:46:19 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFOS: Provider classes found:
+  class com.axelor.web.ObjectMapperResolver
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFOS: Registering com.axelor.web.service.AppService as a root resource class
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFOS: Registering com.axelor.web.service.I18nService as a root resource class
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFOS: Registering com.axelor.web.service.RestService as a root resource class
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFOS: Registering com.axelor.web.service.FileService as a root resource class
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFOS: Registering com.axelor.web.service.ActionService as a root resource class
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFOS: Registering com.axelor.web.service.SearchService as a root resource class
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFOS: Registering com.axelor.web.service.ViewService as a root resource class
+févr. 28, 2018 9:46:19 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFOS: Initiating Jersey application, version 'Jersey: 1.12 02/15/2012 04:51 PM'
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.ObjectMapperResolver to GuiceInstantiatedComponentProvider
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.service.ActionService to GuiceManagedComponentProvider with the scope "PerRequest"
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.service.AppService to GuiceManagedComponentProvider with the scope "PerRequest"
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.service.FileService to GuiceManagedComponentProvider with the scope "PerRequest"
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.service.I18nService to GuiceManagedComponentProvider with the scope "PerRequest"
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.service.RestService to GuiceManagedComponentProvider with the scope "PerRequest"
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.service.SearchService to GuiceManagedComponentProvider with the scope "PerRequest"
+févr. 28, 2018 9:46:19 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFOS: Binding com.axelor.web.service.ViewService to GuiceManagedComponentProvider with the scope "PerRequest"
+févr. 28, 2018 9:46:19 AM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Deployment of web application archive C:\A15\a4x\adk_20170130\tomcat_7_0_85\webapps\axelor-web-2.0.0-SNAPSHOT.war has fini
+shed in 31 668 ms

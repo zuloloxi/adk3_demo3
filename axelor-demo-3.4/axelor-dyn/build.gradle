@@ -1,0 +1,17 @@
+apply plugin: 'axelor-module'
+
+module {
+	name "axelor-custom"
+	title "Axelor :: Custom"
+
+	description """\
+Dynamic module demo.
+
+This is a demo module to provide quick demonstration of removable modules.
+	"""
+
+	removable true
+
+	module "modules:axelor-contact"
+	module "modules:axelor-sale"
+}

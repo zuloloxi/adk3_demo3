@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_3.4.xsd">
+
+  <module name="contact" package="com.axelor.contact.db" />
+  
+  <entity name="Title" cachable="true" repository="abstract">
+    <![CDATA[
+    This class represents the name initial like Mr., Mrs. etc.
+    
+    For example:
+    
+    Title title = new Title();
+    title.setCode("mr");
+    title.setName("Mr.");
+    
+    contact.setTitle(title);
+    
+    @author John Smith <john.smith@gmail.com>
+    @since 1.0
+    ]]>
+    <string name="code" column="ccc" required="true" unique="true" min="2" hashKey="false" help="The unique code."/>
+    <string name="name" required="true" unique="true" min="2" help="The title name." index="idx_my"/>
+    
+    <extra-imports>
+    import org.slf4j.*;
+    import java.util.List;
+    import static com.google.common.collect.Lists.newArrayList;
+    </extra-imports>
+    
+    <extra-code>
+    <![CDATA[
+    private static final Logger log = LoggerFactory.getLogger(Title.class);
+    
+	public static List<String> getFooNames() {
+    	final List<String> names = newArrayList();
+    	names.add("foo");
+    	names.add("bar");
+    	return names;
+	}
+
+	public Title saveAndLog() {
+    	Title title = null;
+		log.info("saving Title instance: " + this.getCode());
+    	try {
+    		title = this.save();
+    	} catch (Exception e) {
+    		log.error("error saving Title");
+    	}
+    	return title;
+    }
+    ]]>
+    </extra-code>
+  </entity>
+
+  <entity name="Group" repository="none">
+    <string name="code" required="true" unique="true" min="2" />
+    <string name="name" required="true" unique="true" min="2" />
+    <one-to-one name="test1" ref="Title" mappedBy="testG" copy="false" />
+    <many-to-many name="contacts" ref="Contact"/>
+  </entity>
+
+  <entity name="Company">
+    <string name="code" required="true" unique="true" min="2" />
+    <string name="name" required="true" unique="true" min="2" />
+  </entity>
+  
+  <entity name="Country" sequential="false">
+    <string name="code" required="true" unique="true" min="2" />
+    <string name="name" required="true" unique="true" min="2" />
+    <finder-method name="findByName" using="code, name" filter="self.code = :code OR self.name = :name" orderBy="name" cacheable="true" flush="false"/>
+    <finder-method name="findByNameAndCode" using="code, name" all="true"/>
+  </entity>
+
+  <entity name="Contact" sequential="true" lang="groovy" hashAll="true" cachable="false">
+    <string name="empId" sequence="emp.seq"/>
+    <many-to-one name="title" ref="Title" unique="true" />
+    <string name="firstName" required="true" initParam="true"/>
+    <string name="lastName" required="true" initParam="true"/>
+    <string name="fullName" namecolumn="true" search="firstName,lastName" transient="true">
+      <![CDATA[
+      title ? "$title.name $firstName $lastName" : "$firstName $lastName"
+      ]]>
+    </string>
+    <string name="email" required="true" unique="true" initParam="true" massUpdate="true"/>
+    <string name="phone" max="20"  hashKey="false" massUpdate="true"/>
+    <string name="notes" multiline="true" title="About Me" />
+    <many-to-many name="groups" ref="Group" mappedBy="contacts"/>
+    <one-to-many name="addresses" ref="Address" mappedBy="contact" orderBy="area" />
+    <index name="IDX_NAMES" columns="firstName,lastName,fullName"/>
+    <index columns="id,fullName,email"/>
+  </entity>
+
+  <entity name="Address" hashAll="true">
+    <many-to-one name="contact" ref="Contact" required="true" />
+    <string name="street" required="true" />
+    <string name="area" required="true" />
+    <string name="city" required="true" />
+    <many-to-one name="country" ref="Country" required="true" />
+    <many-to-one name="user" ref="com.axelor.auth.db.User" />
+    <finder-method name="findByContact" using="long:contactId, String:name" filter="self.customer.id = :contactId OR self.customer.fullName = :name" all="true"/>
+    <finder-method name="findByContact" using="String:email" filter="self.customer.email = :email" all="true"/>
+
+    <finder-method name="findByContact" using="contact" all="false"/>
+    <finder-method name="findByUser" using="user" all="false"/>
+    
+  </entity>
+  
+  <entity name="ConstraintTester">
+    <string name="someName"/>
+    <string name="anotherName" column="another"/>
+    <many-to-one name="myTitle" ref="Title"/>
+    <unique-constraint columns="someName,anotherName,myTitle"/>
+  </entity>
+  
+  <!-- inheritance -->
+  <entity name="Hello" strategy="SINGLE">
+    <string name="title" required="true"/>
+    <string name="message" required="true"/>
+  </entity>
+  
+  <entity name="HelloWorld" extends="Hello" strategy="CLASS" hashAll="true">
+    <string name="tags"/>
+  </entity>
+
+</domain-models>

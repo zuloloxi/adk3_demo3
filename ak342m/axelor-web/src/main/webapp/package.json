@@ -1,0 +1,12 @@
+{
+  "name": "axelor-web",
+  "version": "3.4.2",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-cssmin": "~0.10.0"
+  }
+}

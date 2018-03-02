@@ -1,0 +1,6 @@
+27/08/2017 maven 3.2.5 build java 7u151 
+03/01/2018 maven 3.2.5 build java 7u161 
+axelor-gradle rename to axelor-tools
+
+build:
+  mvn clean install -Dlicense.skip=true -DskipTests
