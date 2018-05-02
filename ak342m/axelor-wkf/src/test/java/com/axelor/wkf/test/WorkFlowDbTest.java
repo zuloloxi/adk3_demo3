@@ -43,6 +43,7 @@ public class WorkFlowDbTest extends JpaSupport {
 
 			@Override
 			public void run() {
+				System.out.println("hello :(");
 				new MetaModelService().process();
 				CreateData.createWorkflow();
 			}

@@ -27,6 +27,41 @@
         </exclusion>
       </exclusions>
     </dependency>
+	<!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
+<!--	<dependency>
+		<groupId>javax.persistence</groupId>
+		<artifactId>persistence-api</artifactId>
+		<version>1.0.2</version>
+	</dependency> -->
+
+<!-- https://mvnrepository.com/artifact/org.glassfish/javax.el -->
+<!--		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.el</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+-->
+<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
+<!--	<dependency>
+		<groupId>org.hibernate.javax.persistence</groupId>
+		<artifactId>hibernate-jpa-2.0-api</artifactId>
+		<version>1.0.1.Final</version>
+	</dependency>
+-->	
+    <!-- JUnit -->
+<!--    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>compile</scope>
+		<exclusions>
+        <exclusion>
+          <artifactId>hamcrest-core</artifactId>
+          <groupId>org.hamcrest</groupId>
+        </exclusion>
+      </exclusions>
+  
+    </dependency>
+-->
   </dependencies>
 
 </project>

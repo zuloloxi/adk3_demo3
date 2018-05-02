@@ -38,11 +38,17 @@
         </exclusion>
       </exclusions>
     </dependency>
-	<dependency>
+<!--	<dependency>
 		<groupId>org.codehaus.groovy</groupId>
 		<artifactId>groovy-all</artifactId>
 		<version>2.2.1</version>
-	</dependency>
+	   <exclusions>
+        <exclusion>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+        </exclusion>
+      </exclusions>	  
+	</dependency> -->
     <dependency>
       <groupId>com.axelor</groupId>
       <artifactId>axelor-project</artifactId>

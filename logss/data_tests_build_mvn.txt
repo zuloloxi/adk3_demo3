@@ -1,0 +1,830 @@
+data_tests 3.4 log build
+
+C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests>mvn clean install
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Data 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-maven-plugin/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-parent/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-parent/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-parent/2.0.0-SNAPSHOT/maven-metadata.xml (602 B at 0.4 KB/sec)
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-contact/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.maven.apache.org/maven2/com/axelor/axelor-contact/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/com/axelor/axelor-contact/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-contact/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-contact/2.0.0-SNAPSHOT/maven-metadata.xml (774 B at 1.2 KB/sec)
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-module-parent/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-module-parent/2.0.0-SNAPSHOT/maven-metadata.xml (609 B at 0.7 KB/sec)
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-groovy-parent/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-groovy-parent/2.0.0-SNAPSHOT/maven-metadata.xml (609 B at 1.5 KB/sec)
+[WARNING] The POM for com.axelor:axelor-contact:jar:2.0.0-SNAPSHOT is invalid, transitive dependencies (if any) will not be available, enable debug logging for
+more details
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-sale/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/com/axelor/axelor-sale/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.maven.apache.org/maven2/com/axelor/axelor-sale/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-sale/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-sale/2.0.0-SNAPSHOT/maven-metadata.xml (771 B at 1.3 KB/sec)
+[WARNING] The POM for com.axelor:axelor-sale:jar:2.0.0-SNAPSHOT is invalid, transitive dependencies (if any) will not be available, enable debug logging for mor
+e details
+Downloading: http://repo.maven.apache.org/maven2/com/axelor/axelor-core/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-core/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/com/axelor/axelor-core/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-core/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-core/2.0.0-SNAPSHOT/maven-metadata.xml (774 B at 0.9 KB/sec)
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-common/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/com/axelor/axelor-common/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.maven.apache.org/maven2/com/axelor/axelor-common/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-common/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-common/2.0.0-SNAPSHOT/maven-metadata.xml (773 B at 0.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/com/axelor/axelor-test/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-test/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-test/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/com/axelor/axelor-test/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-test/2.0.0-SNAPSHOT/maven-metadata.xml (774 B at 0.8 KB/sec)
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ axelor-data ---
+[INFO] Deleting C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\target
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.8:add-source (add-source) @ axelor-data ---
+[INFO] Source directory: C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\src\main\groovy added.
+[INFO]
+[INFO] --- axelor-maven-plugin:2.0.0-SNAPSHOT:generate (default) @ axelor-data ---
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-tools/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-tools/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.maven.apache.org/maven2/com/axelor/axelor-tools/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-tools/2.0.0-SNAPSHOT/maven-metadata.xml (775 B at 0.9 KB/sec)
+[WARNING] The POM for com.axelor:axelor-tools:jar:2.0.0-SNAPSHOT is invalid, transitive dependencies (if any) will not be available, enable debug logging for mo
+re details
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-common/2.0.0-SNAPSHOT/maven-metadata.xml
+[INFO] Generating: C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\target/src-gen/module.properties
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ axelor-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ axelor-data ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources) @ axelor-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.8:add-test-source (add-test-source) @ axelor-data ---
+[INFO] Test Source directory: C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\src\test\groovy added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ axelor-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ axelor-data ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO]
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ axelor-data ---
+[INFO] Surefire report directory: C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.axelor.data.CSVDataTest
+2018-03-23 17:01:54,218 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-23 17:01:54,652 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-23 17:01:55,180 [main] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-03-23 17:01:55,749 [main] INFO  com.axelor.db.JpaScanner - Total found: 39
+2018-03-23 17:01:55,749 [main] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+2018-03-23 17:01:58,618 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_address drop constraint FK_rm0lcgnys
+2n97ad62jkm53qlt
+2018-03-23 17:01:58,618 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_RM0LCGNYS2N97AD62JKM53QLT
+2018-03-23 17:01:58,618 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_address drop constraint FK_p9svu5ssy
+nimpuu0is3j396lt
+2018-03-23 17:01:58,618 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_P9SVU5SSYNIMPUU0IS3J396LT
+2018-03-23 17:01:58,619 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_circle drop constraint FK_47ue6j09g2
+2f1xhy7mo7f423a
+2018-03-23 17:01:58,619 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_47UE6J09G22F1XHY7MO7F423A
+2018-03-23 17:01:58,619 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_circle drop constraint FK_8f7tfn9yrd
+ksacqpepvyml96i
+2018-03-23 17:01:58,619 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_8F7TFN9YRDKSACQPEPVYML96I
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_company drop constraint FK_767wl3qih
+tqka2fqsriil2g0n
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_COMPANY
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_company drop constraint FK_b0opav0gg
+39fs9xf7n98sbtxl
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_COMPANY
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_company drop constraint FK_1kgoxymmt
+d0i98vp3u93bmhf2
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_COMPANY
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_contact drop constraint FK_8dj7rw3jr
+dxk4vxbi6vony0ne
+2018-03-23 17:01:58,620 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_8DJ7RW3JRDXK4VXBI6VONY0NE
+2018-03-23 17:01:58,621 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_contact drop constraint FK_k73mcu7sw
+ia6uf6qpp4v6lwxf
+2018-03-23 17:01:58,621 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_K73MCU7SWIA6UF6QPP4V6LWXF
+2018-03-23 17:01:58,621 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_contact drop constraint FK_ek2gei6en
+ky7v43lkt3118su
+2018-03-23 17:01:58,621 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_EK2GEI6ENKY7V43LKT3118SU
+2018-03-23 17:01:58,622 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_country drop constraint FK_t6hqwp5uo
+87vrsmhcd42vht84
+2018-03-23 17:01:58,622 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_T6HQWP5UO87VRSMHCD42VHT84
+2018-03-23 17:01:58,622 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_country drop constraint FK_m21drnogx
+ukpj0eceevqiww0g
+2018-03-23 17:01:58,622 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_M21DRNOGXUKPJ0ECEEVQIWW0G
+2018-03-23 17:01:58,624 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_email drop constraint FK_9jd2kqbp4gk
+6igyodrgqy1mro
+2018-03-23 17:01:58,624 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_EMAIL
+2018-03-23 17:01:58,624 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_email drop constraint FK_rpib0dxsty8
+ag4cl77vlelf92
+2018-03-23 17:01:58,624 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_EMAIL
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_email drop constraint FK_bu491c6kmcj
+3ryvrpadxn104f
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_EMAIL
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_phone drop constraint FK_hxnkvk9mosc
+rl9ylytrf4xt0f
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_PHONE
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_phone drop constraint FK_16baxsrc0b5
+mxeaitf7utbsvj
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_PHONE
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_phone drop constraint FK_bwrwiywx7to
+1xuatxi5mq95n4
+2018-03-23 17:01:58,625 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.CONTACT_PHONE
+2018-03-23 17:01:58,626 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_title drop constraint FK_427i1pmrn0f
+0kkupxkjxfcoo5
+2018-03-23 17:01:58,626 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_427I1PMRN0F0KKUPXKJXFCOO5
+2018-03-23 17:01:58,626 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table contact_title drop constraint FK_umkcqpq6irv
+gpjtccidxq3kd
+2018-03-23 17:01:58,626 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: FK_UMKCQPQ6IRVGPJTCCIDXQ3KD
+2018-03-23 17:01:58,676 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order drop constraint FK_c33gly6y17tyth
+ibm9pl4e2k5
+2018-03-23 17:01:58,685 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER
+2018-03-23 17:01:58,687 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order drop constraint FK_jk3msarrdj3gb2
+7dljy2ensmu
+2018-03-23 17:01:58,687 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER
+2018-03-23 17:01:58,688 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order drop constraint FK_84nhvbnuhxydck
+7ntwphdd3s2
+2018-03-23 17:01:58,688 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER
+2018-03-23 17:01:58,689 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order_line drop constraint FK_9rmw11xmm
+pm6vjqrr0n97ggth
+2018-03-23 17:01:58,689 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER_LINE
+2018-03-23 17:01:58,690 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order_line drop constraint FK_1wpgqdwyq
+a5y32nkq1rojg3be
+2018-03-23 17:01:58,690 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER_LINE
+2018-03-23 17:01:58,692 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order_line drop constraint FK_4f36udvm2
+jis0pq4xl3l3kqm8
+2018-03-23 17:01:58,692 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER_LINE
+2018-03-23 17:01:58,693 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order_line drop constraint FK_9735mtaja
+3grfq90v2j1ha170
+2018-03-23 17:01:58,693 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER_LINE
+2018-03-23 17:01:58,695 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order_line_taxes drop constraint FK_kyf
+vq2yf7coo46f8ox2xt9ix3
+2018-03-23 17:01:58,695 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER_LINE_TAXES
+2018-03-23 17:01:58,696 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_order_line_taxes drop constraint FK_8lw
+8qyp94ecgbm6gfxioebb4g
+2018-03-23 17:01:58,696 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_ORDER_LINE_TAXES
+2018-03-23 17:01:58,697 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_product drop constraint FK_g7d8ax52yed5
+n2my7fueyhn2d
+2018-03-23 17:01:58,697 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_PRODUCT
+2018-03-23 17:01:58,698 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_product drop constraint FK_o9i3flh6q48u
+dtfuxjtk9e1pk
+2018-03-23 17:01:58,698 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_PRODUCT
+2018-03-23 17:01:58,699 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_product drop constraint FK_3s5cn67c416f
+lh60nmr1gvgim
+2018-03-23 17:01:58,700 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_PRODUCT
+2018-03-23 17:01:58,701 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_product_category drop constraint FK_tpg
+guhwfddyk2nlr96570eoc8
+2018-03-23 17:01:58,701 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_PRODUCT_CATEGORY
+2018-03-23 17:01:58,701 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_product_category drop constraint FK_suk
+w5da99fx07hdcsm8mci8f
+2018-03-23 17:01:58,701 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_PRODUCT_CATEGORY
+2018-03-23 17:01:58,702 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_product_category drop constraint FK_4ap
+sha23qm0nus4bgwi2wb6aw
+2018-03-23 17:01:58,702 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_PRODUCT_CATEGORY
+2018-03-23 17:01:58,704 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_tax drop constraint FK_n80nt1u8var8y7h8
+gngfgrwh0
+2018-03-23 17:01:58,704 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_TAX
+2018-03-23 17:01:58,704 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sale_tax drop constraint FK_30xah3wp796xjdu7
+5bup9w5vq
+2018-03-23 17:01:58,705 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: PUBLIC.SALE_TAX
+2018-03-23 17:01:58,706 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_role if exists
+2018-03-23 17:01:58,706 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_4YI364REN9NNYMQR7NWYAGJ66 in s
+tatement [drop table auth_role if exists]
+2018-03-23 17:01:58,707 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_user if exists
+2018-03-23 17:01:58,707 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_3XQK563XF6WBIHIQJ013C3J7 in st
+atement [drop table auth_user if exists]
+2018-03-23 17:01:58,711 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_action if exists
+2018-03-23 17:01:58,711 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_T7E6LL5LAE40YU43QR6FEATKM in s
+tatement [drop table meta_action if exists]
+2018-03-23 17:01:58,718 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_model if exists
+2018-03-23 17:01:58,718 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_I9KMYNVJ0HUAHCRMD0KYPVTG7 in s
+tatement [drop table meta_model if exists]
+2018-03-23 17:01:58,726 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence CONTACT_ADDRESS_SEQ
+2018-03-23 17:01:58,726 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: CONTACT_ADDRESS_SEQ in statement [drop
+sequence CONTACT_ADDRESS_SEQ]
+2018-03-23 17:01:58,727 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence CONTACT_COMPANY_SEQ
+2018-03-23 17:01:58,727 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: CONTACT_COMPANY_SEQ in statement [drop
+sequence CONTACT_COMPANY_SEQ]
+2018-03-23 17:01:58,727 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence CONTACT_CONTACT_SEQ
+2018-03-23 17:01:58,727 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: CONTACT_CONTACT_SEQ in statement [drop
+sequence CONTACT_CONTACT_SEQ]
+2018-03-23 17:01:58,728 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence CONTACT_EMAIL_SEQ
+2018-03-23 17:01:58,728 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: CONTACT_EMAIL_SEQ in statement [drop se
+quence CONTACT_EMAIL_SEQ]
+2018-03-23 17:01:58,728 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence CONTACT_PHONE_SEQ
+2018-03-23 17:01:58,728 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: CONTACT_PHONE_SEQ in statement [drop se
+quence CONTACT_PHONE_SEQ]
+2018-03-23 17:01:58,744 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence SALE_ORDER_LINE_SEQ
+2018-03-23 17:01:58,744 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: SALE_ORDER_LINE_SEQ in statement [drop
+sequence SALE_ORDER_LINE_SEQ]
+2018-03-23 17:01:58,746 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence SALE_ORDER_SEQ
+2018-03-23 17:01:58,746 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: SALE_ORDER_SEQ in statement [drop seque
+nce SALE_ORDER_SEQ]
+2018-03-23 17:01:58,747 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence SALE_PRODUCT_CATEGORY_SEQ
+2018-03-23 17:01:58,748 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: SALE_PRODUCT_CATEGORY_SEQ in statement
+[drop sequence SALE_PRODUCT_CATEGORY_SEQ]
+2018-03-23 17:01:58,749 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence SALE_PRODUCT_SEQ
+2018-03-23 17:01:58,749 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: SALE_PRODUCT_SEQ in statement [drop seq
+uence SALE_PRODUCT_SEQ]
+2018-03-23 17:01:58,750 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop sequence SALE_TAX_SEQ
+2018-03-23 17:01:58,750 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - user lacks privilege or object not found: SALE_TAX_SEQ in statement [drop sequenc
+e SALE_TAX_SEQ]
+2018-03-23 17:01:58,754 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_role (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by bigint, updated_by bigint, p
+rimary key (id))
+2018-03-23 17:01:58,754 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_ROLE in statement [create table auth_role (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by b
+igint, updated_by bigint, primary key (id))]
+2018-03-23 17:01:58,757 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_user (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, email varchar(255), expires_on
+ date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint, updated_by bigint, group_
+id bigint, primary key (id))
+2018-03-23 17:01:58,758 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER in statement [create table auth_user (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, ema
+il varchar(255), expires_on date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint
+, updated_by bigint, group_id bigint, primary key (id))]
+2018-03-23 17:01:58,781 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_action (id bigint not null, archived b
+oolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not null, type varchar(255) not
+null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:01:58,781 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_ACTION in statement [create table meta_action (i
+d bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not
+ null, type varchar(255) not null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:01:58,793 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_model (id bigint not null, archived bo
+olean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name varchar(255) not null, tabl
+e_name varchar(255), created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:01:58,793 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL in statement [create table meta_model (id
+bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name
+ varchar(255) not null, table_name varchar(255), created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:01:58,830 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_role add constraint UK_lc1sij60969nsgl5
+cy8bfgbsm unique (name)
+2018-03-23 17:01:58,831 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_LC1SIJ60969NSGL5CY8BFGBSM in statement [alter tabl
+e auth_role add constraint UK_lc1sij60969nsgl5cy8bfgbsm unique (name)]
+2018-03-23 17:01:58,833 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_8u7omaa7g7kqp6u5
+gbi3ixc3k unique (code)
+2018-03-23 17:01:58,833 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_8U7OMAA7G7KQP6U5GBI3IXC3K in statement [alter tabl
+e auth_user add constraint UK_8u7omaa7g7kqp6u5gbi3ixc3k unique (code)]
+2018-03-23 17:01:58,835 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_klvc3dss72qnlrjp
+2bai055mw unique (email)
+2018-03-23 17:01:58,835 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_KLVC3DSS72QNLRJP2BAI055MW in statement [alter tabl
+e auth_user add constraint UK_klvc3dss72qnlrjp2bai055mw unique (email)]
+2018-03-23 17:01:58,837 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_4snrvai6dys4tn4n
+l4v64k30w unique (name)
+2018-03-23 17:01:58,837 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_4SNRVAI6DYS4TN4NL4V64K30W in statement [alter tabl
+e auth_user add constraint UK_4snrvai6dys4tn4nl4v64k30w unique (name)]
+2018-03-23 17:01:58,840 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index AUTH_USER_GROUP_ID_IDX on auth_user (group_
+id)
+2018-03-23 17:01:58,840 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER_GROUP_ID_IDX in statement [create index AUT
+H_USER_GROUP_ID_IDX on auth_user (group_id)]
+2018-03-23 17:01:58,875 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table meta_action add constraint UK_1bphppcb3ab8ce
+uv461n93vjp unique (name)
+2018-03-23 17:01:58,875 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_1BPHPPCB3AB8CEUV461N93VJP in statement [alter tabl
+e meta_action add constraint UK_1bphppcb3ab8ceuv461n93vjp unique (name)]
+2018-03-23 17:01:58,888 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index META_MODEL_NAME_IDX on meta_model (name)
+2018-03-23 17:01:58,888 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL_NAME_IDX in statement [create index META_M
+ODEL_NAME_IDX on meta_model (name)]
+2018-03-23 17:01:59,219 [main] INFO  com.axelor.data.CSVDataTest$MyLauncher - Importing data. Please wait...
+2018-03-23 17:01:59,453 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.sale.db.OrderLine from [sale.order]
+2018-03-23 17:01:59,461 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [firstName, lastName, email, product, quantity, price, tax]
+2018-03-23 17:02:00,292 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.sale.db.OrderLine from [sale.order]
+2018-03-23 17:02:00,292 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [firstName, lastName, email, product, quantity, price, tax]
+2018-03-23 17:02:00,338 [main] INFO  com.axelor.data.CSVDataTest$MyLauncher - Import done!
+2018-03-23 17:02:00,340 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-23 17:02:00,347 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-23 17:02:00,777 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_role if exists
+2018-03-23 17:02:00,777 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_4YI364REN9NNYMQR7NWYAGJ66 in s
+tatement [drop table auth_role if exists]
+2018-03-23 17:02:00,778 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_user if exists
+2018-03-23 17:02:00,778 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_3XQK563XF6WBIHIQJ013C3J7 in st
+atement [drop table auth_user if exists]
+2018-03-23 17:02:00,781 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_action if exists
+2018-03-23 17:02:00,781 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_T7E6LL5LAE40YU43QR6FEATKM in s
+tatement [drop table meta_action if exists]
+2018-03-23 17:02:00,787 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_model if exists
+2018-03-23 17:02:00,787 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_I9KMYNVJ0HUAHCRMD0KYPVTG7 in s
+tatement [drop table meta_model if exists]
+2018-03-23 17:02:00,808 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_role (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by bigint, updated_by bigint, p
+rimary key (id))
+2018-03-23 17:02:00,808 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_ROLE in statement [create table auth_role (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by b
+igint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:00,809 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_user (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, email varchar(255), expires_on
+ date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint, updated_by bigint, group_
+id bigint, primary key (id))
+2018-03-23 17:02:00,811 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER in statement [create table auth_user (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, ema
+il varchar(255), expires_on date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint
+, updated_by bigint, group_id bigint, primary key (id))]
+2018-03-23 17:02:00,824 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_action (id bigint not null, archived b
+oolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not null, type varchar(255) not
+null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:00,824 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_ACTION in statement [create table meta_action (i
+d bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not
+ null, type varchar(255) not null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:00,830 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_model (id bigint not null, archived bo
+olean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name varchar(255) not null, tabl
+e_name varchar(255), created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:00,830 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL in statement [create table meta_model (id
+bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name
+ varchar(255) not null, table_name varchar(255), created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:00,839 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_role add constraint UK_lc1sij60969nsgl5
+cy8bfgbsm unique (name)
+2018-03-23 17:02:00,839 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_LC1SIJ60969NSGL5CY8BFGBSM in statement [alter tabl
+e auth_role add constraint UK_lc1sij60969nsgl5cy8bfgbsm unique (name)]
+2018-03-23 17:02:00,839 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_8u7omaa7g7kqp6u5
+gbi3ixc3k unique (code)
+2018-03-23 17:02:00,839 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_8U7OMAA7G7KQP6U5GBI3IXC3K in statement [alter tabl
+e auth_user add constraint UK_8u7omaa7g7kqp6u5gbi3ixc3k unique (code)]
+2018-03-23 17:02:00,839 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_klvc3dss72qnlrjp
+2bai055mw unique (email)
+2018-03-23 17:02:00,839 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_KLVC3DSS72QNLRJP2BAI055MW in statement [alter tabl
+e auth_user add constraint UK_klvc3dss72qnlrjp2bai055mw unique (email)]
+2018-03-23 17:02:00,840 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_4snrvai6dys4tn4n
+l4v64k30w unique (name)
+2018-03-23 17:02:00,840 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_4SNRVAI6DYS4TN4NL4V64K30W in statement [alter tabl
+e auth_user add constraint UK_4snrvai6dys4tn4nl4v64k30w unique (name)]
+2018-03-23 17:02:00,840 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index AUTH_USER_GROUP_ID_IDX on auth_user (group_
+id)
+2018-03-23 17:02:00,840 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER_GROUP_ID_IDX in statement [create index AUT
+H_USER_GROUP_ID_IDX on auth_user (group_id)]
+2018-03-23 17:02:00,858 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table meta_action add constraint UK_1bphppcb3ab8ce
+uv461n93vjp unique (name)
+2018-03-23 17:02:00,858 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_1BPHPPCB3AB8CEUV461N93VJP in statement [alter tabl
+e meta_action add constraint UK_1bphppcb3ab8ceuv461n93vjp unique (name)]
+2018-03-23 17:02:00,881 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index META_MODEL_NAME_IDX on meta_model (name)
+2018-03-23 17:02:00,881 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL_NAME_IDX in statement [create index META_M
+ODEL_NAME_IDX on meta_model (name)]
+2018-03-23 17:02:00,962 [main] INFO  com.axelor.data.CSVDataTest$MyLauncher - Importing data. Please wait...
+2018-03-23 17:02:00,972 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.data.tests.Types from types.csv
+2018-03-23 17:02:00,972 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [date, time, datetime, datetime2, active, number, price]
+2018-03-23 17:02:00,997 [main] INFO  com.axelor.data.CSVDataTest$MyLauncher - Import done!
+2018-03-23 17:02:00,998 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-23 17:02:01,006 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-23 17:02:01,457 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_role if exists
+2018-03-23 17:02:01,457 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_4YI364REN9NNYMQR7NWYAGJ66 in s
+tatement [drop table auth_role if exists]
+2018-03-23 17:02:01,458 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_user if exists
+2018-03-23 17:02:01,458 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_3XQK563XF6WBIHIQJ013C3J7 in st
+atement [drop table auth_user if exists]
+2018-03-23 17:02:01,461 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_action if exists
+2018-03-23 17:02:01,461 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_T7E6LL5LAE40YU43QR6FEATKM in s
+tatement [drop table meta_action if exists]
+2018-03-23 17:02:01,466 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_model if exists
+2018-03-23 17:02:01,466 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_I9KMYNVJ0HUAHCRMD0KYPVTG7 in s
+tatement [drop table meta_model if exists]
+2018-03-23 17:02:01,483 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_role (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by bigint, updated_by bigint, p
+rimary key (id))
+2018-03-23 17:02:01,483 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_ROLE in statement [create table auth_role (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by b
+igint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:01,483 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_user (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, email varchar(255), expires_on
+ date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint, updated_by bigint, group_
+id bigint, primary key (id))
+2018-03-23 17:02:01,483 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER in statement [create table auth_user (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, ema
+il varchar(255), expires_on date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint
+, updated_by bigint, group_id bigint, primary key (id))]
+2018-03-23 17:02:01,489 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_action (id bigint not null, archived b
+oolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not null, type varchar(255) not
+null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:01,489 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_ACTION in statement [create table meta_action (i
+d bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not
+ null, type varchar(255) not null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:01,501 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_model (id bigint not null, archived bo
+olean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name varchar(255) not null, tabl
+e_name varchar(255), created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:01,501 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL in statement [create table meta_model (id
+bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name
+ varchar(255) not null, table_name varchar(255), created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:01,515 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_role add constraint UK_lc1sij60969nsgl5
+cy8bfgbsm unique (name)
+2018-03-23 17:02:01,515 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_LC1SIJ60969NSGL5CY8BFGBSM in statement [alter tabl
+e auth_role add constraint UK_lc1sij60969nsgl5cy8bfgbsm unique (name)]
+2018-03-23 17:02:01,515 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_8u7omaa7g7kqp6u5
+gbi3ixc3k unique (code)
+2018-03-23 17:02:01,515 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_8U7OMAA7G7KQP6U5GBI3IXC3K in statement [alter tabl
+e auth_user add constraint UK_8u7omaa7g7kqp6u5gbi3ixc3k unique (code)]
+2018-03-23 17:02:01,516 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_klvc3dss72qnlrjp
+2bai055mw unique (email)
+2018-03-23 17:02:01,516 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_KLVC3DSS72QNLRJP2BAI055MW in statement [alter tabl
+e auth_user add constraint UK_klvc3dss72qnlrjp2bai055mw unique (email)]
+2018-03-23 17:02:01,516 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_4snrvai6dys4tn4n
+l4v64k30w unique (name)
+2018-03-23 17:02:01,516 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_4SNRVAI6DYS4TN4NL4V64K30W in statement [alter tabl
+e auth_user add constraint UK_4snrvai6dys4tn4nl4v64k30w unique (name)]
+2018-03-23 17:02:01,517 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index AUTH_USER_GROUP_ID_IDX on auth_user (group_
+id)
+2018-03-23 17:02:01,517 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER_GROUP_ID_IDX in statement [create index AUT
+H_USER_GROUP_ID_IDX on auth_user (group_id)]
+2018-03-23 17:02:01,533 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table meta_action add constraint UK_1bphppcb3ab8ce
+uv461n93vjp unique (name)
+2018-03-23 17:02:01,533 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_1BPHPPCB3AB8CEUV461N93VJP in statement [alter tabl
+e meta_action add constraint UK_1bphppcb3ab8ceuv461n93vjp unique (name)]
+2018-03-23 17:02:01,548 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index META_MODEL_NAME_IDX on meta_model (name)
+2018-03-23 17:02:01,549 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL_NAME_IDX in statement [create index META_M
+ODEL_NAME_IDX on meta_model (name)]
+2018-03-23 17:02:01,641 [main] INFO  com.axelor.data.CSVDataTest$MyLauncher - Importing data. Please wait...
+2018-03-23 17:02:01,656 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.contact.db.Title from titles.csv
+2018-03-23 17:02:01,656 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name]
+2018-03-23 17:02:01,684 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.contact.db.Circle from circles.csv
+2018-03-23 17:02:01,684 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name]
+2018-03-23 17:02:01,709 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.contact.db.Company from company.csv
+2018-03-23 17:02:01,709 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name]
+2018-03-23 17:02:01,736 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.contact.db.Contact from contacts.csv
+2018-03-23 17:02:01,736 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [title.code, firstName, lastName, email, phone, dateOfBirth, circle.code, company.
+code]
+2018-03-23 17:02:01,815 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.contact.db.Title from titles.csv
+2018-03-23 17:02:01,815 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name]
+2018-03-23 17:02:01,832 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.contact.db.Title from titles-no-header.csv
+2018-03-23 17:02:01,832 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name]
+2018-03-23 17:02:01,839 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.contact.db.Contact from contacts-update.csv
+2018-03-23 17:02:01,839 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [firstName, lastName, company.code]
+2018-03-23 17:02:01,888 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.sale.db.Tax from taxes.csv
+2018-03-23 17:02:01,888 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [code, name, rate]
+2018-03-23 17:02:01,903 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.sale.db.Order from sale-orders.csv
+2018-03-23 17:02:01,904 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [confirmed, date, firstName, lastName, email, p1, q1, r1, t11, t12, p2, q2, r2, t2
+]
+Date: 2011-12-11
+Customer: John Smith
+Items: 2
+Date: 2011-12-12
+Customer: John Smith
+Items: 2
+Date: 2011-12-13
+Customer: John Smith
+Items: 2
+Date: 2011-12-14
+Customer: John Smith
+Items: 2
+2018-03-23 17:02:02,180 [main] INFO  com.axelor.data.CSVDataTest$MyLauncher - Import done!
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.277 sec - in com.axelor.data.CSVDataTest
+Running com.axelor.data.CSVImportTest
+2018-03-23 17:02:02,936 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-23 17:02:03,197 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-23 17:02:03,527 [main] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-03-23 17:02:03,981 [main] INFO  com.axelor.db.JpaScanner - Total found: 39
+2018-03-23 17:02:03,981 [main] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+2018-03-23 17:02:06,310 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_role if exists
+2018-03-23 17:02:06,310 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_4YI364REN9NNYMQR7NWYAGJ66 in s
+tatement [drop table auth_role if exists]
+2018-03-23 17:02:06,310 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_user if exists
+2018-03-23 17:02:06,311 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_3XQK563XF6WBIHIQJ013C3J7 in st
+atement [drop table auth_user if exists]
+2018-03-23 17:02:06,316 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_action if exists
+2018-03-23 17:02:06,316 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_T7E6LL5LAE40YU43QR6FEATKM in s
+tatement [drop table meta_action if exists]
+2018-03-23 17:02:06,321 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_model if exists
+2018-03-23 17:02:06,322 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_I9KMYNVJ0HUAHCRMD0KYPVTG7 in s
+tatement [drop table meta_model if exists]
+2018-03-23 17:02:06,338 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_role (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by bigint, updated_by bigint, p
+rimary key (id))
+2018-03-23 17:02:06,339 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_ROLE in statement [create table auth_role (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by b
+igint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:06,341 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_user (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, email varchar(255), expires_on
+ date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint, updated_by bigint, group_
+id bigint, primary key (id))
+2018-03-23 17:02:06,341 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER in statement [create table auth_user (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, ema
+il varchar(255), expires_on date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint
+, updated_by bigint, group_id bigint, primary key (id))]
+2018-03-23 17:02:06,352 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_action (id bigint not null, archived b
+oolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not null, type varchar(255) not
+null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:06,352 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_ACTION in statement [create table meta_action (i
+d bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not
+ null, type varchar(255) not null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:06,362 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_model (id bigint not null, archived bo
+olean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name varchar(255) not null, tabl
+e_name varchar(255), created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:06,362 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL in statement [create table meta_model (id
+bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name
+ varchar(255) not null, table_name varchar(255), created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:06,377 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_role add constraint UK_lc1sij60969nsgl5
+cy8bfgbsm unique (name)
+2018-03-23 17:02:06,377 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_LC1SIJ60969NSGL5CY8BFGBSM in statement [alter tabl
+e auth_role add constraint UK_lc1sij60969nsgl5cy8bfgbsm unique (name)]
+2018-03-23 17:02:06,378 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_8u7omaa7g7kqp6u5
+gbi3ixc3k unique (code)
+2018-03-23 17:02:06,378 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_8U7OMAA7G7KQP6U5GBI3IXC3K in statement [alter tabl
+e auth_user add constraint UK_8u7omaa7g7kqp6u5gbi3ixc3k unique (code)]
+2018-03-23 17:02:06,380 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_klvc3dss72qnlrjp
+2bai055mw unique (email)
+2018-03-23 17:02:06,380 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_KLVC3DSS72QNLRJP2BAI055MW in statement [alter tabl
+e auth_user add constraint UK_klvc3dss72qnlrjp2bai055mw unique (email)]
+2018-03-23 17:02:06,382 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_4snrvai6dys4tn4n
+l4v64k30w unique (name)
+2018-03-23 17:02:06,382 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_4SNRVAI6DYS4TN4NL4V64K30W in statement [alter tabl
+e auth_user add constraint UK_4snrvai6dys4tn4nl4v64k30w unique (name)]
+2018-03-23 17:02:06,384 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index AUTH_USER_GROUP_ID_IDX on auth_user (group_
+id)
+2018-03-23 17:02:06,384 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER_GROUP_ID_IDX in statement [create index AUT
+H_USER_GROUP_ID_IDX on auth_user (group_id)]
+2018-03-23 17:02:06,402 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table meta_action add constraint UK_1bphppcb3ab8ce
+uv461n93vjp unique (name)
+2018-03-23 17:02:06,402 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_1BPHPPCB3AB8CEUV461N93VJP in statement [alter tabl
+e meta_action add constraint UK_1bphppcb3ab8ceuv461n93vjp unique (name)]
+2018-03-23 17:02:06,421 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index META_MODEL_NAME_IDX on meta_model (name)
+2018-03-23 17:02:06,422 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL_NAME_IDX in statement [create index META_M
+ODEL_NAME_IDX on meta_model (name)]
+2018-03-23 17:02:06,781 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.sale.db.OrderLine from [sale.order]
+2018-03-23 17:02:06,785 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [firstName, lastName, email, product, quantity, price, tax]
+2018-03-23 17:02:07,530 [main] INFO  com.axelor.data.CSVImportTest - Bean saved : OrderLine(id=1)
+2018-03-23 17:02:07,560 [main] INFO  com.axelor.data.CSVImportTest - Bean saved : OrderLine(id=2)
+2018-03-23 17:02:07,566 [main] INFO  com.axelor.data.CSVImportTest - Record (total): 2
+2018-03-23 17:02:07,566 [main] INFO  com.axelor.data.CSVImportTest - Record (success): 2
+2018-03-23 17:02:07,567 [main] INFO  com.axelor.data.csv.CSVImporter - Importing com.axelor.sale.db.OrderLine from [sale.order]
+2018-03-23 17:02:07,567 [main] DEBUG com.axelor.data.csv.CSVImporter - Header [firstName, lastName, email, product, quantity, price, tax]
+2018-03-23 17:02:07,609 [main] INFO  com.axelor.data.CSVImportTest - Bean saved : OrderLine(id=3)
+2018-03-23 17:02:07,621 [main] INFO  com.axelor.data.CSVImportTest - Bean saved : OrderLine(id=4)
+2018-03-23 17:02:07,628 [main] INFO  com.axelor.data.CSVImportTest - Record (total): 2
+2018-03-23 17:02:07,628 [main] INFO  com.axelor.data.CSVImportTest - Record (success): 2
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.968 sec - in com.axelor.data.CSVImportTest
+Running com.axelor.data.DataScriptHelperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.198 sec - in com.axelor.data.DataScriptHelperTest
+Running com.axelor.data.XMLDataTest
+2018-03-23 17:02:20,029 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-23 17:02:20,306 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-23 17:02:20,630 [main] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-03-23 17:02:21,113 [main] INFO  com.axelor.db.JpaScanner - Total found: 39
+2018-03-23 17:02:21,113 [main] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+2018-03-23 17:02:23,463 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_role if exists
+2018-03-23 17:02:23,463 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_4YI364REN9NNYMQR7NWYAGJ66 in s
+tatement [drop table auth_role if exists]
+2018-03-23 17:02:23,464 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_user if exists
+2018-03-23 17:02:23,464 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_3XQK563XF6WBIHIQJ013C3J7 in st
+atement [drop table auth_user if exists]
+2018-03-23 17:02:23,473 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_action if exists
+2018-03-23 17:02:23,473 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_T7E6LL5LAE40YU43QR6FEATKM in s
+tatement [drop table meta_action if exists]
+2018-03-23 17:02:23,479 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_model if exists
+2018-03-23 17:02:23,480 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_I9KMYNVJ0HUAHCRMD0KYPVTG7 in s
+tatement [drop table meta_model if exists]
+2018-03-23 17:02:23,503 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_role (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by bigint, updated_by bigint, p
+rimary key (id))
+2018-03-23 17:02:23,504 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_ROLE in statement [create table auth_role (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by b
+igint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:23,505 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_user (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, email varchar(255), expires_on
+ date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint, updated_by bigint, group_
+id bigint, primary key (id))
+2018-03-23 17:02:23,505 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER in statement [create table auth_user (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, ema
+il varchar(255), expires_on date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint
+, updated_by bigint, group_id bigint, primary key (id))]
+2018-03-23 17:02:23,520 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_action (id bigint not null, archived b
+oolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not null, type varchar(255) not
+null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:23,520 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_ACTION in statement [create table meta_action (i
+d bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not
+ null, type varchar(255) not null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:23,526 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_model (id bigint not null, archived bo
+olean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name varchar(255) not null, tabl
+e_name varchar(255), created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:23,526 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL in statement [create table meta_model (id
+bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name
+ varchar(255) not null, table_name varchar(255), created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:23,549 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_role add constraint UK_lc1sij60969nsgl5
+cy8bfgbsm unique (name)
+2018-03-23 17:02:23,549 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_LC1SIJ60969NSGL5CY8BFGBSM in statement [alter tabl
+e auth_role add constraint UK_lc1sij60969nsgl5cy8bfgbsm unique (name)]
+2018-03-23 17:02:23,550 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_8u7omaa7g7kqp6u5
+gbi3ixc3k unique (code)
+2018-03-23 17:02:23,550 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_8U7OMAA7G7KQP6U5GBI3IXC3K in statement [alter tabl
+e auth_user add constraint UK_8u7omaa7g7kqp6u5gbi3ixc3k unique (code)]
+2018-03-23 17:02:23,551 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_klvc3dss72qnlrjp
+2bai055mw unique (email)
+2018-03-23 17:02:23,551 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_KLVC3DSS72QNLRJP2BAI055MW in statement [alter tabl
+e auth_user add constraint UK_klvc3dss72qnlrjp2bai055mw unique (email)]
+2018-03-23 17:02:23,552 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_4snrvai6dys4tn4n
+l4v64k30w unique (name)
+2018-03-23 17:02:23,552 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_4SNRVAI6DYS4TN4NL4V64K30W in statement [alter tabl
+e auth_user add constraint UK_4snrvai6dys4tn4nl4v64k30w unique (name)]
+2018-03-23 17:02:23,554 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index AUTH_USER_GROUP_ID_IDX on auth_user (group_
+id)
+2018-03-23 17:02:23,555 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER_GROUP_ID_IDX in statement [create index AUT
+H_USER_GROUP_ID_IDX on auth_user (group_id)]
+2018-03-23 17:02:23,582 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table meta_action add constraint UK_1bphppcb3ab8ce
+uv461n93vjp unique (name)
+2018-03-23 17:02:23,582 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_1BPHPPCB3AB8CEUV461N93VJP in statement [alter tabl
+e meta_action add constraint UK_1bphppcb3ab8ceuv461n93vjp unique (name)]
+2018-03-23 17:02:23,596 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index META_MODEL_NAME_IDX on meta_model (name)
+2018-03-23 17:02:23,596 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL_NAME_IDX in statement [create index META_M
+ODEL_NAME_IDX on meta_model (name)]
+2018-03-23 17:02:23,719 [main] INFO  com.axelor.data.XMLDataTest$MyLauncher - Importing data. Please wait...
+2018-03-23 17:02:23,901 [main] INFO  com.axelor.data.xml.XMLImporter - Importing: types.xml
+2018-03-23 17:02:23,992 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='adapter-test' type='com.axelor.data.tests.Types' ... >
+2018-03-23 17:02:24,244 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='adapter-test' type='com.axelor.data.tests.Types' ... >
+2018-03-23 17:02:24,249 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='adapter-test' type='com.axelor.data.tests.Types' ... >
+2018-03-23 17:02:24,255 [main] INFO  com.axelor.data.XMLDataTest$MyLauncher - Import done!
+2018-03-23 17:02:24,257 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-23 17:02:24,266 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-23 17:02:24,698 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_role if exists
+2018-03-23 17:02:24,698 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_4YI364REN9NNYMQR7NWYAGJ66 in s
+tatement [drop table auth_role if exists]
+2018-03-23 17:02:24,699 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_user if exists
+2018-03-23 17:02:24,699 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_3XQK563XF6WBIHIQJ013C3J7 in st
+atement [drop table auth_user if exists]
+2018-03-23 17:02:24,704 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_action if exists
+2018-03-23 17:02:24,704 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_T7E6LL5LAE40YU43QR6FEATKM in s
+tatement [drop table meta_action if exists]
+2018-03-23 17:02:24,709 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_model if exists
+2018-03-23 17:02:24,710 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_I9KMYNVJ0HUAHCRMD0KYPVTG7 in s
+tatement [drop table meta_model if exists]
+2018-03-23 17:02:24,727 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_role (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by bigint, updated_by bigint, p
+rimary key (id))
+2018-03-23 17:02:24,727 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_ROLE in statement [create table auth_role (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by b
+igint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:24,728 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_user (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, email varchar(255), expires_on
+ date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint, updated_by bigint, group_
+id bigint, primary key (id))
+2018-03-23 17:02:24,728 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER in statement [create table auth_user (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, ema
+il varchar(255), expires_on date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint
+, updated_by bigint, group_id bigint, primary key (id))]
+2018-03-23 17:02:24,740 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_action (id bigint not null, archived b
+oolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not null, type varchar(255) not
+null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:24,740 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_ACTION in statement [create table meta_action (i
+d bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not
+ null, type varchar(255) not null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:24,750 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_model (id bigint not null, archived bo
+olean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name varchar(255) not null, tabl
+e_name varchar(255), created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:24,750 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL in statement [create table meta_model (id
+bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name
+ varchar(255) not null, table_name varchar(255), created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:24,766 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_role add constraint UK_lc1sij60969nsgl5
+cy8bfgbsm unique (name)
+2018-03-23 17:02:24,766 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_LC1SIJ60969NSGL5CY8BFGBSM in statement [alter tabl
+e auth_role add constraint UK_lc1sij60969nsgl5cy8bfgbsm unique (name)]
+2018-03-23 17:02:24,766 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_8u7omaa7g7kqp6u5
+gbi3ixc3k unique (code)
+2018-03-23 17:02:24,766 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_8U7OMAA7G7KQP6U5GBI3IXC3K in statement [alter tabl
+e auth_user add constraint UK_8u7omaa7g7kqp6u5gbi3ixc3k unique (code)]
+2018-03-23 17:02:24,767 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_klvc3dss72qnlrjp
+2bai055mw unique (email)
+2018-03-23 17:02:24,767 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_KLVC3DSS72QNLRJP2BAI055MW in statement [alter tabl
+e auth_user add constraint UK_klvc3dss72qnlrjp2bai055mw unique (email)]
+2018-03-23 17:02:24,768 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_4snrvai6dys4tn4n
+l4v64k30w unique (name)
+2018-03-23 17:02:24,768 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_4SNRVAI6DYS4TN4NL4V64K30W in statement [alter tabl
+e auth_user add constraint UK_4snrvai6dys4tn4nl4v64k30w unique (name)]
+2018-03-23 17:02:24,770 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index AUTH_USER_GROUP_ID_IDX on auth_user (group_
+id)
+2018-03-23 17:02:24,771 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER_GROUP_ID_IDX in statement [create index AUT
+H_USER_GROUP_ID_IDX on auth_user (group_id)]
+2018-03-23 17:02:24,785 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table meta_action add constraint UK_1bphppcb3ab8ce
+uv461n93vjp unique (name)
+2018-03-23 17:02:24,785 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_1BPHPPCB3AB8CEUV461N93VJP in statement [alter tabl
+e meta_action add constraint UK_1bphppcb3ab8ceuv461n93vjp unique (name)]
+2018-03-23 17:02:24,799 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index META_MODEL_NAME_IDX on meta_model (name)
+2018-03-23 17:02:24,799 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL_NAME_IDX in statement [create index META_M
+ODEL_NAME_IDX on meta_model (name)]
+2018-03-23 17:02:24,917 [main] INFO  com.axelor.data.XMLDataTest$MyLauncher - Importing data. Please wait...
+2018-03-23 17:02:24,928 [main] INFO  com.axelor.data.xml.XMLImporter - Importing: contacts.xml
+2018-03-23 17:02:24,935 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/titles/title' type='com.axelor.contact.db.Title' ... >
+2018-03-23 17:02:25,106 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/country' type='com.axelor.contact.db.Country' ... >
+2018-03-23 17:02:25,151 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='contacts/contact' type='com.axelor.contact.db.Contact' ... >
+2018-03-23 17:02:25,154 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/titles/title' type='com.axelor.contact.db.Title' ... >
+2018-03-23 17:02:25,155 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/country' type='com.axelor.contact.db.Country' ... >
+2018-03-23 17:02:25,155 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='contacts/contact' type='com.axelor.contact.db.Contact' ... >
+2018-03-23 17:02:25,569 [main] INFO  com.axelor.data.XMLDataTest$MyLauncher - Import done!
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.838 sec - in com.axelor.data.XMLDataTest
+Running com.axelor.data.XMLImportTest
+2018-03-23 17:02:26,271 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-23 17:02:26,536 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-23 17:02:26,872 [main] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-03-23 17:02:27,334 [main] INFO  com.axelor.db.JpaScanner - Total found: 39
+2018-03-23 17:02:27,334 [main] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+2018-03-23 17:02:29,705 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_role if exists
+2018-03-23 17:02:29,706 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_4YI364REN9NNYMQR7NWYAGJ66 in s
+tatement [drop table auth_role if exists]
+2018-03-23 17:02:29,706 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table auth_user if exists
+2018-03-23 17:02:29,706 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_3XQK563XF6WBIHIQJ013C3J7 in st
+atement [drop table auth_user if exists]
+2018-03-23 17:02:29,712 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_action if exists
+2018-03-23 17:02:29,712 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_T7E6LL5LAE40YU43QR6FEATKM in s
+tatement [drop table meta_action if exists]
+2018-03-23 17:02:29,717 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table meta_model if exists
+2018-03-23 17:02:29,717 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - is referenced by FOREIGN KEY constraint: PUBLIC.FK_I9KMYNVJ0HUAHCRMD0KYPVTG7 in s
+tatement [drop table meta_model if exists]
+2018-03-23 17:02:29,733 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_role (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by bigint, updated_by bigint, p
+rimary key (id))
+2018-03-23 17:02:29,733 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_ROLE in statement [create table auth_role (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, description varchar(255), name varchar(255) not null, created_by b
+igint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:29,733 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table auth_user (id bigint not null, archived boo
+lean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, email varchar(255), expires_on
+ date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint, updated_by bigint, group_
+id bigint, primary key (id))
+2018-03-23 17:02:29,733 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER in statement [create table auth_user (id bi
+gint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, activate_on date, blocked boolean, code varchar(255) not null, ema
+il varchar(255), expires_on date, home_action varchar(255), language varchar(255), name varchar(255) not null, password varchar(255) not null, created_by bigint
+, updated_by bigint, group_id bigint, primary key (id))]
+2018-03-23 17:02:29,741 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_action (id bigint not null, archived b
+oolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not null, type varchar(255) not
+null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:29,741 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_ACTION in statement [create table meta_action (i
+d bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, model varchar(255), module varchar(255), name varchar(255) not
+ null, type varchar(255) not null, xml longvarchar not null, created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:29,756 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table meta_model (id bigint not null, archived bo
+olean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name varchar(255) not null, tabl
+e_name varchar(255), created_by bigint, updated_by bigint, primary key (id))
+2018-03-23 17:02:29,756 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL in statement [create table meta_model (id
+bigint not null, archived boolean, version integer, created_on timestamp, updated_on timestamp, full_name varchar(255), name varchar(255) not null, package_name
+ varchar(255) not null, table_name varchar(255), created_by bigint, updated_by bigint, primary key (id))]
+2018-03-23 17:02:29,768 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_role add constraint UK_lc1sij60969nsgl5
+cy8bfgbsm unique (name)
+2018-03-23 17:02:29,768 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_LC1SIJ60969NSGL5CY8BFGBSM in statement [alter tabl
+e auth_role add constraint UK_lc1sij60969nsgl5cy8bfgbsm unique (name)]
+2018-03-23 17:02:29,769 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_8u7omaa7g7kqp6u5
+gbi3ixc3k unique (code)
+2018-03-23 17:02:29,769 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_8U7OMAA7G7KQP6U5GBI3IXC3K in statement [alter tabl
+e auth_user add constraint UK_8u7omaa7g7kqp6u5gbi3ixc3k unique (code)]
+2018-03-23 17:02:29,769 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_klvc3dss72qnlrjp
+2bai055mw unique (email)
+2018-03-23 17:02:29,769 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_KLVC3DSS72QNLRJP2BAI055MW in statement [alter tabl
+e auth_user add constraint UK_klvc3dss72qnlrjp2bai055mw unique (email)]
+2018-03-23 17:02:29,771 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table auth_user add constraint UK_4snrvai6dys4tn4n
+l4v64k30w unique (name)
+2018-03-23 17:02:29,772 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_4SNRVAI6DYS4TN4NL4V64K30W in statement [alter tabl
+e auth_user add constraint UK_4snrvai6dys4tn4nl4v64k30w unique (name)]
+2018-03-23 17:02:29,774 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index AUTH_USER_GROUP_ID_IDX on auth_user (group_
+id)
+2018-03-23 17:02:29,774 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: AUTH_USER_GROUP_ID_IDX in statement [create index AUT
+H_USER_GROUP_ID_IDX on auth_user (group_id)]
+2018-03-23 17:02:29,791 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table meta_action add constraint UK_1bphppcb3ab8ce
+uv461n93vjp unique (name)
+2018-03-23 17:02:29,791 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: UK_1BPHPPCB3AB8CEUV461N93VJP in statement [alter tabl
+e meta_action add constraint UK_1bphppcb3ab8ceuv461n93vjp unique (name)]
+2018-03-23 17:02:29,806 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create index META_MODEL_NAME_IDX on meta_model (name)
+2018-03-23 17:02:29,806 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - object name already exists: META_MODEL_NAME_IDX in statement [create index META_M
+ODEL_NAME_IDX on meta_model (name)]
+2018-03-23 17:02:30,198 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/titles/title' type='com.axelor.contact.db.Title' ... >
+2018-03-23 17:02:30,538 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/country' type='com.axelor.contact.db.Country' ... >
+2018-03-23 17:02:30,588 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='contacts/contact' type='com.axelor.contact.db.Contact' ... >
+2018-03-23 17:02:30,594 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/titles/title' type='com.axelor.contact.db.Title' ... >
+2018-03-23 17:02:30,595 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/country' type='com.axelor.contact.db.Country' ... >
+2018-03-23 17:02:30,595 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='contacts/contact' type='com.axelor.contact.db.Contact' ... >
+2018-03-23 17:02:31,030 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/titles/title' type='com.axelor.contact.db.Title' ... >
+2018-03-23 17:02:31,030 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='configs/country' type='com.axelor.contact.db.Country' ... >
+2018-03-23 17:02:31,030 [main] DEBUG com.axelor.data.xml.XMLBinder - binding: <bind node='contacts/contact' type='com.axelor.contact.db.Contact' ... >
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.054 sec - in com.axelor.data.XMLImportTest
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ axelor-data ---
+[INFO] Building jar: C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\target\axelor-data-2.0.0-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ axelor-data ---
+[INFO] Installing C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\target\axelor-data-2.0.0-SNAPSHOT.jar to C:\Users\317718\.m2\repository\com\axelor\axel
+or-data\2.0.0-SNAPSHOT\axelor-data-2.0.0-SNAPSHOT.jar
+[INFO] Installing C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests\pom.xml to C:\Users\317718\.m2\repository\com\axelor\axelor-data\2.0.0-SNAPSHOT\axelor-
+data-2.0.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 06:47 min
+[INFO] Finished at: 2018-03-23T17:02:31+01:00
+[INFO] Final Memory: 15M/37M
+[INFO] ------------------------------------------------------------------------
+C:\A15\a4x\adk3_demo\axelor-demo-3.4\axelor-data-tests>cd ..
+
+

@@ -1,0 +1,218 @@
+rem clean install
+rem C:\A15\a4x\adk3_demo\ak342m\axelor-core>cd C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125
+
+C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125>mvn clean
+[INFO] Scanning for projects...
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.3/maven-scm-provider-gitexe-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.3/maven-scm-provider-gitexe-1.3.pom (3 KB at 6.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-git/1.3/maven-scm-providers-git-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers-git/1.3/maven-scm-providers-git-1.3.pom (3 KB at 22.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers/1.3/maven-scm-providers-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-providers/1.3/maven-scm-providers-1.3.pom (4 KB at 38.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm/1.3/maven-scm-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm/1.3/maven-scm-1.3.pom (12 KB at 115.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/regexp/regexp/1.3/regexp-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/regexp/regexp/1.3/regexp-1.3.pom (145 B at 1.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.3/maven-scm-provider-git-commons-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.3/maven-scm-provider-git-commons-1.3.pom (3 KB at 23.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.3/maven-scm-api-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.3/maven-scm-api-1.3.pom (2 KB at 16.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.3/maven-scm-provider-gitexe-1.3.jar
+Downloading: http://repo.maven.apache.org/maven2/regexp/regexp/1.3/regexp-1.3.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.3/maven-scm-provider-git-commons-1.3.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.3/maven-scm-api-1.3.jar
+Downloaded: http://repo.maven.apache.org/maven2/regexp/regexp/1.3/regexp-1.3.jar (25 KB at 81.2 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-git-commons/1.3/maven-scm-provider-git-commons-1.3.jar (36 KB at 76.5 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-provider-gitexe/1.3/maven-scm-provider-gitexe-1.3.jar (49 KB at 85.9 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-api/1.3/maven-scm-api-1.3.jar (88 KB at 85.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.3/maven-scm-manager-plexus-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.3/maven-scm-manager-plexus-1.3.pom (3 KB at 17.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-managers/1.3/maven-scm-managers-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-managers/1.3/maven-scm-managers-1.3.pom (2 KB at 14.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.3/maven-scm-manager-plexus-1.3.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/scm/maven-scm-manager-plexus/1.3/maven-scm-manager-plexus-1.3.jar (11 KB at 51.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/kathrynhuxtable/maven/wagon/wagon-gitsite/0.3.1/wagon-gitsite-0.3.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/kathrynhuxtable/maven/wagon/wagon-gitsite/0.3.1/wagon-gitsite-0.3.1.pom (17 KB at 126.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/kathrynhuxtable/maven/wagon/wagon-gitsite/0.3.1/wagon-gitsite-0.3.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/kathrynhuxtable/maven/wagon/wagon-gitsite/0.3.1/wagon-gitsite-0.3.1.jar (20 KB at 88.7 KB/sec)
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dumbster 1.9.0.3
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.5.1/cobertura-maven-plugin-2.5.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.5.1/cobertura-maven-plugin-2.5.1.pom (10 KB at 93.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.5.1/cobertura-maven-plugin-2.5.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.5.1/cobertura-maven-plugin-2.5.1.jar (47 KB at 22.2 KB/sec)
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ dumbster ---
+[INFO]
+[INFO] --- cobertura-maven-plugin:2.5.1:clean (default) @ dumbster ---
+Downloading: http://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9.4.1/cobertura-1.9.4.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9.4.1/cobertura-1.9.4.1.pom (2 KB at 15.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/asm/asm-tree/3.0/asm-tree-3.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/asm/asm-tree/3.0/asm-tree-3.0.pom (499 B at 5.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.pom (0 B at 0.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.7.0/ant-parent-1.7.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.7.0/ant-parent-1.7.0.pom (0 B at 0.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.pom (0 B at 0.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura-runtime/1.9.4.1/cobertura-runtime-1.9.4.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura-runtime/1.9.4.1/cobertura-runtime-1.9.4.1.pom (2 KB at 14.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.pom (157 B at 1.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4.2/maven-reporting-impl-2.0.4.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4.2/maven-reporting-impl-2.0.4.2.pom (6 KB at 56.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.2/plexus-utils-2.0.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.2/plexus-utils-2.0.2.pom (4 KB at 35.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9.4.1/cobertura-1.9.4.1.jar
+Downloading: http://repo.maven.apache.org/maven2/asm/asm-tree/3.0/asm-tree-3.0.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.jar
+Downloading: http://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.0/ant-1.7.0.jar (0 B at 0.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4.2/maven-reporting-impl-2.0.4.2.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar (0 B at 0.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.2/plexus-utils-2.0.2.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4.2/maven-reporting-impl-2.0.4.2.jar (20 KB at 69.6 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/urbanophile/java-getopt/1.0.9/java-getopt-1.0.9.jar (53 KB at 159.9 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/asm/asm-tree/3.0/asm-tree-3.0.jar (22 KB at 53.2 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.2/plexus-utils-2.0.2.jar (218 KB at 127.5 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/net/sourceforge/cobertura/cobertura/1.9.4.1/cobertura-1.9.4.1.jar (443 KB at 172.1 KB/sec)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.186 s
+[INFO] Finished at: 2018-03-08T17:27:17+01:00
+[INFO] Final Memory: 7M/18M
+[INFO] ------------------------------------------------------------------------
+C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125>mvn install
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dumbster 1.9.0.3
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.maven.apache.org/maven2/javax/mail/mail/1.4.4/mail-1.4.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/javax/mail/mail/1.4.4/mail-1.4.4.pom (5 KB at 16.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/com/sun/mail/all/1.4.4/all-1.4.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/com/sun/mail/all/1.4.4/all-1.4.4.pom (16 KB at 129.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/javax/mail/mail/1.4.4/mail-1.4.4.jar
+Downloaded: http://repo.maven.apache.org/maven2/javax/mail/mail/1.4.4/mail-1.4.4.jar (484 KB at 134.1 KB/sec)
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ dumbster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dumbster ---
+[INFO] Compiling 32 source files to C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ dumbster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dumbster ---
+[INFO] Compiling 9 source files to C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ dumbster ---
+[INFO] Surefire report directory: C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.dumbster.smtp.eml.EMLMailMessageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Running com.dumbster.smtp.eml.EMLMailStoreTest
+Received message: 1
+Received message: 1
+Received message: 1
+Received message: 1
+Received message: 1
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Running com.dumbster.smtp.MailMessageTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running com.dumbster.smtp.RequestTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running com.dumbster.smtp.RollingMailStoreTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.dumbster.smtp.ServerOptionsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.dumbster.smtp.SmtpServerTest
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Dumbster SMTP Server started on port 1081.
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.796 sec
+Running com.dumbster.smtp.SmtpStateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Dumbster SMTP Server stopped
+        Total messages received: 1
+
+Dumbster SMTP Server stopped
+        Total messages received: 1
+
+Dumbster SMTP Server stopped
+        Total messages received: 2
+
+Dumbster SMTP Server stopped
+        Total messages received: 1
+
+Dumbster SMTP Server stopped
+        Total messages received: 0
+
+Dumbster SMTP Server stopped
+
+Dumbster SMTP Server stopped
+        Total messages received: 0
+        Total messages received: 1
+
+Dumbster SMTP Server stopped
+        Total messages received: 1
+
+Dumbster SMTP Server stopped
+        Total messages received: 1
+
+Dumbster SMTP Server stopped
+
+Dumbster SMTP Server stopped
+        Total messages received: 1
+        Total messages received: 2
+
+Results :
+
+Tests run: 94, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ dumbster ---
+[INFO] Building jar: C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\target\dumbster-1.9.0.3.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ dumbster ---
+[INFO] Installing C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\target\dumbster-1.9.0.3.jar to C:\Users\317718\.m2\repository\org\github\rjo1970\dumbster\1.9.0.3\dumbster-1.9.
+0.3.jar
+[INFO] Installing C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125\pom.xml to C:\Users\317718\.m2\repository\org\github\rjo1970\dumbster\1.9.0.3\dumbster-1.9.0.3.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.701 s
+[INFO] Finished at: 2018-03-08T17:27:52+01:00
+[INFO] Final Memory: 15M/36M
+[INFO] ------------------------------------------------------------------------
+C:\A15\a4x\adk3_demo\dumbster-23d2ccc1f92947d861cd07f1e15a98f8ff783125>

@@ -69,6 +69,12 @@ public class MetaModelService {
 	@Transactional
 	public void process(){
 		for (Class<?> klass : JPA.models()){
+			if (klass == null) {
+				System.out.println(":(");
+				//System.out.println("model"+JPA.models());
+			} else {
+				System.out.println(":)");
+			}
 			process(klass);
 		}
 	}
@@ -297,4 +303,34 @@ public class MetaModelService {
 	public static MetaModel getMetaModel(Class<?> klass){
 		return Query.of(MetaModel.class).filter("self.fullName = ?1", klass.getName()).fetchOne();
 	}
+
+	/**
+	 * @return the models
+	 */
+	public MetaModelRepository getModels() {
+		return models;
+	}
+
+	/**
+	 * @param models the models to set
+	 */
+	public void setModels(MetaModelRepository models) {
+		this.models = models;
+	}
+
+	/**
+	 * @return the fields
+	 */
+	public MetaFieldRepository getFields() {
+		return fields;
+	}
+
+	/**
+	 * @param fields the fields to set
+	 */
+	public void setFields(MetaFieldRepository fields) {
+		this.fields = fields;
+	}
+	
+	
 }

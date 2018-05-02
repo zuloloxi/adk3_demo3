@@ -91,11 +91,12 @@
       <artifactId>log4j</artifactId>
       <scope>runtime</scope>
     </dependency>
-       <dependency>
+<!--       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
         <version>2.4.7</version>
       </dependency>
+-->	  
     <!-- JUnit4 -->
     <dependency>
       <groupId>junit</groupId>
@@ -109,8 +110,12 @@
     <dependencies>
 
       <!-- Groovy -->
-   
-
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-all</artifactId>
+        <classifier>indy</classifier>
+        <version>${groovy.version}</version>
+      </dependency>
       <!-- Google Guava -->
       <dependency>
         <groupId>com.google.guava</groupId>
@@ -393,6 +398,21 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.1</version>
         </plugin>
+		<plugin>
+<!--			<groupId>org.apache.maven.plugins</groupId>-->
+				<artifactId>maven-surefire-plugin</artifactId>
+<!--        <version>2.12</version> 
+        <configuration> 
+            <parallel>classes</parallel>
+-->			   	<version>2.16</version>
+				<configuration>
+					<reuseForks>false</reuseForks>
+					<forkCount>1</forkCount>
+					<includes> 
+						<include>**/*Test.java</include>
+					</includes> 
+				</configuration>
+		</plugin>  
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.9.1</version>

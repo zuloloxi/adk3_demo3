@@ -28,6 +28,7 @@
     <module>axelor-sale</module>
     <module>axelor-project</module>
     <module>axelor-dyn</module>
+	<module>axelor-data-tests</module>
   </modules>
 
   <build>

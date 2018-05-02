@@ -1,0 +1,1320 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Axelor :: Test
+[INFO] Axelor :: Common
+[INFO] Axelor :: Tools
+[INFO] Axelor :: Maven Plugin
+[INFO] Axelor :: Core
+[INFO] Axelor :: Wkf
+[INFO] Axelor :: Web
+[INFO] Axelor :: Platform
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Test 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-test ---
+[INFO] com.axelor:axelor-test:jar:2.0.0-SNAPSHOT
+[INFO] +- com.google.inject:guice:jar:3.0:compile
+[INFO] |  +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- com.google.inject.extensions:guice-servlet:jar:3.0:compile
+[INFO] |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] +- com.google.inject.extensions:guice-persist:jar:3.0:compile
+[INFO] |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] +- org.hsqldb:hsqldb:jar:2.3.2:test
+[INFO] +- org.hibernate:hibernate-entitymanager:jar:4.2.8.Final:test
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:test
+[INFO] |  +- org.hibernate:hibernate-core:jar:4.2.8.Final:test
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:test
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:test - omitted for duplicate)
+[INFO] |  |  +- (dom4j:dom4j:jar:1.6.1:test - omitted for duplicate)
+[INFO] |  |  +- (org.javassist:javassist:jar:3.18.1-GA:test - omitted for duplicate)
+[INFO] |  |  +- (org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:test - omitted for duplicate)
+[INFO] |  |  +- (org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:test - omitted for duplicate)
+[INFO] |  |  \- (org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:test - omitted for duplicate)
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:test
+[INFO] |  +- org.javassist:javassist:jar:3.18.1-GA:test
+[INFO] |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:test
+[INFO] |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:test
+[INFO] |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:test
+[INFO] |     \- (org.jboss.logging:jboss-logging:jar:3.1.0.CR2:test - omitted for conflict with 3.1.0.GA)
+[INFO] +- org.hibernate:hibernate-validator:jar:5.0.2.Final:test
+[INFO] |  +- (javax.validation:validation-api:jar:1.1.0.Final:test - omitted for duplicate)
+[INFO] |  +- (org.jboss.logging:jboss-logging:jar:3.1.1.GA:test - omitted for conflict with 3.1.0.GA)
+[INFO] |  \- com.fasterxml:classmate:jar:1.0.0:test
+[INFO] +- javax.validation:validation-api:jar:1.1.0.Final:test
+[INFO] +- javax.el:javax.el-api:jar:3.0.0:compile
+[INFO] +- org.glassfish:javax.el:jar:3.0.0:compile
+[INFO] +- com.sun.jersey:jersey-server:jar:1.12:compile
+[INFO] |  +- asm:asm:jar:3.1:compile
+[INFO] |  \- com.sun.jersey:jersey-core:jar:1.12:compile
+[INFO] +- com.sun.jersey:jersey-client:jar:1.12:compile
+[INFO] |  \- (com.sun.jersey:jersey-core:jar:1.12:compile - omitted for duplicate)
+[INFO] +- com.sun.jersey.contribs:jersey-guice:jar:1.12:compile
+[INFO] |  +- (javax.inject:javax.inject:jar:1:compile - omitted for duplicate)
+[INFO] |  +- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:compile - omitted for duplicate)
+[INFO] |  \- com.sun.jersey:jersey-servlet:jar:1.12:compile
+[INFO] |     \- (com.sun.jersey:jersey-server:jar:1.12:compile - omitted for duplicate)
+[INFO] +- com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.12:compile
+[INFO] |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.12:compile
+[INFO] |  |  +- javax.servlet:javax.servlet-api:jar:3.0.1:provided (scope managed from compile)
+[INFO] |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; scope managed from compile; omitted for duplicate)
+[INFO] |  |  +- (com.sun.jersey:jersey-servlet:jar:1.12:compile - omitted for duplicate)
+[INFO] |  |  \- (com.sun.jersey:jersey-client:jar:1.12:test - scope managed from compile; omitted for duplicate)
+[INFO] |  \- com.sun.jersey:jersey-grizzly2-servlet:jar:1.12:compile
+[INFO] |     +- org.glassfish.grizzly:grizzly-http-servlet:jar:2.2.1:compile
+[INFO] |     |  \- org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:compile
+[INFO] |     |     +- (org.glassfish.grizzly:grizzly-http:jar:2.2.1:compile - omitted for duplicate)
+[INFO] |     |     \- org.glassfish.grizzly:grizzly-rcm:jar:2.2.1:compile
+[INFO] |     |        \- (org.glassfish.grizzly:grizzly-framework:jar:2.2.1:compile - omitted for duplicate)
+[INFO] |     +- com.sun.jersey:jersey-grizzly2:jar:1.12:compile
+[INFO] |     |  +- org.glassfish.grizzly:grizzly-http:jar:2.2.1:compile
+[INFO] |     |  |  \- org.glassfish.grizzly:grizzly-framework:jar:2.2.1:compile
+[INFO] |     |  |     \- org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:compile
+[INFO] |     |  |        \- org.glassfish.external:management-api:jar:3.0.0-b012:compile
+[INFO] |     |  +- (org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:compile - omitted for duplicate)
+[INFO] |     |  \- (com.sun.jersey:jersey-server:jar:1.12:compile - omitted for duplicate)
+[INFO] |     +- org.glassfish:javax.servlet:jar:3.1:compile
+[INFO] |     \- (com.sun.jersey:jersey-servlet:jar:1.12:compile - omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:compile
+[INFO] |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:compile
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:compile
+[INFO] |  |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:compile
+[INFO] |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] +- junit:junit:jar:4.11:compile
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] \- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Common 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-common ---
+[INFO] com.axelor:axelor-common:jar:2.0.0-SNAPSHOT
+[INFO] +- com.axelor:axelor-cglib:jar:3.0:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Tools 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-tools ---
+[INFO] com.axelor:axelor-tools:jar:2.0.0-SNAPSHOT
+[INFO] +- com.sun.jersey:jersey-server:jar:1.12:compile
+[INFO] |  +- asm:asm:jar:3.1:compile
+[INFO] |  \- com.sun.jersey:jersey-core:jar:1.12:compile
+[INFO] +- com.axelor:axelor-common:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  +- com.axelor:axelor-cglib:jar:3.0:compile
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- com.axelor:axelor-test:jar:2.0.0-SNAPSHOT:test
+[INFO] |  +- com.google.inject:guice:jar:3.0:test
+[INFO] |  |  +- javax.inject:javax.inject:jar:1:test
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:test
+[INFO] |  +- com.google.inject.extensions:guice-servlet:jar:3.0:test
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- com.google.inject.extensions:guice-persist:jar:3.0:test
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- javax.el:javax.el-api:jar:3.0.0:test
+[INFO] |  +- org.glassfish:javax.el:jar:3.0.0:test
+[INFO] |  +- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey:jersey-client:jar:1.12:test
+[INFO] |  |  \- (com.sun.jersey:jersey-core:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.contribs:jersey-guice:jar:1.12:test
+[INFO] |  |  +- (javax.inject:javax.inject:jar:1:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-servlet:jar:1.12:test
+[INFO] |  |     \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.12:test
+[INFO] |  |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.12:test
+[INFO] |  |  |  +- javax.servlet:javax.servlet-api:jar:3.0.1:provided (scope managed from test)
+[INFO] |  |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  |  |  +- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  |  \- (com.sun.jersey:jersey-client:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-grizzly2-servlet:jar:1.12:test
+[INFO] |  |     +- org.glassfish.grizzly:grizzly-http-servlet:jar:2.2.1:test
+[INFO] |  |     |  \- org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test
+[INFO] |  |     |     +- (org.glassfish.grizzly:grizzly-http:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |     \- org.glassfish.grizzly:grizzly-rcm:jar:2.2.1:test
+[INFO] |  |     |        \- (org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     +- com.sun.jersey:jersey-grizzly2:jar:1.12:test
+[INFO] |  |     |  +- org.glassfish.grizzly:grizzly-http:jar:2.2.1:test
+[INFO] |  |     |  |  \- org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test
+[INFO] |  |     |  |     \- org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:test
+[INFO] |  |     |  |        \- org.glassfish.external:management-api:jar:3.0.0-b012:test
+[INFO] |  |     |  +- (org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |  \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  |     +- org.glassfish:javax.servlet:jar:3.1:test
+[INFO] |  |     \- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:test
+[INFO] |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:test
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:test
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:test
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:test
+[INFO] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:test - omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:test - omitted for duplicate)
+[INFO] |  \- (com.google.code.findbugs:jsr305:jar:2.0.3:test - omitted for duplicate)
+[INFO] +- net.sf.opencsv:opencsv:jar:2.3:compile
+[INFO] +- org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Maven Plugin 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-maven-plugin ---
+[INFO] com.axelor:axelor-maven-plugin:maven-plugin:2.0.0-SNAPSHOT
+[INFO] +- com.axelor:axelor-tools:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  +- com.sun.jersey:jersey-server:jar:1.12:compile
+[INFO] |  |  +- asm:asm:jar:3.1:compile
+[INFO] |  |  \- com.sun.jersey:jersey-core:jar:1.12:compile
+[INFO] |  +- (com.axelor:axelor-common:jar:2.0.0-SNAPSHOT:compile - omitted for duplicate)
+[INFO] |  +- net.sf.opencsv:opencsv:jar:2.3:compile
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] +- org.apache.maven.shared:maven-dependency-tree:jar:1.2:compile
+[INFO] |  \- (org.apache.maven:maven-project:jar:2.0.8:compile - omitted for conflict with 2.0)
+[INFO] +- org.apache.maven:maven-project:jar:2.0:compile
+[INFO] |  +- org.apache.maven:maven-profile:jar:2.0:compile
+[INFO] |  |  +- (org.apache.maven:maven-model:jar:2.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  |  \- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:compile - omitted for duplicate)
+[INFO] |  +- org.apache.maven:maven-model:jar:2.0:compile
+[INFO] |  |  \- (org.codehaus.plexus:plexus-utils:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  +- org.apache.maven:maven-artifact-manager:jar:2.0:compile
+[INFO] |  |  +- org.apache.maven:maven-repository-metadata:jar:2.0:compile
+[INFO] |  |  |  \- (org.codehaus.plexus:plexus-utils:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven:maven-artifact:jar:2.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:compile - omitted for duplicate)
+[INFO] |  |  \- org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5:compile
+[INFO] |  |     \- (org.codehaus.plexus:plexus-utils:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  +- org.codehaus.plexus:plexus-utils:jar:1.0.4:compile
+[INFO] |  +- org.apache.maven:maven-artifact:jar:2.0:compile
+[INFO] |  |  \- (org.codehaus.plexus:plexus-utils:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  \- org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:compile
+[INFO] |     +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |     +- (junit:junit:jar:4.11:test - version managed from 3.8.2; scope managed from compile; omitted for duplicate)
+[INFO] |     \- classworlds:classworlds:jar:1.1-alpha-2:compile
+[INFO] +- com.axelor:axelor-common:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  +- com.axelor:axelor-cglib:jar:3.0:compile
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] +- org.apache.maven:maven-plugin-api:jar:2.0:compile
+[INFO] +- org.apache.maven.plugin-testing:maven-plugin-testing-harness:jar:1.2:test
+[INFO] |  +- (org.apache.maven:maven-project:jar:2.0:test - omitted for duplicate)
+[INFO] |  +- org.apache.maven:maven-core:jar:2.0:test
+[INFO] |  |  +- org.apache.maven:maven-settings:jar:2.0:test
+[INFO] |  |  |  +- (org.apache.maven:maven-model:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven.wagon:wagon-file:jar:1.0-alpha-5:test
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven:maven-plugin-parameter-documenter:jar:2.0:test
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven.wagon:wagon-http-lightweight:jar:1.0-alpha-5:test
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven.reporting:maven-reporting-api:jar:2.0:test
+[INFO] |  |  |  \- doxia:doxia-sink-api:jar:1.0-alpha-4:test
+[INFO] |  |  +- (org.apache.maven:maven-profile:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven:maven-model:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven:maven-artifact:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5:test - omitted for duplicate)
+[INFO] |  |  +- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven:maven-repository-metadata:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven:maven-error-diagnostics:jar:2.0:test
+[INFO] |  |  |  \- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven:maven-project:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven:maven-plugin-registry:jar:2.0:test
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:test - omitted for duplicate)
+[INFO] |  |  +- commons-cli:commons-cli:jar:1.0:test
+[INFO] |  |  +- (org.apache.maven:maven-plugin-api:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven:maven-plugin-descriptor:jar:2.0:test
+[INFO] |  |  |  +- (org.apache.maven:maven-plugin-api:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.maven:maven-artifact:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:test - omitted for duplicate)
+[INFO] |  |  +- org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:test
+[INFO] |  |  |  \- (classworlds:classworlds:jar:1.1-alpha-2:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven:maven-artifact-manager:jar:2.0:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven:maven-monitor:jar:2.0:test
+[INFO] |  |  +- org.apache.maven.wagon:wagon-ssh:jar:1.0-alpha-5:test
+[INFO] |  |  |  +- com.jcraft:jsch:jar:0.1.23:test
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.0.4:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5:test - omitted for duplicate)
+[INFO] |  |  |  +- (classworlds:classworlds:jar:1.1-alpha-2:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:test - omitted for duplicate)
+[INFO] |  |  \- (org.codehaus.plexus:plexus-utils:jar:1.0.4:test - omitted for duplicate)
+[INFO] |  +- (org.apache.maven:maven-model:jar:2.0:test - omitted for duplicate)
+[INFO] |  +- (org.apache.maven:maven-artifact:jar:2.0:test - omitted for duplicate)
+[INFO] |  +- (org.apache.maven:maven-artifact-manager:jar:2.0:test - omitted for duplicate)
+[INFO] |  +- (org.apache.maven:maven-plugin-api:jar:2.0:test - omitted for duplicate)
+[INFO] |  +- (org.codehaus.plexus:plexus-utils:jar:1.5.1:test - omitted for conflict with 1.0.4)
+[INFO] |  +- org.codehaus.plexus:plexus-archiver:jar:1.0-alpha-7:test
+[INFO] |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.2:test - omitted for conflict with 1.0.4)
+[INFO] |  |  \- (org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:test - omitted for duplicate)
+[INFO] |  \- (junit:junit:jar:4.11:test - version managed from 3.8.2; scope managed from compile; omitted for duplicate)
+[INFO] +- org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Core 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-core ---
+[INFO] com.axelor:axelor-core:jar:2.0.0-SNAPSHOT
+[INFO] +- com.axelor:axelor-common:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  +- (com.axelor:axelor-cglib:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - version managed from 15.0; omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - version managed from 1.7.5; scope managed from test; omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- com.axelor:axelor-test:jar:2.0.0-SNAPSHOT:test
+[INFO] |  +- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-persist:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- javax.el:javax.el-api:jar:3.0.0:test
+[INFO] |  +- org.glassfish:javax.el:jar:3.0.0:test
+[INFO] |  +- com.sun.jersey:jersey-server:jar:1.12:test
+[INFO] |  |  +- asm:asm:jar:3.1:test
+[INFO] |  |  \- com.sun.jersey:jersey-core:jar:1.12:test
+[INFO] |  +- com.sun.jersey:jersey-client:jar:1.12:test
+[INFO] |  |  \- (com.sun.jersey:jersey-core:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.contribs:jersey-guice:jar:1.12:test
+[INFO] |  |  +- (javax.inject:javax.inject:jar:1:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-servlet:jar:1.12:test
+[INFO] |  |     \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.12:test
+[INFO] |  |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.12:test
+[INFO] |  |  |  +- (javax.servlet:javax.servlet-api:jar:3.0.1:provided - scope managed from test; omitted for duplicate)
+[INFO] |  |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  |  |  +- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  |  \- (com.sun.jersey:jersey-client:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-grizzly2-servlet:jar:1.12:test
+[INFO] |  |     +- org.glassfish.grizzly:grizzly-http-servlet:jar:2.2.1:test
+[INFO] |  |     |  \- org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test
+[INFO] |  |     |     +- (org.glassfish.grizzly:grizzly-http:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |     \- org.glassfish.grizzly:grizzly-rcm:jar:2.2.1:test
+[INFO] |  |     |        \- (org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     +- com.sun.jersey:jersey-grizzly2:jar:1.12:test
+[INFO] |  |     |  +- org.glassfish.grizzly:grizzly-http:jar:2.2.1:test
+[INFO] |  |     |  |  \- org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test
+[INFO] |  |     |  |     \- org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:test
+[INFO] |  |     |  |        \- org.glassfish.external:management-api:jar:3.0.0-b012:test
+[INFO] |  |     |  +- (org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |  \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  |     +- org.glassfish:javax.servlet:jar:3.1:test
+[INFO] |  |     \- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:test - omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:test - omitted for duplicate)
+[INFO] |  \- (com.google.code.findbugs:jsr305:jar:2.0.3:test - omitted for duplicate)
+[INFO] +- joda-time:joda-time:jar:2.3:compile
+[INFO] +- org.jadira.usertype:usertype.core:jar:3.0.0.GA:compile
+[INFO] |  +- (org.hibernate:hibernate-entitymanager:jar:4.2.8.Final:compile - version managed from 4.0.1.Final; omitted for duplicate)
+[INFO] |  +- org.joda:joda-money:jar:0.6:compile
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  \- org.jadira.usertype:usertype.spi:jar:3.0.0.GA:compile
+[INFO] |     \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] +- org.yaml:snakeyaml:jar:1.13:compile
+[INFO] +- com.google.inject:guice:jar:3.0:compile
+[INFO] |  +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- com.google.inject.extensions:guice-servlet:jar:3.0:compile
+[INFO] |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] +- com.google.inject.extensions:guice-persist:jar:3.0:compile
+[INFO] |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] +- org.hsqldb:hsqldb:jar:2.3.2:compile
+[INFO] +- org.postgresql:postgresql:jar:9.3-1101-jdbc41:compile
+[INFO] +- org.hibernate:hibernate-entitymanager:jar:4.2.8.Final:compile
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:4.2.8.Final:compile
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  |  +- (dom4j:dom4j:jar:1.6.1:compile - omitted for duplicate)
+[INFO] |  |  +- (org.javassist:javassist:jar:3.18.1-GA:compile - omitted for duplicate)
+[INFO] |  |  +- (org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile - omitted for duplicate)
+[INFO] |  |  +- (org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile - omitted for duplicate)
+[INFO] |  |  \- (org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:compile - omitted for duplicate)
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  +- org.javassist:javassist:jar:3.18.1-GA:compile
+[INFO] |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile
+[INFO] |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:compile
+[INFO] |     \- (org.jboss.logging:jboss-logging:jar:3.1.0.CR2:compile - omitted for conflict with 3.1.0.GA)
+[INFO] +- org.hibernate:hibernate-ehcache:jar:4.2.8.Final:compile
+[INFO] |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  \- (org.hibernate:hibernate-core:jar:4.2.8.Final:compile - omitted for duplicate)
+[INFO] +- net.sf.ehcache:ehcache:jar:2.8.1:compile
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] +- org.hibernate:hibernate-validator:jar:5.0.2.Final:compile
+[INFO] |  +- (javax.validation:validation-api:jar:1.1.0.Final:compile - omitted for duplicate)
+[INFO] |  +- (org.jboss.logging:jboss-logging:jar:3.1.1.GA:compile - omitted for conflict with 3.1.0.GA)
+[INFO] |  \- com.fasterxml:classmate:jar:1.0.0:compile
+[INFO] +- javax.validation:validation-api:jar:1.1.0.Final:compile
+[INFO] +- org.hibernate:hibernate-c3p0:jar:4.2.8.Final:compile
+[INFO] |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  +- com.mchange:c3p0:jar:0.9.2.1:compile
+[INFO] |  |  \- com.mchange:mchange-commons-java:jar:0.2.3.4:compile
+[INFO] |  \- (org.hibernate:hibernate-core:jar:4.2.8.Final:compile - omitted for duplicate)
+[INFO] +- org.eclipse.persistence:org.eclipse.persistence.core:jar:2.6.1:compile
+[INFO] |  +- org.eclipse.persistence:org.eclipse.persistence.asm:jar:2.6.1:compile
+[INFO] |  \- org.glassfish:javax.json:jar:1.0.4:compile
+[INFO] +- javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[INFO] +- javax.mail:mail:jar:1.4.7:compile
+[INFO] |  \- javax.activation:activation:jar:1.1:compile
+[INFO] +- javax.mail:javax.mail-api:jar:1.5.1:compile
+[INFO] |  \- (javax.activation:activation:jar:1.1:compile - omitted for duplicate)
+[INFO] +- org.github.rjo1970:dumbster:jar:1.9.0.3:test
+[INFO] +- org.apache.shiro:shiro-core:jar:1.2.2:compile
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  \- commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[INFO] +- org.apache.shiro:shiro-web:jar:1.2.2:compile
+[INFO] |  \- (org.apache.shiro:shiro-core:jar:1.2.2:compile - omitted for duplicate)
+[INFO] +- org.apache.shiro:shiro-guice:jar:1.2.2:compile
+[INFO] |  +- (org.apache.shiro:shiro-core:jar:1.2.2:compile - omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - version managed from r09; omitted for duplicate)
+[INFO] |  +- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  \- com.google.inject.extensions:guice-multibindings:jar:3.0:compile
+[INFO] |     \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] +- org.quartz-scheduler:quartz:jar:2.2.1:compile
+[INFO] |  +- c3p0:c3p0:jar:0.9.1.1:compile
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] +- com.axelor:axelor-cglib:jar:3.0:compile
+[INFO] +- com.github.groovy-wslite:groovy-wslite:jar:0.7.1:compile
+[INFO] +- org.codehaus.groovy:groovy-streaming-template-engine:jar:2.2.1.1:compile
+[INFO] |  \- org.codehaus.groovy:groovy:jar:2.2.1:compile
+[INFO] |     +- org.ow2.asm:asm-tree:jar:4.1:compile
+[INFO] |     |  \- (org.ow2.asm:asm:jar:4.1:compile - omitted for duplicate)
+[INFO] |     +- (antlr:antlr:jar:2.7.7:compile - omitted for duplicate)
+[INFO] |     +- org.ow2.asm:asm-util:jar:4.1:compile
+[INFO] |     |  \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |     +- org.ow2.asm:asm-commons:jar:4.1:compile
+[INFO] |     |  \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |     +- org.ow2.asm:asm:jar:4.1:compile
+[INFO] |     \- org.ow2.asm:asm-analysis:jar:4.1:compile
+[INFO] |        \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] +- org.apache.directory.server:apacheds-test-framework:jar:2.0.0-M15:test
+[INFO] |  +- org.apache.directory.server:apacheds-core-annotations:jar:2.0.0-M15:test
+[INFO] |  |  +- org.apache.directory.server:apacheds-core:jar:2.0.0-M15:test
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-admin:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-extras-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-authn:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-client-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-extras-codec:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-extras-codec-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-authz:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-extras-aci:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (net.sf.ehcache:ehcache-core:jar:2.4.4:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-changelog:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-collective:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-event:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-exception:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-journal:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-normalization:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-operational:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-referral:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-schema:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-subtree:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (net.sf.ehcache:ehcache-core:jar:2.4.4:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-interceptors-trigger:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- org.apache.directory.api:api-ldap-extras-trigger:jar:1.0.0-M20:test
+[INFO] |  |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (antlr:antlr:jar:2.7.7:test - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-extras-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (bouncycastle:bcprov-jdk15:jar:140:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.server:apacheds-ldif-partition:jar:2.0.0-M15:test
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-xdbm-partition:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.server:apacheds-jdbm-partition:jar:2.0.0-M15:test
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- org.apache.directory.server:apacheds-core-avl:jar:2.0.0-M15:test
+[INFO] |  |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-xdbm-partition:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.server:apacheds-xdbm-partition:jar:2.0.0-M15:test
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-avl:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.mavibot:mavibot:jar:1.0.0-M1:test
+[INFO] |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - version managed from 1.7.5; scope managed from test; omitted for duplicate)
+[INFO] |  |  |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.server:apacheds-mavibot-partition:jar:2.0.0-M15:test
+[INFO] |  |  |  +- (org.apache.directory.mavibot:mavibot:jar:1.0.0-M1:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-avl:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-xdbm-partition:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-util:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test
+[INFO] |  |  +- commons-lang:commons-lang:jar:2.6:test
+[INFO] |  |  +- org.apache.directory.server:apacheds-core-constants:jar:2.0.0-M15:test
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-i18n:jar:1.0.0-M20:test
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-asn1-api:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-client-api:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- commons-pool:commons-pool:jar:1.6:test
+[INFO] |  |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-asn1-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-asn1-ber:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-extras-aci:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (antlr:antlr:jar:2.7.7:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-extras-util:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.mina:mina-core:jar:2.0.7:test
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  |  +- net.sf.ehcache:ehcache-core:jar:2.4.4:test
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.6.1; omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.server:apacheds-protocol-kerberos:jar:2.0.0-M15:test
+[INFO] |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.server:apacheds-kerberos-codec:jar:2.0.0-M15:test
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-asn1-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-asn1-ber:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (net.sf.ehcache:ehcache-core:jar:2.4.4:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-protocol-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.server:apacheds-core-shared:jar:2.0.0-M15:test
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-extras-codec-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-extras-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (net.sf.ehcache:ehcache-core:jar:2.4.4:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-asn1-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  +- (net.sf.ehcache:ehcache-core:jar:2.4.4:test - omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.server:apacheds-protocol-ldap:jar:2.0.0-M15:test
+[INFO] |  |  +- (org.apache.directory.server:apacheds-core:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-protocol-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-jdbm-partition:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-kerberos-codec:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-asn1-ber:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-asn1-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-client-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-extras-codec-api:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-extras-codec:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-extras-codec-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.directory.api:api-ldap-extras-sp:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-extras-codec:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-extras-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-extras-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-schema-data:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  +- bouncycastle:bcprov-jdk15:jar:140:test
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.server:apacheds-protocol-shared:jar:2.0.0-M15:test
+[INFO] |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-kerberos-codec:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.server:apacheds-server-annotations:jar:2.0.0-M15:test
+[INFO] |  |  +- (org.apache.directory.server:apacheds-core-annotations:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-core-api:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-protocol-kerberos:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-protocol-ldap:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.server:apacheds-protocol-shared:jar:2.0.0-M15:test - omitted for duplicate)
+[INFO] |  |  +- (commons-io:commons-io:jar:2.4:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.api:api-ldap-codec-standalone:jar:1.0.0-M20:test
+[INFO] |  |  +- org.apache.directory.api:api-ldap-net-mina:jar:1.0.0-M20:test
+[INFO] |  |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-ldap-codec-core:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- org.apache.directory.api:api-ldap-model:jar:1.0.0-M20:test
+[INFO] |  |  +- (org.apache.directory.api:api-util:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-asn1-api:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-asn1-ber:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.directory.api:api-i18n:jar:1.0.0-M20:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.mina:mina-core:jar:2.0.7:test - omitted for duplicate)
+[INFO] |  |  +- (antlr:antlr:jar:2.7.7:test - omitted for duplicate)
+[INFO] |  |  +- (commons-lang:commons-lang:jar:2.6:test - omitted for duplicate)
+[INFO] |  |  +- commons-collections:commons-collections:jar:3.2.1:test
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  +- commons-io:commons-io:jar:2.4:test
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] +- org.apache.directory.jdbm:apacheds-jdbm1:jar:2.0.0-M3:test
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.7.5; omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:compile
+[INFO] |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:compile
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:compile
+[INFO] |  |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:compile
+[INFO] |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.datatype:jackson-datatype-joda:jar:2.3.1:compile
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  \- (joda-time:joda-time:jar:2.3:compile - version managed from 2.1; omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.3.1:compile
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  \- (com.google.guava:guava:jar:17.0:compile - version managed from 15.0; omitted for duplicate)
+[INFO] +- com.thoughtworks.xstream:xstream:jar:1.4.7:compile
+[INFO] |  +- xmlpull:xmlpull:jar:1.1.3.1:compile
+[INFO] |  \- xpp3:xpp3_min:jar:1.1.4c:compile
+[INFO] +- org.antlr:ST4:jar:4.0.7:compile
+[INFO] |  \- org.antlr:antlr-runtime:jar:3.5:compile
+[INFO] |     \- org.antlr:stringtemplate:jar:3.2.1:compile
+[INFO] |        \- (antlr:antlr:jar:2.7.7:compile - omitted for duplicate)
+[INFO] +- net.sf.opencsv:opencsv:jar:2.3:compile
+[INFO] +- commons-jxpath:commons-jxpath:jar:1.3:compile
+[INFO] +- com.beust:jcommander:jar:1.48:compile
+[INFO] +- org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - version managed from 1.7.5; omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - version managed from 1.7.5; omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Wkf 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-wkf ---
+[INFO] com.axelor:axelor-wkf:jar:2.0.0-SNAPSHOT
+[INFO] +- com.beust:jcommander:jar:1.48:compile
+[INFO] +- com.axelor:axelor-core:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  +- com.axelor:axelor-common:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  |  +- (com.axelor:axelor-cglib:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:17.0:compile - version managed from 15.0; omitted for duplicate)
+[INFO] |  |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] |  +- joda-time:joda-time:jar:2.3:compile
+[INFO] |  +- org.jadira.usertype:usertype.core:jar:3.0.0.GA:compile
+[INFO] |  |  +- (org.hibernate:hibernate-entitymanager:jar:4.2.8.Final:compile - version managed from 4.0.1.Final; omitted for duplicate)
+[INFO] |  |  +- org.joda:joda-money:jar:0.6:compile
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  |  \- org.jadira.usertype:usertype.spi:jar:3.0.0.GA:compile
+[INFO] |  |     \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  +- org.yaml:snakeyaml:jar:1.13:compile
+[INFO] |  +- com.google.inject:guice:jar:3.0:compile
+[INFO] |  |  +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.google.inject.extensions:guice-servlet:jar:3.0:compile
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- com.google.inject.extensions:guice-persist:jar:3.0:compile
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- org.hsqldb:hsqldb:jar:2.3.2:compile
+[INFO] |  +- org.postgresql:postgresql:jar:9.3-1101-jdbc41:compile
+[INFO] |  +- org.hibernate:hibernate-entitymanager:jar:4.2.8.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[INFO] |  |  +- org.hibernate:hibernate-core:jar:4.2.8.Final:compile
+[INFO] |  |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  |  |  +- (dom4j:dom4j:jar:1.6.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.javassist:javassist:jar:3.18.1-GA:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile - omitted for duplicate)
+[INFO] |  |  |  \- (org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:compile - omitted for duplicate)
+[INFO] |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  +- org.javassist:javassist:jar:3.18.1-GA:compile
+[INFO] |  |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile
+[INFO] |  |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:compile
+[INFO] |  |     \- (org.jboss.logging:jboss-logging:jar:3.1.0.CR2:compile - omitted for conflict with 3.1.0.GA)
+[INFO] |  +- org.hibernate:hibernate-ehcache:jar:4.2.8.Final:compile
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  |  \- (org.hibernate:hibernate-core:jar:4.2.8.Final:compile - omitted for duplicate)
+[INFO] |  +- net.sf.ehcache:ehcache:jar:2.8.1:compile
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- org.hibernate:hibernate-validator:jar:5.0.2.Final:compile
+[INFO] |  |  +- (javax.validation:validation-api:jar:1.1.0.Final:compile - omitted for duplicate)
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.1.GA:compile - omitted for conflict with 3.1.0.GA)
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.0.0:compile
+[INFO] |  +- javax.validation:validation-api:jar:1.1.0.Final:compile
+[INFO] |  +- org.hibernate:hibernate-c3p0:jar:4.2.8.Final:compile
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  |  +- com.mchange:c3p0:jar:0.9.2.1:compile
+[INFO] |  |  |  \- com.mchange:mchange-commons-java:jar:0.2.3.4:compile
+[INFO] |  |  \- (org.hibernate:hibernate-core:jar:4.2.8.Final:compile - omitted for duplicate)
+[INFO] |  +- org.eclipse.persistence:org.eclipse.persistence.core:jar:2.6.1:compile
+[INFO] |  |  +- org.eclipse.persistence:org.eclipse.persistence.asm:jar:2.6.1:compile
+[INFO] |  |  \- org.glassfish:javax.json:jar:1.0.4:compile
+[INFO] |  +- javax.mail:mail:jar:1.4.7:compile
+[INFO] |  |  \- javax.activation:activation:jar:1.1:compile
+[INFO] |  +- javax.mail:javax.mail-api:jar:1.5.1:compile
+[INFO] |  |  \- (javax.activation:activation:jar:1.1:compile - omitted for duplicate)
+[INFO] |  +- org.apache.shiro:shiro-core:jar:1.2.2:compile
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  |  \- commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[INFO] |  +- org.apache.shiro:shiro-web:jar:1.2.2:compile
+[INFO] |  |  \- (org.apache.shiro:shiro-core:jar:1.2.2:compile - omitted for duplicate)
+[INFO] |  +- org.apache.shiro:shiro-guice:jar:1.2.2:compile
+[INFO] |  |  +- (org.apache.shiro:shiro-core:jar:1.2.2:compile - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:17.0:compile - version managed from r09; omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  \- com.google.inject.extensions:guice-multibindings:jar:3.0:compile
+[INFO] |  |     \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- org.quartz-scheduler:quartz:jar:2.2.1:compile
+[INFO] |  |  +- c3p0:c3p0:jar:0.9.1.1:compile
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- com.axelor:axelor-cglib:jar:3.0:compile
+[INFO] |  +- com.github.groovy-wslite:groovy-wslite:jar:0.7.1:compile
+[INFO] |  +- org.codehaus.groovy:groovy-streaming-template-engine:jar:2.2.1.1:compile
+[INFO] |  |  \- org.codehaus.groovy:groovy:jar:2.2.1:compile
+[INFO] |  |     +- org.ow2.asm:asm-tree:jar:4.1:compile
+[INFO] |  |     |  \- (org.ow2.asm:asm:jar:4.1:compile - omitted for duplicate)
+[INFO] |  |     +- (antlr:antlr:jar:2.7.7:compile - omitted for duplicate)
+[INFO] |  |     +- org.ow2.asm:asm-util:jar:4.1:compile
+[INFO] |  |     |  \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |  |     +- org.ow2.asm:asm-commons:jar:4.1:compile
+[INFO] |  |     |  \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |  |     +- org.ow2.asm:asm:jar:4.1:compile
+[INFO] |  |     \- org.ow2.asm:asm-analysis:jar:4.1:compile
+[INFO] |  |        \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:compile
+[INFO] |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:compile
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:compile
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:compile
+[INFO] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.datatype:jackson-datatype-joda:jar:2.3.1:compile
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  \- (joda-time:joda-time:jar:2.3:compile - version managed from 2.1; omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.3.1:compile
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  \- (com.google.guava:guava:jar:17.0:compile - version managed from 15.0; omitted for duplicate)
+[INFO] |  +- com.thoughtworks.xstream:xstream:jar:1.4.7:compile
+[INFO] |  |  +- xmlpull:xmlpull:jar:1.1.3.1:compile
+[INFO] |  |  \- xpp3:xpp3_min:jar:1.1.4c:compile
+[INFO] |  +- org.antlr:ST4:jar:4.0.7:compile
+[INFO] |  |  \- org.antlr:antlr-runtime:jar:3.5:compile
+[INFO] |  |     \- org.antlr:stringtemplate:jar:3.2.1:compile
+[INFO] |  |        \- (antlr:antlr:jar:2.7.7:compile - omitted for duplicate)
+[INFO] |  +- net.sf.opencsv:opencsv:jar:2.3:compile
+[INFO] |  +- commons-jxpath:commons-jxpath:jar:1.3:compile
+[INFO] |  +- (com.beust:jcommander:jar:1.48:compile - omitted for duplicate)
+[INFO] |  +- (org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile - omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - version managed from 15.0; omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- com.axelor:axelor-test:jar:2.0.0-SNAPSHOT:test
+[INFO] |  +- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-persist:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- javax.el:javax.el-api:jar:3.0.0:test
+[INFO] |  +- org.glassfish:javax.el:jar:3.0.0:test
+[INFO] |  +- com.sun.jersey:jersey-server:jar:1.12:test
+[INFO] |  |  +- asm:asm:jar:3.1:test
+[INFO] |  |  \- com.sun.jersey:jersey-core:jar:1.12:test
+[INFO] |  +- com.sun.jersey:jersey-client:jar:1.12:test
+[INFO] |  |  \- (com.sun.jersey:jersey-core:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.contribs:jersey-guice:jar:1.12:test
+[INFO] |  |  +- (javax.inject:javax.inject:jar:1:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-servlet:jar:1.12:test
+[INFO] |  |     \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.12:test
+[INFO] |  |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.12:test
+[INFO] |  |  |  +- javax.servlet:javax.servlet-api:jar:3.0.1:provided (scope managed from test)
+[INFO] |  |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  |  |  +- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  |  \- (com.sun.jersey:jersey-client:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-grizzly2-servlet:jar:1.12:test
+[INFO] |  |     +- org.glassfish.grizzly:grizzly-http-servlet:jar:2.2.1:test
+[INFO] |  |     |  \- org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test
+[INFO] |  |     |     +- (org.glassfish.grizzly:grizzly-http:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |     \- org.glassfish.grizzly:grizzly-rcm:jar:2.2.1:test
+[INFO] |  |     |        \- (org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     +- com.sun.jersey:jersey-grizzly2:jar:1.12:test
+[INFO] |  |     |  +- org.glassfish.grizzly:grizzly-http:jar:2.2.1:test
+[INFO] |  |     |  |  \- org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test
+[INFO] |  |     |  |     \- org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:test
+[INFO] |  |     |  |        \- org.glassfish.external:management-api:jar:3.0.0-b012:test
+[INFO] |  |     |  +- (org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |  \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  |     +- org.glassfish:javax.servlet:jar:3.1:test
+[INFO] |  |     \- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:test - version managed from 15.0; omitted for duplicate)
+[INFO] |  \- (com.google.code.findbugs:jsr305:jar:2.0.3:test - omitted for duplicate)
+[INFO] +- org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile
+[INFO] +- javax.persistence:persistence-api:jar:1.0.2:compile
+[INFO] +- org.codehaus.groovy:groovy-all:jar:2.4.7:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - version managed from 1.6.6; omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Web 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-wkf/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.maven.apache.org/maven2/com/axelor/axelor-wkf/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/com/axelor/axelor-wkf/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-wkf/2.0.0-SNAPSHOT/maven-metadata.xml
+773/773 B               Downloaded: http://repository.axelor.com/nexus/content/groups/public/com/axelor/axelor-wkf/2.0.0-SNAPSHOT/maven-metadata.xml (773 B at 0.4 KB/sec)
+            Downloading: http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/com/axelor/axelor-groovy-parent/2.0.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/com/axelor/axelor-groovy-parent/2.0.0-SNAPSHOT/maven-metadata.xml
+                        [INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-web ---
+[INFO] com.axelor:axelor-web:war:2.0.0-SNAPSHOT
+[INFO] +- org.codehaus.groovy:groovy-all:jar:2.2.1:compile
+[INFO] +- com.axelor:axelor-wkf:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  +- com.beust:jcommander:jar:1.48:compile
+[INFO] |  +- (com.axelor:axelor-core:jar:2.0.0-SNAPSHOT:compile - omitted for duplicate)
+[INFO] |  +- (org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile - omitted for duplicate)
+[INFO] |  +- (javax.persistence:persistence-api:jar:1.0.2:compile - omitted for duplicate)
+[INFO] |  +- (org.codehaus.groovy:groovy-all:jar:2.4.7:compile - omitted for conflict with 2.2.1)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - version managed from r09; omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[INFO] +- com.sun.jersey:jersey-server:jar:1.12:compile
+[INFO] |  +- asm:asm:jar:3.1:compile
+[INFO] |  \- com.sun.jersey:jersey-core:jar:1.12:compile
+[INFO] +- com.sun.jersey.contribs:jersey-guice:jar:1.12:compile
+[INFO] |  +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  +- com.google.inject:guice:jar:3.0:compile
+[INFO] |  |  +- (javax.inject:javax.inject:jar:1:compile - omitted for duplicate)
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.google.inject.extensions:guice-servlet:jar:3.0:compile
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  \- com.sun.jersey:jersey-servlet:jar:1.12:compile
+[INFO] |     \- (com.sun.jersey:jersey-server:jar:1.12:compile - omitted for duplicate)
+[INFO] +- com.sun.jersey.contribs:jersey-multipart:jar:1.12:compile
+[INFO] |  +- org.jvnet:mimepull:jar:1.6:compile
+[INFO] |  \- (com.sun.jersey:jersey-core:jar:1.12:compile - omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:compile
+[INFO] |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:compile
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:compile
+[INFO] |  |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:compile
+[INFO] |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.datatype:jackson-datatype-joda:jar:2.3.1:compile
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  \- joda-time:joda-time:jar:2.3:compile
+[INFO] +- com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.3.1:compile
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  \- (com.google.guava:guava:jar:17.0:compile - version managed from 15.0; omitted for duplicate)
+[INFO] +- com.axelor:axelor-core:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  +- com.axelor:axelor-common:jar:2.0.0-SNAPSHOT:compile
+[INFO] |  |  +- (com.axelor:axelor-cglib:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:17.0:compile - version managed from 15.0; omitted for duplicate)
+[INFO] |  |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] |  +- (joda-time:joda-time:jar:2.3:compile - version managed from 2.1; omitted for duplicate)
+[INFO] |  +- org.jadira.usertype:usertype.core:jar:3.0.0.GA:compile
+[INFO] |  |  +- (org.hibernate:hibernate-entitymanager:jar:4.2.8.Final:compile - version managed from 4.0.1.Final; omitted for duplicate)
+[INFO] |  |  +- org.joda:joda-money:jar:0.6:compile
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  |  \- org.jadira.usertype:usertype.spi:jar:3.0.0.GA:compile
+[INFO] |  |     \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  +- org.yaml:snakeyaml:jar:1.13:compile
+[INFO] |  +- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- com.google.inject.extensions:guice-persist:jar:3.0:compile
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- org.hsqldb:hsqldb:jar:2.3.2:compile
+[INFO] |  +- org.postgresql:postgresql:jar:9.3-1101-jdbc41:compile
+[INFO] |  +- org.hibernate:hibernate-entitymanager:jar:4.2.8.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[INFO] |  |  +- org.hibernate:hibernate-core:jar:4.2.8.Final:compile
+[INFO] |  |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  |  |  +- (dom4j:dom4j:jar:1.6.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.javassist:javassist:jar:3.18.1-GA:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile - omitted for duplicate)
+[INFO] |  |  |  \- (org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:compile - omitted for duplicate)
+[INFO] |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  +- org.javassist:javassist:jar:3.18.1-GA:compile
+[INFO] |  |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile
+[INFO] |  |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:compile
+[INFO] |  |     \- (org.jboss.logging:jboss-logging:jar:3.1.0.CR2:compile - omitted for conflict with 3.1.0.GA)
+[INFO] |  +- org.hibernate:hibernate-ehcache:jar:4.2.8.Final:compile
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  |  \- (org.hibernate:hibernate-core:jar:4.2.8.Final:compile - omitted for duplicate)
+[INFO] |  +- net.sf.ehcache:ehcache:jar:2.8.1:compile
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- org.hibernate:hibernate-validator:jar:5.0.2.Final:compile
+[INFO] |  |  +- (javax.validation:validation-api:jar:1.1.0.Final:compile - omitted for duplicate)
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.1.GA:compile - omitted for conflict with 3.1.0.GA)
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.0.0:compile
+[INFO] |  +- javax.validation:validation-api:jar:1.1.0.Final:compile
+[INFO] |  +- org.hibernate:hibernate-c3p0:jar:4.2.8.Final:compile
+[INFO] |  |  +- (org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile - omitted for duplicate)
+[INFO] |  |  +- com.mchange:c3p0:jar:0.9.2.1:compile
+[INFO] |  |  |  \- com.mchange:mchange-commons-java:jar:0.2.3.4:compile
+[INFO] |  |  \- (org.hibernate:hibernate-core:jar:4.2.8.Final:compile - omitted for duplicate)
+[INFO] |  +- org.eclipse.persistence:org.eclipse.persistence.core:jar:2.6.1:compile
+[INFO] |  |  +- org.eclipse.persistence:org.eclipse.persistence.asm:jar:2.6.1:compile
+[INFO] |  |  \- org.glassfish:javax.json:jar:1.0.4:compile
+[INFO] |  +- javax.mail:mail:jar:1.4.7:compile
+[INFO] |  |  \- javax.activation:activation:jar:1.1:compile
+[INFO] |  +- javax.mail:javax.mail-api:jar:1.5.1:compile
+[INFO] |  |  \- (javax.activation:activation:jar:1.1:compile - omitted for duplicate)
+[INFO] |  +- org.apache.shiro:shiro-core:jar:1.2.2:compile
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.4; omitted for duplicate)
+[INFO] |  |  \- commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[INFO] |  +- org.apache.shiro:shiro-web:jar:1.2.2:compile
+[INFO] |  |  \- (org.apache.shiro:shiro-core:jar:1.2.2:compile - omitted for duplicate)
+[INFO] |  +- org.apache.shiro:shiro-guice:jar:1.2.2:compile
+[INFO] |  |  +- (org.apache.shiro:shiro-core:jar:1.2.2:compile - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:17.0:compile - version managed from r09; omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  \- com.google.inject.extensions:guice-multibindings:jar:3.0:compile
+[INFO] |  |     \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  +- org.quartz-scheduler:quartz:jar:2.2.1:compile
+[INFO] |  |  +- c3p0:c3p0:jar:0.9.1.1:compile
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- com.axelor:axelor-cglib:jar:3.0:compile
+[INFO] |  +- com.github.groovy-wslite:groovy-wslite:jar:0.7.1:compile
+[INFO] |  +- org.codehaus.groovy:groovy-streaming-template-engine:jar:2.2.1.1:compile
+[INFO] |  |  \- org.codehaus.groovy:groovy:jar:2.2.1:compile
+[INFO] |  |     +- org.ow2.asm:asm-tree:jar:4.1:compile
+[INFO] |  |     |  \- (org.ow2.asm:asm:jar:4.1:compile - omitted for duplicate)
+[INFO] |  |     +- (antlr:antlr:jar:2.7.7:compile - omitted for duplicate)
+[INFO] |  |     +- org.ow2.asm:asm-util:jar:4.1:compile
+[INFO] |  |     |  \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |  |     +- org.ow2.asm:asm-commons:jar:4.1:compile
+[INFO] |  |     |  \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |  |     +- org.ow2.asm:asm:jar:4.1:compile
+[INFO] |  |     \- org.ow2.asm:asm-analysis:jar:4.1:compile
+[INFO] |  |        \- (org.ow2.asm:asm-tree:jar:4.1:compile - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.datatype:jackson-datatype-joda:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.3.1:compile - omitted for duplicate)
+[INFO] |  +- com.thoughtworks.xstream:xstream:jar:1.4.7:compile
+[INFO] |  |  +- xmlpull:xmlpull:jar:1.1.3.1:compile
+[INFO] |  |  \- xpp3:xpp3_min:jar:1.1.4c:compile
+[INFO] |  +- org.antlr:ST4:jar:4.0.7:compile
+[INFO] |  |  \- org.antlr:antlr-runtime:jar:3.5:compile
+[INFO] |  |     \- org.antlr:stringtemplate:jar:3.2.1:compile
+[INFO] |  |        \- (antlr:antlr:jar:2.7.7:compile - omitted for duplicate)
+[INFO] |  +- net.sf.opencsv:opencsv:jar:2.3:compile
+[INFO] |  +- commons-jxpath:commons-jxpath:jar:1.3:compile
+[INFO] |  +- (com.beust:jcommander:jar:1.48:compile - omitted for duplicate)
+[INFO] |  +- (org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile - omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:compile - version managed from r09; omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:compile - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] +- com.axelor:axelor-test:jar:2.0.0-SNAPSHOT:test
+[INFO] |  +- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- (com.google.inject.extensions:guice-persist:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- javax.el:javax.el-api:jar:3.0.0:test
+[INFO] |  +- org.glassfish:javax.el:jar:3.0.0:test
+[INFO] |  +- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey:jersey-client:jar:1.12:test
+[INFO] |  |  \- (com.sun.jersey:jersey-core:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- (com.sun.jersey.contribs:jersey-guice:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.12:test
+[INFO] |  |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.12:test
+[INFO] |  |  |  +- (javax.servlet:javax.servlet-api:jar:3.0.1:provided - scope managed from test; omitted for duplicate)
+[INFO] |  |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  |  |  +- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  |  \- (com.sun.jersey:jersey-client:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-grizzly2-servlet:jar:1.12:test
+[INFO] |  |     +- org.glassfish.grizzly:grizzly-http-servlet:jar:2.2.1:test
+[INFO] |  |     |  \- org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test
+[INFO] |  |     |     +- (org.glassfish.grizzly:grizzly-http:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |     \- org.glassfish.grizzly:grizzly-rcm:jar:2.2.1:test
+[INFO] |  |     |        \- (org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     +- com.sun.jersey:jersey-grizzly2:jar:1.12:test
+[INFO] |  |     |  +- org.glassfish.grizzly:grizzly-http:jar:2.2.1:test
+[INFO] |  |     |  |  \- org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test
+[INFO] |  |     |  |     \- org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:test
+[INFO] |  |     |  |        \- org.glassfish.external:management-api:jar:3.0.0-b012:test
+[INFO] |  |     |  +- (org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |  \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  |     +- org.glassfish:javax.servlet:jar:3.1:test
+[INFO] |  |     \- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:test - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:test - version managed from r09; omitted for duplicate)
+[INFO] |  \- (com.google.code.findbugs:jsr305:jar:2.0.3:test - omitted for duplicate)
+[INFO] +- org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile
+[INFO] +- javax.persistence:persistence-api:jar:1.0.2:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - version managed from 1.6.6; omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - version managed from 1.6.6; omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Platform 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-platform ---
+[INFO] com.axelor:axelor-platform:pom:2.0.0-SNAPSHOT
+[INFO] +- org.codehaus.groovy:groovy-all:jar:indy:2.4.7:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Axelor :: Test ..................................... SUCCESS [  2.262 s]
+[INFO] Axelor :: Common ................................... SUCCESS [  0.031 s]
+[INFO] Axelor :: Tools .................................... SUCCESS [  1.092 s]
+[INFO] Axelor :: Maven Plugin ............................. SUCCESS [  0.842 s]
+[INFO] Axelor :: Core ..................................... SUCCESS [  4.337 s]
+[INFO] Axelor :: Wkf ...................................... SUCCESS [  0.250 s]
+[INFO] Axelor :: Web ...................................... SUCCESS [01:01 min]
+[INFO] Axelor :: Platform ................................. SUCCESS [  0.016 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:11 min
+[INFO] Finished at: 2018-03-15T17:13:41+01:00
+[INFO] Final Memory: 25M/60M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,1078 @@
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T18:29:23+01:00)
+Maven home: C:\A15\java\apache-maven-3.2.5
+Java version: 1.7.0_161, vendor: Oracle Corporation
+Java home: C:\A15\java\jdk7u161\jre
+Default locale: fr_FR, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "x86", family: "windows"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from C:\A15\java\apache-maven-3.2.5\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\317718\.m2\settings.xml
+[DEBUG] Using local repository at C:\Users\317718\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\317718\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.axelor:axelor-wkf:jar:2.0.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project com.axelor:axelor-module-parent:pom:2.0.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project com.axelor:axelor-groovy-parent:pom:2.0.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project com.axelor:axelor-parent:pom:2.0.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.axelor:axelor-wkf:jar:2.0.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Wkf 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Skipped remote request for com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Failure to find com.axelor:axelor-parent:2.0.0-SNAPSHOT/maven-metadata.xml in http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/ was cached in the local repository, resolution will not be reattempted until the update interval of sweetdev3.dev_proxy has elapsed or updates are forced
+[DEBUG] Failure to find com.axelor:axelor-parent:2.0.0-SNAPSHOT/maven-metadata.xml in http://repo.maven.apache.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[DEBUG] Skipped remote request for com.axelor:axelor-parent:2.0.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.axelor:axelor-wkf:2.0.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [central (http://repo.maven.apache.org/maven2/, default, releases+snapshots), sweetDev_proxy (http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/, default, releases+snapshots), sweetDev.releases (http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/, default, releases+snapshots), axelor-public-repository-group (http://repository.axelor.com/nexus/content/groups/public, default, releases+snapshots)]
+[DEBUG] Repositories (plugins)     : [sweetdev3.dev_proxy (http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/, default, releases+snapshots), central (http://repo.maven.apache.org/maven2/, default, releases+snapshots), axelor-public-repository-group (http://repository.axelor.com/nexus/content/groups/public, default, releases+snapshots)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:build-helper-maven-plugin:1.8:add-source (add-source)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <sources>
+    <source>src/main/groovy</source>
+  </sources>
+  <project default-value="${project}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT:generate (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <baseDirectory>${basedir}</baseDirectory>
+  <project>${project}</project>
+  <targetDirectory>${project.build.directory}</targetDirectory>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">groovy-eclipse-compiler</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">false</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:copy-resources (copy-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>C:\A15\a4x\adk3_demo\ak342m\axelor-wkf/target/classes</outputDirectory>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources>
+    <resource>
+      <directory>C:\A15\a4x\adk3_demo\ak342m\axelor-wkf/target/src-gen</directory>
+      <filtering>true</filtering>
+      <excludes>
+        <exclude>**/*.java</exclude>
+        <exclude>**/*.groovy</exclude>
+        <exclude>**/*.scala</exclude>
+      </excludes>
+    </resource>
+  </resources>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:build-helper-maven-plugin:1.8:add-test-source (add-test-source)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <sources>
+    <source>src/test/groovy</source>
+  </sources>
+  <project default-value="${project}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.5.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">groovy-eclipse-compiler</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">false</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:2.4:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archive>
+    <addMavenDescriptor>false</addMavenDescriptor>
+  </archive>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <finalName default-value="${project.build.finalName}">${jar.finalName}</finalName>
+  <forceCreation default-value="false">${jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false">${jar.skipIfEmpty}</skipIfEmpty>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.4:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-core:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Could not find metadata com.axelor:axelor-groovy-parent:2.0.0-SNAPSHOT/maven-metadata.xml in local (C:\Users\317718\.m2\repository)
+[DEBUG] Failure to find com.axelor:axelor-groovy-parent:2.0.0-SNAPSHOT/maven-metadata.xml in http://repo.maven.apache.org/maven2/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[DEBUG] Failure to find com.axelor:axelor-groovy-parent:2.0.0-SNAPSHOT/maven-metadata.xml in http://sweetdev3.dev.echonet:8081/repository/content/groups/proxy/ was cached in the local repository, resolution will not be reattempted until the update interval of sweetDev_proxy has elapsed or updates are forced
+[DEBUG] Failure to find com.axelor:axelor-groovy-parent:2.0.0-SNAPSHOT/maven-metadata.xml in http://sweetdev3.dev.echonet:8081/repository/content/repositories/public/ was cached in the local repository, resolution will not be reattempted until the update interval of sweetDev.releases has elapsed or updates are forced
+[DEBUG] Skipped remote request for com.axelor:axelor-groovy-parent:2.0.0-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[WARNING] The POM for com.axelor:axelor-core:jar:2.0.0-SNAPSHOT is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model for com.axelor:axelor-core:2.0.0-SNAPSHOT
+[ERROR] 'dependencies.dependency.version' for org.codehaus.groovy:groovy-all:jar:indy is missing. @ 
+
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-test:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=84, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=76, DefaultDependencyCollector.collectTime=406, DefaultDependencyCollector.transformTime=0}
+[DEBUG] com.axelor:axelor-wkf:jar:2.0.0-SNAPSHOT
+[DEBUG]    com.beust:jcommander:jar:1.48:compile
+[DEBUG]    com.axelor:axelor-core:jar:2.0.0-SNAPSHOT:compile
+[DEBUG]    com.axelor:axelor-test:jar:2.0.0-SNAPSHOT:test
+[DEBUG]       com.google.inject:guice:jar:3.0:test
+[DEBUG]          javax.inject:javax.inject:jar:1:test
+[DEBUG]          aopalliance:aopalliance:jar:1.0:test
+[DEBUG]       com.google.inject.extensions:guice-servlet:jar:3.0:test
+[DEBUG]       com.google.inject.extensions:guice-persist:jar:3.0:test
+[DEBUG]       javax.el:javax.el-api:jar:3.0.0:test
+[DEBUG]       org.glassfish:javax.el:jar:3.0.0:test
+[DEBUG]       com.sun.jersey:jersey-server:jar:1.12:test
+[DEBUG]          asm:asm:jar:3.1:test
+[DEBUG]          com.sun.jersey:jersey-core:jar:1.12:test
+[DEBUG]       com.sun.jersey:jersey-client:jar:1.12:test (scope managed from compile by com.axelor:axelor-parent:2.0.0-SNAPSHOT)
+[DEBUG]       com.sun.jersey.contribs:jersey-guice:jar:1.12:test
+[DEBUG]          com.sun.jersey:jersey-servlet:jar:1.12:test
+[DEBUG]       com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.12:test (scope managed from compile by com.axelor:axelor-parent:2.0.0-SNAPSHOT)
+[DEBUG]          com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.12:test
+[DEBUG]             javax.servlet:javax.servlet-api:jar:3.0.1:provided (scope managed from compile by com.axelor:axelor-parent:2.0.0-SNAPSHOT)
+[DEBUG]          com.sun.jersey:jersey-grizzly2-servlet:jar:1.12:test
+[DEBUG]             org.glassfish.grizzly:grizzly-http-servlet:jar:2.2.1:test
+[DEBUG]                org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test
+[DEBUG]                   org.glassfish.grizzly:grizzly-rcm:jar:2.2.1:test
+[DEBUG]             com.sun.jersey:jersey-grizzly2:jar:1.12:test
+[DEBUG]                org.glassfish.grizzly:grizzly-http:jar:2.2.1:test
+[DEBUG]                   org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test
+[DEBUG]                      org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:test
+[DEBUG]                         org.glassfish.external:management-api:jar:3.0.0-b012:test
+[DEBUG]             org.glassfish:javax.servlet:jar:3.1:test
+[DEBUG]       com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:test
+[DEBUG]          com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:test
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:test
+[DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:test
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:test
+[DEBUG]    org.codehaus.groovy:groovy-all:jar:2.4.7:compile
+[DEBUG]    javax.persistence:persistence-api:jar:1.0.2:compile
+[DEBUG]    com.google.guava:guava:jar:17.0:compile
+[DEBUG]    com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.7:compile
+[DEBUG]    org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[DEBUG]    org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[DEBUG]    log4j:log4j:jar:1.2.17:runtime
+[DEBUG]    junit:junit:jar:4.11:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ axelor-wkf ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=46, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@12d9844]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG]   (f) reportDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\module.properties
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Workflow.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Transition.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\TimerEvent.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\StartEvent.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceRepository.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceHistoryRepository.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceCounterRepository.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractWorkflowRepository.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractTransitionRepository.java
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ParallelGateway.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\NodeTask.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Node.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\MessageEvent.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceHistory.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceCounter.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Instance.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InclusiveGateway.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Gateway.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ExclusiveGateway.java
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\EndEvent.java
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\maven-status\maven-compiler-plugin\compile\default-compile
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\maven-status\maven-compiler-plugin\compile
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\maven-status\maven-compiler-plugin
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\maven-status
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Workflow.xml
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Node.xml
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Menu.xml
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Instance.xml
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\i18n\messages_fr.csv
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\i18n\messages_en.csv
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\i18n\messages.csv
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\i18n
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\domains\Workflow.xml
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\domains
+[INFO] Deleting file C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\data\xml-bpmn-config.xml
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\data
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[INFO] Deleting directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target
+[DEBUG] Skipping non-existing directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG] Skipping non-existing directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\test-classes
+[DEBUG] Skipping non-existing directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\site
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:add-source (add-source) @ axelor-wkf ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=61, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=25, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=61, DefaultDependencyCollector.collectTime=188, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.codehaus.mojo:build-helper-maven-plugin:jar:1.8:
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:4.10:test
+[DEBUG]             org.hamcrest:hamcrest-core:jar:1.1:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.5.8:compile
+[DEBUG]    org.beanshell:bsh:jar:2.0b4:compile
+[DEBUG] Created new class realm plugin>org.codehaus.mojo:build-helper-maven-plugin:1.8
+[DEBUG] Importing foreign packages into class realm plugin>org.codehaus.mojo:build-helper-maven-plugin:1.8
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.codehaus.mojo:build-helper-maven-plugin:1.8
+[DEBUG]   Included: org.codehaus.mojo:build-helper-maven-plugin:jar:1.8
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.8
+[DEBUG]   Included: org.beanshell:bsh:jar:2.0b4
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: junit:junit:jar:4.10
+[DEBUG]   Excluded: org.hamcrest:hamcrest-core:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG] Configuring mojo org.codehaus.mojo:build-helper-maven-plugin:1.8:add-source from plugin realm ClassRealm[plugin>org.codehaus.mojo:build-helper-maven-plugin:1.8, parent: sun.misc.Launcher$AppClassLoader@12d9844]
+[DEBUG] Configuring mojo 'org.codehaus.mojo:build-helper-maven-plugin:1.8:add-source' with basic configurator -->
+[DEBUG]   (f) sources = [C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\groovy]
+[DEBUG]   (f) project = MavenProject: com.axelor:axelor-wkf:2.0.0-SNAPSHOT @ C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\pom.xml
+[DEBUG] -- end configuration --
+[INFO] Source directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\groovy added.
+[INFO] 
+[INFO] --- axelor-maven-plugin:2.0.0-SNAPSHOT:generate (default) @ axelor-wkf ---
+[DEBUG] Skipped remote request for com.axelor:axelor-tools:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-tools:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-tools:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-tools:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-tools:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-tools:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[WARNING] The POM for com.axelor:axelor-tools:jar:2.0.0-SNAPSHOT is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model for com.axelor:axelor-tools:2.0.0-SNAPSHOT
+[ERROR] 'dependencies.dependency.version' for org.codehaus.groovy:groovy-all:jar:indy is missing. @ 
+
+[DEBUG] Skipped remote request for com.axelor:axelor-common:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-common:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-common:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-common:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-common:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for com.axelor:axelor-common:2.0.0-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=72, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=45, DefaultDependencyCollector.collectTime=187, DefaultDependencyCollector.transformTime=0}
+[DEBUG] com.axelor:axelor-maven-plugin:jar:2.0.0-SNAPSHOT:
+[DEBUG]    com.axelor:axelor-tools:jar:2.0.0-SNAPSHOT:compile
+[DEBUG]    org.apache.maven.shared:maven-dependency-tree:jar:1.2:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.0.4:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:compile
+[DEBUG]          junit:junit:jar:4.11:test
+[DEBUG]             org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    com.axelor:axelor-common:jar:2.0.0-SNAPSHOT:compile
+[DEBUG]       com.axelor:axelor-cglib:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0:compile
+[DEBUG]    org.codehaus.groovy:groovy-all:jar:2.4.7:compile
+[DEBUG]    com.google.guava:guava:jar:17.0:compile
+[DEBUG]    com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.7:compile
+[DEBUG]    org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[DEBUG]    org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[DEBUG]    log4j:log4j:jar:1.2.17:runtime
+[DEBUG] Created new class realm plugin>com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin>com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT
+[DEBUG]   Included: com.axelor:axelor-maven-plugin:jar:2.0.0-SNAPSHOT
+[DEBUG]   Included: com.axelor:axelor-tools:jar:2.0.0-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.0.4
+[DEBUG]   Included: com.axelor:axelor-common:jar:2.0.0-SNAPSHOT
+[DEBUG]   Included: com.axelor:axelor-cglib:jar:3.0
+[DEBUG]   Included: org.codehaus.groovy:groovy-all:jar:2.4.7
+[DEBUG]   Included: com.google.guava:guava:jar:17.0
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.3
+[DEBUG]   Included: org.slf4j:slf4j-api:jar:1.7.7
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.7.7
+[DEBUG]   Included: org.slf4j:slf4j-log4j12:jar:1.7.7
+[DEBUG]   Included: log4j:log4j:jar:1.2.17
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8
+[DEBUG]   Excluded: junit:junit:jar:4.11
+[DEBUG]   Excluded: org.hamcrest:hamcrest-core:jar:1.3
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0
+[DEBUG] Configuring mojo com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT:generate from plugin realm ClassRealm[plugin>com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@12d9844]
+[DEBUG] Configuring mojo 'com.axelor:axelor-maven-plugin:2.0.0-SNAPSHOT:generate' with basic configurator -->
+[DEBUG]   (f) baseDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf
+[DEBUG]   (f) project = MavenProject: com.axelor:axelor-wkf:2.0.0-SNAPSHOT @ C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\pom.xml
+[DEBUG]   (f) targetDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target
+[DEBUG] -- end configuration --
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target/src-gen/module.properties
+[INFO] Generating Models: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf
+[INFO] Generating JPA classes.
+[INFO] Domain path: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\domains
+[INFO] Output path: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen
+[INFO] Processing: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\domains\Workflow.xml
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Workflow.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractWorkflowRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Instance.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceCounter.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceCounterRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceHistory.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceHistoryRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Transition.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractTransitionRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Node.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\StartEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\EndEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\NodeTask.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\MessageEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\TimerEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Gateway.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ExclusiveGateway.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InclusiveGateway.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ParallelGateway.java
+[INFO] Source directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target/src-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ axelor-wkf ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=78, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@12d9844]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.axelor:axelor-wkf:2.0.0-SNAPSHOT @ C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@155887
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, env.USERDOMAIN_ROAMINGPROFILE=FRA, env.DEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, env.ORACLE_HOME=F:\ORAC\CLNT0011203NEN003\Oracle\Product\Client_11.2.0.3, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, env.PROMPT=$P$G, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=C:\A15\java\jdk7u161\jre\lib\resources.jar;C:\A15\java\jdk7u161\jre\lib\rt.jar;C:\A15\java\jdk7u161\jre\lib\sunrsasign.jar;C:\A15\java\jdk7u161\jre\lib\jsse.jar;C:\A15\java\jdk7u161\jre\lib\jce.jar;C:\A15\java\jdk7u161\jre\lib\charsets.jar;C:\A15\java\jdk7u161\jre\lib\jfr.jar;C:\A15\java\jdk7u161\jre\classes, env.COMPUTERNAME=PARW00211710, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_161-b33, env.DISPLAYLINKCONFIGROOT=C:\Program Files\DisplayLink Core Software\8.2.2152.0\, env.HOMEPATH=\, project.build.sourceEncoding=UTF-8, env.HOMESHARE=\\pardmp23hd\317718$, user.name=317718, maven.build.version=Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T18:29:23+01:00), env.WINDOWS_TRACING_FLAGS=3, env.PATH=C:\A15\java\apache-maven-3.2.5\bin;C:\A15\java\jdk7u161\bin;C:\Program Files\Serena\Dimensions 12.2\CM\prog\Microsoft.VC90.MFC;C:\Program Files\Serena\Dimensions 12.2\CM\prog\Microsoft.VC90;C:\Program Files\Serena\Dimensions 12.2\CM\prog;C:\Program Files\Serena\Dimensions 12.2\CM\prog64;C:\Program Files\Serena\Dimensions 12.2\CM\prog\Microsoft.VC90.ATL;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft Application Virtualization Client;C:\Program Files\Axalto\Access Client\v5\;C:\Program Files\ActivIdentity\SecureLogin\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDEpro\Ultraedit92\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.6.0_45\bin;C:\Program Files\wrq\Reflection1103\;F:\ORAC\CLNT0011203NEN003\Oracle\Product\Client_11.2.0.3\bin;C:\A15\D7lite\Bin;C:\A15\D7lite\Projects\Bpl;C:\Program Files\IDEPRO\UltraEdit 10.00;C:\Program Files\Java\jdk1.6.0_16\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.1\bin;C:\Program Files\nodejs\;C:\Users\317718\AppData\Roaming\npm, user.language=fr, env.MOZ_CRASHREPORTER_DISABLE=1, groovy.version=2.4.7, env.=Z:=Z:\FIN_USERS\SRS\120 - Docs in progress\10 - DI\awr, env.WINDIR=C:\Windows, sun.boot.library.path=C:\A15\java\jdk7u161\jre\bin, classworlds.conf=C:\A15\java\apache-maven-3.2.5\bin\m2.conf, env.BANK_DUMMY=C:\Program Files\TortoiseGit\bin, env.BANK_NOJS=C:\Program Files\nodejs\, java.version=1.7.0_161, env.PROCESSOR_IDENTIFIER=x86 Family 6 Model 78 Stepping 3, GenuineIntel, user.timezone=Europe/Paris, env.TEMP=C:\Users\317718\AppData\Local\Temp, sun.arch.data.model=32, env.WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log, java.endorsed.dirs=C:\A15\java\jdk7u161\jre\lib\endorsed, env.VSEDEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86, env.HOMEDRIVE=U:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, env.NLS_LANG=FRENCH_FRANCE.WE8ISO8859P1, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=51.0, org.slf4j.simpleLogger.defaultLogLevel=debug, env.=S:=S:\Ri01\PBMRC\d. MCP - Documents liés à la  méthode de conduite de projet\b. Bmrc\o. Optimisations\b. Benchs et Optims\g. GAG\20180221, user.country=FR, java.home=C:\A15\java\jdk7u161\jre, env.APPDATA=C:\Users\317718\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.=Y:=Y:\A15, env.OS=Windows_NT, os.version=6.1, maven.compiler.target=1.7, env.=::=::\, path.separator=;, java.vm.version=24.161-b33, env.LASTCUESEC=Update AMT Firmware V2 - HP EliteBook 820/840 G3, env.USERPROFILE=C:\Users\317718, user.variant=, env.BANK_JDK=C:\Program Files\Java\jdk1.6.0_16\bin, env.JAVA_HOME=C:\A15\java\jdk7u161, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.BANK_DUMMY1=C:\Program Files\Java\jdk1.6.0_45\bin, env.TMP=C:\Users\317718\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, guice.version=3.0, user.script=, env.BANK_NOJS1=C:\Users\317718\AppData\Roaming\npm, user.home=C:\Users\317718, jersey.version=1.12, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.=EXITCODE=00000000, env.SESSIONNAME=Console, guava.version=17.0, java.specification.vendor=Oracle Corporation, env.TNS_ADMIN=f:\orac\config, env.M2_HOME=C:\A15\java\apache-maven-3.2.5, java.library.path=C:\A15\java\jdk7u161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\A15\java\apache-maven-3.2.5\bin;C:\A15\java\jdk7u161\bin;C:\Program Files\Serena\Dimensions 12.2\CM\prog\Microsoft.VC90.MFC;C:\Program Files\Serena\Dimensions 12.2\CM\prog\Microsoft.VC90;C:\Program Files\Serena\Dimensions 12.2\CM\prog;C:\Program Files\Serena\Dimensions 12.2\CM\prog64;C:\Program Files\Serena\Dimensions 12.2\CM\prog\Microsoft.VC90.ATL;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft Application Virtualization Client;C:\Program Files\Axalto\Access Client\v5\;C:\Program Files\ActivIdentity\SecureLogin\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\IDEpro\Ultraedit92\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.6.0_45\bin;C:\Program Files\wrq\Reflection1103\;F:\ORAC\CLNT0011203NEN003\Oracle\Product\Client_11.2.0.3\bin;C:\A15\D7lite\Bin;C:\A15\D7lite\Projects\Bpl;C:\Program Files\IDEPRO\UltraEdit 10.00;C:\Program Files\Java\jdk1.6.0_16\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.1\bin;C:\Program Files\nodejs\;C:\Users\317718\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, env.NUMBER_OF_PROCESSORS=4, env.USERDNSDOMAIN=FRA.NET.INTRA, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=clean install -X, java.vm.vendor=Oracle Corporation, maven.home=C:\A15\java\apache-maven-3.2.5, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -X, java.class.path=C:\A15\java\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar, hibernate.version=4.2.8.Final, env.CACHEFOLDER=C:\Program Files\HP\Quality Center Client Side\Mercury Interactive\TEMP, maven.version=3.2.5, env.MAVEN_JAVA_EXE="C:\A15\java\jdk7u161\bin\java.exe", slf4j.version=1.7.7, java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\PARS00041823, java.vm.specification.version=1.7, env.PROCESSOR_ARCHITECTURE=x86, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=U:\, java.io.tmpdir=C:\Users\317718\AppData\Local\Temp\, env.UATDATA=C:\Windows\system32\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, env.PROCESSOR_REVISION=4e03, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, maven.compiler.source=1.7, os.arch=x86, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\A15\java\jdk7u161\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\A15\a4x\adk3_demo\ak342m\axelor-wkf, env.LOCALAPPDATA=C:\Users\317718\AppData\Local, line.separator=
+, java.vm.name=Java HotSpot(TM) Client VM, env.CLASSWORLDS_JAR="C:\A15\java\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar", env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, quartz.version=2.2.1, env.M2=C:\Program Files\Apache Software Foundation\apache-maven-3.2.1\bin, env.ERROR_CODE=0, env.USERNAME=317718, jackson.version=2.3.1, file.encoding=Cp1252, env.USERDOMAIN=FRA, java.specification.version=1.7, env.=C:=C:\A15\a4x\adk3_demo\ak342m\axelor-wkf, shiro.version=1.2.2, env.PROCESSOR_LEVEL=6}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 9 resources
+[DEBUG] file xml-bpmn-config.xml has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\data\xml-bpmn-config.xml to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\data\xml-bpmn-config.xml
+[DEBUG] file Workflow.xml has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\domains\Workflow.xml to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\domains\Workflow.xml
+[DEBUG] file messages.csv has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\i18n\messages.csv to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\i18n\messages.csv
+[DEBUG] file messages_en.csv has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\i18n\messages_en.csv to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\i18n\messages_en.csv
+[DEBUG] file messages_fr.csv has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\i18n\messages_fr.csv to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\i18n\messages_fr.csv
+[DEBUG] file Instance.xml has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\views\Instance.xml to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Instance.xml
+[DEBUG] file Menu.xml has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\views\Menu.xml to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Menu.xml
+[DEBUG] file Node.xml has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\views\Node.xml to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Node.xml
+[DEBUG] file Workflow.xml has a filtered file extension
+[DEBUG] copy C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\views\Workflow.xml to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes\views\Workflow.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ axelor-wkf ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=255, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=57, ConflictIdSorter.conflictIdCycleCount=1, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=86, DefaultDependencyCollector.collectTime=624, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.5.1:
+[DEBUG]    org.codehaus.groovy:groovy-eclipse-compiler:jar:2.8.0-01:runtime
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.5.4:runtime
+[DEBUG]          org.apache.xbean:xbean-reflect:jar:3.4:runtime
+[DEBUG]             log4j:log4j:jar:1.2.12:runtime
+[DEBUG]             commons-logging:commons-logging-api:jar:1.1:runtime
+[DEBUG]          com.google.collections:google-collections:jar:1.0:runtime
+[DEBUG]          junit:junit:jar:3.8.2:runtime
+[DEBUG]    org.codehaus.groovy:groovy-eclipse-batch:jar:2.1.8-01:runtime
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.0.0:compile
+[DEBUG]       commons-io:commons-io:jar:2.4:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.7:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.5.1
+[DEBUG]   Included: org.codehaus.groovy:groovy-eclipse-compiler:jar:2.8.0-01
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG]   Included: org.codehaus.groovy:groovy-eclipse-batch:jar:2.1.8-01
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.0.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.4
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.4
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.5.1, parent: sun.misc.Launcher$AppClassLoader@12d9844]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf
+[DEBUG]   (f) buildDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target
+[DEBUG]   (f) classpathElements = [C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes, C:\Users\317718\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar, C:\Users\317718\.m2\repository\com\axelor\axelor-core\2.0.0-SNAPSHOT\axelor-core-2.0.0-SNAPSHOT.jar, C:\Users\317718\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar, C:\Users\317718\.m2\repository\org\codehaus\groovy\groovy-all\2.4.7\groovy-all-2.4.7.jar, C:\Users\317718\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar, C:\Users\317718\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar, C:\Users\317718\.m2\repository\com\google\code\findbugs\jsr305\2.0.3\jsr305-2.0.3.jar, C:\Users\317718\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java, C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\groovy, C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen]
+[DEBUG]   (f) compilerId = groovy-eclipse-compiler
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG]   (f) project = MavenProject: com.axelor:axelor-wkf:2.0.0-SNAPSHOT @ C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\pom.xml
+[DEBUG]   (f) projectArtifact = com.axelor:axelor-wkf:jar:2.0.0-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@155887
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.7
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.7
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'groovy-eclipse-compiler'.
+[DEBUG] Source directories: [C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java
+ C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen]
+[DEBUG] Classpath: [C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+ C:\Users\317718\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar
+ C:\Users\317718\.m2\repository\com\axelor\axelor-core\2.0.0-SNAPSHOT\axelor-core-2.0.0-SNAPSHOT.jar
+ C:\Users\317718\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar
+ C:\Users\317718\.m2\repository\org\codehaus\groovy\groovy-all\2.4.7\groovy-all-2.4.7.jar
+ C:\Users\317718\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar
+ C:\Users\317718\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar
+ C:\Users\317718\.m2\repository\com\google\code\findbugs\jsr305\2.0.3\jsr305-2.0.3.jar
+ C:\Users\317718\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar]
+[DEBUG] Output directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG] Adding C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\generated-sources\annotations to compile source roots:
+  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java
+  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\groovy
+  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen
+[DEBUG] New compile source roots:
+  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java
+  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\groovy
+  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen
+  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\generated-sources\annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\db\repo\NodeRepository.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Transition.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\StartEvent.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\service\WorkflowService.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ExclusiveGateway.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Node.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceHistory.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\web\InstanceController.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Workflow.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\MessageEvent.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\TimerEvent.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Instance.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\db\repo\WorkflowRepository.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InclusiveGateway.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\module.properties
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\web\WorkflowController.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceCounterRepository.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\helper\DiagramHelper.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\IWorkflow.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\EndEvent.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractTransitionRepository.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\action\Action.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\db\repo\TransitionRepository.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractWorkflowRepository.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\service\WorkflowImporter.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ParallelGateway.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceCounter.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceRepository.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\NodeTask.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Gateway.java
+[DEBUG] Stale source detected: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceHistoryRepository.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG]  C:\Users\317718\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar
+[DEBUG]  C:\Users\317718\.m2\repository\com\axelor\axelor-core\2.0.0-SNAPSHOT\axelor-core-2.0.0-SNAPSHOT.jar
+[DEBUG]  C:\Users\317718\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar
+[DEBUG]  C:\Users\317718\.m2\repository\org\codehaus\groovy\groovy-all\2.4.7\groovy-all-2.4.7.jar
+[DEBUG]  C:\Users\317718\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar
+[DEBUG]  C:\Users\317718\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar
+[DEBUG]  C:\Users\317718\.m2\repository\com\google\code\findbugs\jsr305\2.0.3\jsr305-2.0.3.jar
+[DEBUG]  C:\Users\317718\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
+[DEBUG] Source roots:
+[DEBUG]  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java
+[DEBUG]  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\groovy
+[DEBUG]  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen
+[DEBUG]  C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\generated-sources\annotations
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[DEBUG] Compiling 30 source files to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG] Command line options:
+[DEBUG] -cp C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes;C:\Users\317718\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\317718\.m2\repository\com\axelor\axelor-core\2.0.0-SNAPSHOT\axelor-core-2.0.0-SNAPSHOT.jar;C:\Users\317718\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;C:\Users\317718\.m2\repository\org\codehaus\groovy\groovy-all\2.4.7\groovy-all-2.4.7.jar;C:\Users\317718\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\317718\.m2\repository\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\317718\.m2\repository\com\google\code\findbugs\jsr305\2.0.3\jsr305-2.0.3.jar;C:\Users\317718\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar; -d C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes -g -s C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\generated-sources\annotations -source 1.7 -target 1.7 -nowarn -encoding UTF-8 C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\db\repo\NodeRepository.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Transition.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\StartEvent.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\service\WorkflowService.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ExclusiveGateway.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Node.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceHistory.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\web\InstanceController.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Workflow.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\MessageEvent.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\TimerEvent.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Instance.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\db\repo\WorkflowRepository.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InclusiveGateway.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\web\WorkflowController.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceCounterRepository.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\helper\DiagramHelper.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\IWorkflow.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\EndEvent.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractTransitionRepository.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\action\Action.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\db\repo\TransitionRepository.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractWorkflowRepository.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\java\com\axelor\wkf\service\WorkflowImporter.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ParallelGateway.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceCounter.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceRepository.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\NodeTask.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Gateway.java C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceHistoryRepository.java
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[DEBUG] Compiling 30 source files to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] Found 1 error and 0 warnings.
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.899 s
+[INFO] Finished at: 2018-03-14T15:53:42+01:00
+[INFO] Final Memory: 15M/38M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project axelor-wkf: Compilation failure
+[ERROR] Found 1 error and 0 warnings.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project axelor-wkf: Compilation failure
+Found 1 error and 0 warnings.
+
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:120)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:355)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:216)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+Found 1 error and 0 warnings.
+
+	at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute(AbstractCompilerMojo.java:972)
+	at org.apache.maven.plugin.compiler.CompilerMojo.execute(CompilerMojo.java:129)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:132)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	... 19 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

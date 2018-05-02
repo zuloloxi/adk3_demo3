@@ -25,7 +25,7 @@ public class WkfTest extends AbstractModule {
 
 	@Override
 	protected void configure() {
-		install(new JpaModule("testUnit"));
+		install(new JpaModule("testUnit",true,true));
         install(new AuthModule.Simple());
 	}
 

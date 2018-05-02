@@ -1,0 +1,94 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Wkf 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for com.axelor:axelor-core:jar:2.0.0-SNAPSHOT is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ axelor-wkf ---
+[WARNING] Failed to build parent project for com.axelor:axelor-core:jar:2.0.0-SNAPSHOT
+[WARNING] Invalid POM for com.axelor:axelor-core:jar:2.0.0-SNAPSHOT, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] com.axelor:axelor-wkf:jar:2.0.0-SNAPSHOT
+[INFO] +- com.beust:jcommander:jar:1.48:compile
+[INFO] +- com.axelor:axelor-core:jar:2.0.0-SNAPSHOT:compile
+[INFO] +- com.axelor:axelor-test:jar:2.0.0-SNAPSHOT:test
+[INFO] |  +- com.google.inject:guice:jar:3.0:test
+[INFO] |  |  +- javax.inject:javax.inject:jar:1:test
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:test
+[INFO] |  +- com.google.inject.extensions:guice-servlet:jar:3.0:test
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- com.google.inject.extensions:guice-persist:jar:3.0:test
+[INFO] |  |  \- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  +- javax.el:javax.el-api:jar:3.0.0:test
+[INFO] |  +- org.glassfish:javax.el:jar:3.0.0:test
+[INFO] |  +- com.sun.jersey:jersey-server:jar:1.12:test
+[INFO] |  |  +- asm:asm:jar:3.1:test
+[INFO] |  |  \- com.sun.jersey:jersey-core:jar:1.12:test
+[INFO] |  +- com.sun.jersey:jersey-client:jar:1.12:test
+[INFO] |  |  \- (com.sun.jersey:jersey-core:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.contribs:jersey-guice:jar:1.12:test
+[INFO] |  |  +- (javax.inject:javax.inject:jar:1:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-servlet:jar:1.12:test
+[INFO] |  |     \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.12:test
+[INFO] |  |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.12:test
+[INFO] |  |  |  +- javax.servlet:javax.servlet-api:jar:3.0.1:provided (scope managed from test)
+[INFO] |  |  |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  |  |  +- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  |  \- (com.sun.jersey:jersey-client:jar:1.12:test - omitted for duplicate)
+[INFO] |  |  \- com.sun.jersey:jersey-grizzly2-servlet:jar:1.12:test
+[INFO] |  |     +- org.glassfish.grizzly:grizzly-http-servlet:jar:2.2.1:test
+[INFO] |  |     |  \- org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test
+[INFO] |  |     |     +- (org.glassfish.grizzly:grizzly-http:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |     \- org.glassfish.grizzly:grizzly-rcm:jar:2.2.1:test
+[INFO] |  |     |        \- (org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     +- com.sun.jersey:jersey-grizzly2:jar:1.12:test
+[INFO] |  |     |  +- org.glassfish.grizzly:grizzly-http:jar:2.2.1:test
+[INFO] |  |     |  |  \- org.glassfish.grizzly:grizzly-framework:jar:2.2.1:test
+[INFO] |  |     |  |     \- org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:test
+[INFO] |  |     |  |        \- org.glassfish.external:management-api:jar:3.0.0-b012:test
+[INFO] |  |     |  +- (org.glassfish.grizzly:grizzly-http-server:jar:2.2.1:test - omitted for duplicate)
+[INFO] |  |     |  \- (com.sun.jersey:jersey-server:jar:1.12:test - omitted for duplicate)
+[INFO] |  |     +- org.glassfish:javax.servlet:jar:3.1:test
+[INFO] |  |     \- (com.sun.jersey:jersey-servlet:jar:1.12:test - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:test
+[INFO] |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:test
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:test
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0:test
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:test
+[INFO] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:test - omitted for duplicate)
+[INFO] |  +- (junit:junit:jar:4.11:test - version managed from 4.8.2; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - scope updated from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.7:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:17.0:test - omitted for duplicate)
+[INFO] |  +- (com.google.code.findbugs:jsr305:jar:2.0.3:test - omitted for duplicate)
+[INFO] |  \- (org.codehaus.groovy:groovy-all:jar:2.4.7:test - omitted for duplicate)
+[INFO] +- org.codehaus.groovy:groovy-all:jar:2.4.7:compile
+[INFO] +- javax.persistence:persistence-api:jar:1.0.2:compile
+[INFO] +- com.google.guava:guava:jar:17.0:compile
+[INFO] +- com.google.code.findbugs:jsr305:jar:2.0.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.7:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.7:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.7:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - scope managed from test; omitted for duplicate)
+[INFO] +- log4j:log4j:jar:1.2.17:runtime
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.229 s
+[INFO] Finished at: 2018-03-14T18:20:02+01:00
+[INFO] Final Memory: 11M/26M
+[INFO] ------------------------------------------------------------------------

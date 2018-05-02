@@ -1,0 +1,13 @@
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T18:29:23+01:00)
+Maven home: C:\A15\java\apache-maven-3.2.5
+Java version: 1.7.0_161, vendor: Oracle Corporation
+Java home: C:\A15\java\jdk7u161\jre
+Default locale: fr_FR, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "x86", family: "windows"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from C:\A15\java\apache-maven-3.2.5\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\317718\.m2\settings.xml
+[DEBUG] Using local repository at C:\Users\317718\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\317718\.m2\repository
+[INFO] Scanning for projects...
+Terminer le programme de commandes (O/N) ? 

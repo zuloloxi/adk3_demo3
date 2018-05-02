@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_3.4.xsd">
+
+  <selection name="select.language">
+    <option value="en">English</option>
+    <option value="fr">French</option>
+  </selection>
+
+  <grid name="user-grid" title="Users" model="com.axelor.auth.db.User">
+    <field name="name"/>
+    <field name="code"/>
+    <field name="email"/>
+    <field name="language"/>
+    <field name="group"/>
+  </grid>
+
+  <form name="user-form" title="User" model="com.axelor.auth.db.User" onSave="com.axelor.auth.AuthService:validate">
+    <panel title="Overview">
+      <field name="name" placeholder="user name" onChange="action-condition-user-validName" validIf="name.length >= 2"/>
+      <field name="code" placeholder="login name" onChange="action-condition-user-validCode" validIf="code.length >= 2" readonlyIf="id &amp;&amp; code == 'admin'"/>
+      <field name="group" placeholder="user group"/>
+      <field name="email" widget="Email"/>
+      <field name="language"/>
+      <panel stacked="true">
+        <field name="homeAction" hidden="true" x-bind="{{__actionSelect.name}}"/>
+        <field name="__actionSelect" title="Action" widget="SuggestBox" canNew="false" target="com.axelor.meta.db.MetaAction" target-name="name" domain="self.type = 'action-view'"/>
+      </panel>
+    </panel>
+    <panel title="Authorization">
+      <field name="activateOn" validIf="!activateOn || (activateOn &amp;&amp; !expiresOn) || (activateOn &amp;&amp; expiresOn &amp;&amp; $moment(expiresOn) >= $moment(activateOn))"/>
+      <field name="expiresOn" validIf="!expiresOn || (!activateOn &amp;&amp; expiresOn) || (activateOn &amp;&amp; expiresOn &amp;&amp; $moment(expiresOn) >= $moment(activateOn))"/>
+      <field name="blocked"/>
+      <field name="change" title="Change password?" showIf="id &amp;&amp; !$readonly()" widget="boolean"/>
+      <panel colSpan="12" showIf="change || !id" >
+        <field name="newPassword" title="Password" placeholder="new password" widget="password" requiredIf="!id" validIf="(!change &amp;&amp; id) || (newPassword.length >= 4 &amp;&amp; confirm == newPassword)"/>
+        <field name="confirm" title="Confirm" placeholder="confirm password" widget="password"/>
+      </panel>
+    </panel>
+    <panel-tabs>
+      <panel-related field="roles" form-view="role-form" grid-view="role-grid"/>
+      <panel-related field="permissions"/>
+      <panel-related field="metaPermissions"/>
+    </panel-tabs>
+  </form>
+
+  <form name="user-preferences-form" title="Preferences" model="com.axelor.auth.db.User"
+    onSave="com.axelor.auth.AuthService:validate">
+    <panel title="User preferences" itemSpan="12">
+      <field name="email" widget="Email"/>
+      <field name="language"/>
+      <field name="change" title="Change password?" widget="boolean"/>
+      <panel showIf="change">
+        <field name="newPassword" title="Password" placeholder="new password" widget="password" requiredIf="change" validIf="(!change) || (newPassword.length >= 4 &amp;&amp; confirm == newPassword)"/>
+        <field name="confirm" title="Confirm" placeholder="confirm password" widget="password"/>
+      </panel>
+    </panel>
+  </form>
+
+  <action-condition name="action-condition-user-validCode">
+    <check error="Code length should be greater than 2." field="code" if="code?.length() &lt; 2"/>
+  </action-condition>
+
+  <action-condition name="action-condition-user-validName">
+    <check error="Name length should be greater than 2." field="name" if="name?.length() &lt; 2"/>
+  </action-condition>
+
+</object-views>

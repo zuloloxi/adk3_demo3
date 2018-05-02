@@ -19,6 +19,9 @@ package com.axelor.i18n;
 
 import static org.junit.Assert.assertEquals;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 import javax.inject.Inject;
 
 import org.junit.Before;
@@ -63,6 +66,14 @@ public class I18nTest extends JpaTest {
 
 	@Test
 	public void test() {
+		
+		System.out.println("Default locale 1:" + Locale.getDefault().toString());
+
+		System.out.println("\nSetting default locale to swedish_sweden");
+		Locale swedishLocale = new Locale("en", "EN");
+		Locale.setDefault(swedishLocale);
+
+		System.out.println("Default locale 2:" + Locale.getDefault().toString());
 		
 		// test simple
 		assertEquals("Hello...", I18n.get("Hello World!!!"));

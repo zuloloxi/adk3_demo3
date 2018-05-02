@@ -1,0 +1,153 @@
+C:\A15\a4x\adk3_demo\ak342m\axelor-web>cd ..\axelor-wkf
+
+C:\A15\a4x\adk3_demo\ak342m\axelor-wkf>mvn clean install -o
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Axelor :: Wkf 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ axelor-wkf ---
+[INFO] Deleting C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.8:add-source (add-source) @ axelor-wkf ---
+[INFO] Source directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\groovy added.
+[INFO]
+[INFO] --- axelor-maven-plugin:2.0.0-SNAPSHOT:generate (default) @ axelor-wkf ---
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target/src-gen/module.properties
+[INFO] Generating Models: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf
+[INFO] Generating JPA classes.
+[INFO] Domain path: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\domains
+[INFO] Output path: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen
+[INFO] Processing: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\main\resources\domains\Workflow.xml
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Workflow.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractWorkflowRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Instance.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceCounter.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceCounterRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InstanceHistory.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\InstanceHistoryRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Transition.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\repo\AbstractTransitionRepository.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Node.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\StartEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\EndEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\NodeTask.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\MessageEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\TimerEvent.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\Gateway.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ExclusiveGateway.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\InclusiveGateway.java
+[INFO] Generating: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\src-gen\com\axelor\wkf\db\ParallelGateway.java
+[INFO] Source directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target/src-gen added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ axelor-wkf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ axelor-wkf ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:copy-resources (copy-resources) @ axelor-wkf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.8:add-test-source (add-test-source) @ axelor-wkf ---
+[INFO] Test Source directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\src\test\groovy added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ axelor-wkf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ axelor-wkf ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO]
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ axelor-wkf ---
+[INFO] Surefire report directory: C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.axelor.wkf.test.WorkFlowDbTest
+2018-03-28 18:06:12,227 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-28 18:06:12,756 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-28 18:06:13,089 [main] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-03-28 18:06:13,530 [main] INFO  com.axelor.db.JpaScanner - Total found: 40
+2018-03-28 18:06:13,530 [main] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+hello :(
+:)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.919 sec <<< FAILURE! - in com.axelor.wkf.test.WorkFlowDbTest
+test(com.axelor.wkf.test.WorkFlowDbTest)  Time elapsed: 0.099 sec  <<< ERROR!
+java.lang.NullPointerException: null
+        at com.axelor.meta.service.MetaModelService.process(MetaModelService.java:87)
+        at com.axelor.meta.service.MetaModelService.process(MetaModelService.java:78)
+        at com.axelor.wkf.test.WorkFlowDbTest$1.run(WorkFlowDbTest.java:47)
+        at com.axelor.db.JPA.runInTransaction(JPA.java:663)
+        at com.axelor.db.JpaSupport.inTransaction(JpaSupport.java:69)
+        at com.axelor.wkf.test.WorkFlowDbTest.test(WorkFlowDbTest.java:42)
+
+Running com.axelor.wkf.test.WorkFlowEngineTest
+2018-03-28 18:06:16,581 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-28 18:06:17,065 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-28 18:06:17,367 [main] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-03-28 18:06:17,812 [main] INFO  com.axelor.db.JpaScanner - Total found: 40
+2018-03-28 18:06:17,812 [main] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+:)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.793 sec <<< FAILURE! - in com.axelor.wkf.test.WorkFlowEngineTest
+com.axelor.wkf.test.WorkFlowEngineTest  Time elapsed: 3.792 sec  <<< ERROR!
+java.lang.NullPointerException: null
+        at com.axelor.meta.service.MetaModelService.process(MetaModelService.java:87)
+        at com.axelor.meta.service.MetaModelService.process(MetaModelService.java:78)
+        at com.axelor.wkf.test.WorkFlowEngineTest$1.run(WorkFlowEngineTest.java:76)
+        at com.axelor.db.JPA.runInTransaction(JPA.java:663)
+        at com.axelor.wkf.test.WorkFlowEngineTest.setUp(WorkFlowEngineTest.java:72)
+
+Running com.axelor.wkf.test.WorkflowImporterTest
+2018-03-28 18:06:20,776 [main] INFO  com.axelor.db.JpaModule - Configuring JPA...
+2018-03-28 18:06:21,224 [main] INFO  com.axelor.db.JpaModule - Initialize JPA...
+2018-03-28 18:06:21,530 [main] INFO  com.axelor.db.JpaScanner - Searching for model classes...
+2018-03-28 18:06:21,970 [main] INFO  com.axelor.db.JpaScanner - Total found: 40
+2018-03-28 18:06:21,970 [main] INFO  com.axelor.db.JpaScanner - Searching for repository classes...
+:)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.586 sec <<< FAILURE! - in com.axelor.wkf.test.WorkflowImporterTest
+com.axelor.wkf.test.WorkflowImporterTest  Time elapsed: 3.586 sec  <<< ERROR!
+java.lang.NullPointerException: null
+        at com.axelor.meta.service.MetaModelService.process(MetaModelService.java:87)
+        at com.axelor.meta.service.MetaModelService.process(MetaModelService.java:78)
+        at com.axelor.wkf.test.WorkflowImporterTest.setUp(WorkflowImporterTest.java:53)
+
+
+Results :
+
+Tests in error:
+  WorkFlowDbTest.test:42->JpaSupport.inTransaction:69 » NullPointer
+  WorkFlowEngineTest.setUp:72 » NullPointer
+  WorkflowImporterTest.setUp:53 » NullPointer
+
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.312 s
+[INFO] Finished at: 2018-03-28T18:06:24+02:00
+[INFO] Final Memory: 21M/50M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project axelor-wkf: There are test failures.
+[ERROR]
+[ERROR] Please refer to C:\A15\a4x\adk3_demo\ak342m\axelor-wkf\target\surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+C:\A15\a4x\adk3_demo\ak342m\axelor-wkf>

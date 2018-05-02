@@ -14,11 +14,12 @@
   <name>Axelor :: Sale</name>
 
   <dependencies>
-	<dependency>
+	<!--<dependency>
 		<groupId>org.codehaus.groovy</groupId>
 		<artifactId>groovy-all</artifactId>
 		<version>2.2.1</version>
-	</dependency>
+	</dependency> 
+	-->
   <!-- module specific dependencies -->
     <dependency>
       <groupId>com.axelor</groupId>
